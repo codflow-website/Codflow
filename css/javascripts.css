@@ -1,0 +1,629 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Global Styles */
+body {
+  background-color: #0b0f19;
+  color: #94a3b8;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0b0f19; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom Navbar */
+.bg-dark-custom {
+  background-color: #0b0f19;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Compact Brand Logo */
+.brand-logo {
+  height: 38px;
+  width: auto;
+}
+
+/* Navigation Links */
+.custom-nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #94a3b8 !important;
+  padding: 0.35rem 0.75rem !important;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.custom-nav-link:hover {
+  color: #f8fafc !important;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.custom-nav-link.active {
+  color: #ffffff !important;
+  background-color: #272042; /* Highlight pill matching your dark-purple accent */
+}
+
+/* Compact Search Box */
+.search-box {
+  width: 220px;
+}
+
+.compact-search {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #e2e8f0 !important;
+  font-size: 0.8rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2.5rem !important;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.compact-search::placeholder {
+  color: #64748b;
+}
+
+.compact-search:focus {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: #6366f1 !important;
+  box-shadow: none !important;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.65rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.kbd-shortcut {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.65rem;
+  color: #64748b;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+  pointer-events: none;
+}
+
+/* Icon Buttons & Profile */
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: #f8fafc;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.profile-avatar-btn {
+  background: #272042;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #c084fc;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.profile-avatar-btn:hover {
+  background: #342a58;
+  color: #ffffff;
+}
+
+/* Flex Alignment Layout */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .main-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .left-content {
+    flex: 1;
+    max-width: 620px;
+  }
+
+  .right-card-wrapper {
+    width: 460px;
+    flex-shrink: 0;
+  }
+}
+
+/* Cards Base */
+.custom-card {
+  background-color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Badges */
+.badge-track {
+  background-color: #2e285a;
+  color: #c084fc;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.badge-meta {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+/* Custom Buttons */
+.btn-violet {
+  background-color: #6366f1;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-violet:hover {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  border: 1px solid #374151;
+  color: #e2e8f0;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: #1f2937;
+  color: #ffffff;
+  border-color: #4b5563;
+}
+
+/* Progress Bar */
+.progress-custom {
+  height: 8px;
+  background-color: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: linear-gradient(90deg, #3b82f6, #38bdf8);
+  border-radius: 10px;
+}
+
+/* Code Terminal Window */
+.terminal-box {
+  background-color: #030712;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.window-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Code Syntax Colors */
+.code-kw { color: #c084fc; }   /* const, let, var */
+.code-var { color: #38bdf8; }  /* object variables */
+.code-str { color: #fde047; }  /* string text */
+.code-fn { color: #60a5fa; }   /* console.log */
+.code-num { color: #64748b; }  /* line numbers */
+
+/* General Utilities */
+.text-purple { color: #a78bfa; }
+.text-cyan { color: #38bdf8; }
+.bg-violet-avatar { background-color: #8b5cf6; }
+
+
+/* --- CURRICULUM SECTION STYLING --- */
+.curriculum-section{
+  padding: 6px 50px;
+}
+
+.section-tag {
+  color: #a855f7;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.lesson-card {
+  background-color: #111726;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.lesson-card:hover:not(.locked) {
+  border-color: rgba(168, 85, 247, 0.3);
+  background-color: #1a243d;
+}
+
+.lesson-status {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.lesson-card.completed .lesson-status {
+  background-color: rgba(34, 197, 94, 0.1);
+  border-radius: 50%;
+}
+
+.lesson-num {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-family: 'Fira Code', monospace;
+}
+
+.lesson-title {
+  color: #cbd5e1;
+  margin: 0;
+  font-size: 0.925rem;
+  font-weight: 500;
+}
+
+.lesson-time {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-family: 'Fira Code', monospace;
+}
+
+.icon-arrow {
+  color: #475569;
+  font-size: 0.8rem;
+}
+
+/* --- Active Lesson Styling --- */
+.lesson-card.active {
+  background: linear-gradient(90deg, #181d36 0%, #151b30 100%);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  padding: 22px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.play-btn-circle {
+  width: 42px;
+  height: 42px;
+  background-color: rgba(168, 85, 247, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.btn-purple-bright {
+  background-color: #8b5cf6;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-purple-bright:hover {
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+
+/* --- Helper Classes for Badges & Locked State --- */
+.bg-purple-subtle {
+  background-color: rgba(168, 85, 247, 0.1) !important;
+}
+
+.border-purple-subtle {
+  border-color: rgba(168, 85, 247, 0.25) !important;
+}
+
+.lesson-card.locked {
+  opacity: 0.55;
+}
+
+.capstone-icon {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(168, 85, 247, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* --- CORE COMPETENCIES & SKILL PROGRESSION SECTION STYLING --- */
+
+.sandbox-section {
+  padding: 6px 54px;
+}
+
+.competencies-section {
+  padding: 6px 54px;
+}
+
+/* Left Side Check Box Cards */
+.competency-card {
+  background-color: #111726;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+.competency-card:hover {
+  border-color: rgba(34, 211, 238, 0.3);
+  background-color: #161f33;
+}
+
+/* Right Side Skill Progression Card Container */
+.skill-progression-card {
+  background-color: #0d1220;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.badge-level {
+  background-color: #1a1e36;
+  color: #a855f7;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  font-size: 0.7rem;
+  border-radius: 6px;
+}
+
+/* Skill Progress Bars Custom Styling */
+.progress-skill {
+  height: 5px;
+  background-color: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bg-green-teal {
+  background: linear-gradient(90deg, #10b981, #22d3ee);
+}
+
+.bg-purple-glow {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+}
+
+.bg-cyan-bright {
+  background: linear-gradient(90deg, #0284c7, #38bdf8);
+}
+
+.bg-orange-gold {
+  background: linear-gradient(90deg, #eab308, #f59e0b);
+}
+
+
+/* --- INTERACTIVE SANDBOX SECTION STYLING --- */
+
+/* Badge Styling */
+.badge-sandbox {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  font-size: 0.8rem;
+}
+
+/* Card Outer Containers */
+.sandbox-card {
+  background-color: #0b0f19;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Inline Code Element */
+.code-inline {
+  background-color: #1a2236;
+  color: #38bdf8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85rem;
+}
+
+/* Test Criteria Box */
+.test-criteria-box {
+  background-color: #121827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+/* Code Editor Window Header */
+.editor-header {
+  background-color: #0d1220;
+}
+
+.editor-body {
+  background-color: #080c14;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Syntax Color Customization */
+.code-num {
+  color: #334155;
+  user-select: none;
+  width: 20px;
+}
+
+.code-kw {
+  color: #c084fc; /* Purple for function, return */
+}
+
+.code-fn {
+  color: #38bdf8; /* Blue for function names & console */
+}
+
+.code-param {
+  color: #f43f5e; /* Red/pink for parameters */
+}
+
+.code-num-val {
+  color: #f59e0b; /* Yellow/amber for numbers */
+}
+
+/* Console Section */
+.console-box {
+  background-color: #060910;
+}
+
+.console-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+/* --- COURSE PROGRESS SUMMARY & FOOTER STYLING --- */
+
+.progress-summary-section {
+  padding: 6px 54px;
+}
+
+/* Main Card Outer Box */
+.summary-card {
+  background-color: #0d1220;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Inner Stats Cards */
+.stat-box {
+  background-color: #111726;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+/* Progress Ring (Circle) */
+.progress-ring-container {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring-bg {
+  fill: none;
+  stroke: #1e293b;
+  stroke-width: 4;
+}
+
+.progress-ring-circle {
+  fill: none;
+  stroke: #a855f7;
+  stroke-width: 4;
+  stroke-dasharray: 138;
+  stroke-dashoffset: 34.5; /* 75% Completion */
+  stroke-linecap: round;
+}
+
+.progress-ring-text {
+  position: absolute;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Fira Code', monospace;
+}
+
+/* Progress Bars inside Stats */
+.progress-stat {
+  height: 4px;
+  background-color: #1a2236;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bg-cyan-line {
+  background-color: #22d3ee;
+}
+
+.bg-blue-line {
+  background-color: #3b82f6;
+}
+
+.bg-green-line {
+  background-color: #10b981;
+}
+
+/* Footer Link Styles */
+.footer-link {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}

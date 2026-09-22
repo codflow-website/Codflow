@@ -6,6 +6,16 @@ body {
   min-height: 100vh;
 }
 
+
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0b0f19; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
 /* Dark Theme Base */
 .bg-dark-custom {
   background-color: #0b0f19;
@@ -1652,4 +1662,19 @@ body {
 
 .footer-legal-links a:hover {
   color: #ffffff;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#popularcourses,
+#prcticebycoding,
+#quizes,
+#projects,
+#learningpath,
+section[id] {
+  scroll-margin-top: 80px;
 }

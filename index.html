@@ -24,7 +24,7 @@
 </head>
 <body>
 
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
+ <nav class="navbar-sticky navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
   <div class="container-fluid px-3">
     <!-- Brand Logo -->
     <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
@@ -43,19 +43,19 @@
           <a class="nav-link custom-nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link custom-nav-link" href="#">Courses</a>
+          <a class="nav-link custom-nav-link" href="#popularcourses">Courses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link custom-nav-link" href="#">Practice</a>
+          <a class="nav-link custom-nav-link" href="#prcticebycoding">Practice</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link custom-nav-link" href="#">Quizzes</a>
+          <a class="nav-link custom-nav-link" href="#quizes">Quizzes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link custom-nav-link" href="#">Projects</a>
+          <a class="nav-link custom-nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link custom-nav-link" href="#">Learning Path</a>
+          <a class="nav-link custom-nav-link" href="#learningpath">Learning Path</a>
         </li>
       </ul>
 
@@ -108,10 +108,10 @@
           </p>
 
           <div class="d-flex flex-wrap gap-3 mb-5">
-            <a href="#" class="btn btn-purple">
+            <a href="#learningpath" class="btn btn-purple">
               Start Learning <i class="fa-solid fa-arrow-right fs-6"></i>
             </a>
-            <a href="#" class="btn btn-outline-custom">
+            <a href="#popularcourses" class="btn btn-outline-custom">
               <i class="fa-regular fa-folder-open"></i> Explore Courses
             </a>
           </div>
@@ -203,7 +203,7 @@
 
 
 
-  <section class="learning-path-section py-5">
+  <section id="learningpath" class="learning-path-section py-5">
   <div class="container-fluid px-4 px-lg-5">
     
     <!-- Section Header -->
@@ -346,7 +346,7 @@
 
 
 <section class="popular-courses-section py-5">
-  <div class="container-fluid px-4 px-lg-5">
+  <div id="popularcourses" class="container-fluid px-4 px-lg-5">
     
     <!-- Section Header with Filter Pill Buttons -->
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
@@ -389,7 +389,7 @@
               <div class="progress-bar bg-purple" style="width: 75%"></div>
             </div>
           </div>
-          <a href="#" class="btn btn-course-purple w-100 mt-3">
+          <a href="./Courses/javascripts.html" class="btn btn-course-purple w-100 mt-3">
             Continue Learning <i class="fa-solid fa-arrow-right ms-1"></i>
           </a>
         </div>
@@ -534,7 +534,7 @@
 
 
 
-<section class="practice-coding-section py-5">
+<section id="prcticebycoding" class="practice-coding-section py-5">
   <div class="container-fluid px-4 px-lg-5">
     
     <!-- Header Area -->
@@ -668,7 +668,7 @@
 
 
 
-<section class="quiz-section py-5">
+<section id="quizes" class="quiz-section py-5">
   <div class="container-fluid px-4 px-lg-5">
     <div class="quiz-container mx-auto">
       
@@ -747,7 +747,7 @@
 
 
 
-<section class="real-projects-section py-5">
+<section id="projects" class="real-projects-section py-5">
   <div class="container-fluid px-4 px-lg-5">
     
     <!-- Section Header -->
