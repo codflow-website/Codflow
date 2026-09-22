@@ -3,12 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CodFlow - Learn to Code</title>
-  <meta name="description" content="CodFlow helps you learn to code with interactive lessons, practice, and real-world projects." />
-  <meta property="og:title" content="CodFlow - Learn to Code" />
-  <meta property="og:description" content="Interactive coding lessons, projects, and practice in one platform." />
-  <meta property="og:image" content="img/codflow.png" />
-  <link rel="icon" type="image/png" href="img/codflow.png" />
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>CodFlow - Learn to Code with Interactive Lessons & Projects</title>
+  <meta name="title" content="CodFlow - Learn to Code with Interactive Lessons & Projects" />
+  <meta name="description" content="CodFlow helps you learn to code with interactive lessons, hands-on practice, and real-world projects. Master web development, programming languages, and more." />
+  <meta name="keywords" content="learn to code, coding platform, interactive coding lessons, web development, programming tutorials, learn programming, CodFlow" />
+  <meta name="author" content="CodFlow" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://codflow-programming.vercel.app/" />
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codflow-programming.vercel.app/" />
+  <meta property="og:title" content="CodFlow - Learn to Code with Interactive Lessons & Projects" />
+  <meta property="og:description" content="CodFlow helps you learn to code with interactive lessons, hands-on practice, and real-world projects." />
+  <meta property="og:image" content="https://codflow-programming.vercel.app/img/codflow.png" />
+  <meta property="og:site_name" content="CodFlow" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://codflow-programming.vercel.app/" />
+  <meta name="twitter:title" content="CodFlow - Learn to Code with Interactive Lessons & Projects" />
+  <meta name="twitter:description" content="CodFlow helps you learn to code with interactive lessons, hands-on practice, and real-world projects." />
+  <meta name="twitter:image" content="https://codflow-programming.vercel.app/img/codflow.png" />
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/png" href="./img/codflow.png" />
+  <link rel="apple-touch-icon" href="./img/codflow.png" />
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -21,6 +43,22 @@
 
   <!-- Custom CSS File -->
   <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Structured Data (Schema.org JSON-LD for Organization/WebSite) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CodFlow",
+    "url": "https://codflow-programming.vercel.app/",
+    "description": "Interactive coding lessons, projects, and practice in one platform.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://codflow-programming.vercel.app/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -40,7 +78,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
         <li class="nav-item">
-          <a class="nav-link custom-nav-link active" href="#">Home</a>
+          <a class="nav-link custom-nav-link active" href="#home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link custom-nav-link" href="#popularcourses">Courses</a>
@@ -50,12 +88,20 @@
         </li>
         <li class="nav-item">
           <a class="nav-link custom-nav-link" href="#quizes">Quizzes</a>
+          <a class="nav-link custom-nav-link" href="#courses">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#practice">Practice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#quizzes">Quizzes</a>
         </li>
         <li class="nav-item">
           <a class="nav-link custom-nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link custom-nav-link" href="#learningpath">Learning Path</a>
+          <a class="nav-link custom-nav-link" href="#learning-path">Learning Path</a>
         </li>
       </ul>
 
@@ -83,7 +129,7 @@
 </nav>
 
   <!-- Hero Section -->
-  <section class="hero-section">
+  <section class="hero-section" id="home">
     <div class="container-fluid px-4 px-lg-5">
       <div class="row align-items-center gy-5">
         
@@ -204,6 +250,7 @@
 
 
   <section id="learningpath" class="learning-path-section py-5">
+  <section class="learning-path-section py-5" id="learning-path">
   <div class="container-fluid px-4 px-lg-5">
     
     <!-- Section Header -->
@@ -347,6 +394,8 @@
 
 <section class="popular-courses-section py-5">
   <div id="popularcourses" class="container-fluid px-4 px-lg-5">
+<section class="popular-courses-section py-5" id="courses">
+  <div class="container-fluid px-4 px-lg-5">
     
     <!-- Section Header with Filter Pill Buttons -->
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
@@ -376,7 +425,10 @@
             <span class="level-badge badge-purple-light">Beginner</span>
             <span class="lessons-count"><i class="fa-regular fa-book-open me-1"></i> 12 Lessons</span>
           </div>
-          <h3 class="course-title">JavaScript Fundamentals</h3>
+          <div class="course-title-row">
+            <span class="course-tech-icon js-icon"><i class="fa-brands fa-js"></i></span>
+            <h3 class="course-title">JavaScript Fundamentals</h3>
+          </div>
           <p class="course-desc">
             Learn variables, functions, arrays, loops, DOM manipulation, and modern ES6+ syntax patterns.
           </p>
@@ -402,7 +454,11 @@
             <span class="level-badge badge-teal">Beginner</span>
             <span class="lessons-count"><i class="fa-regular fa-book-open me-1"></i> 10 Lessons</span>
           </div>
-          <h3 class="course-title">HTML & CSS Fundamentals</h3>
+          <div class="course-title-row">
+            <span class="course-tech-icon html-icon"><i class="fa-brands fa-html5"></i></span>
+            <span class="course-tech-icon css-icon"><i class="fa-brands fa-css3-alt"></i></span>
+            <h3 class="course-title">HTML & CSS Fundamentals</h3>
+          </div>
           <p class="course-desc">
             Master modern semantic markup, responsive layout design, CSS Grid, Flexbox, and micro-animations.
           </p>
@@ -428,7 +484,10 @@
             <span class="level-badge badge-blue">Intermediate</span>
             <span class="lessons-count"><i class="fa-regular fa-book-open me-1"></i> 18 Lessons</span>
           </div>
-          <h3 class="course-title">Frontend Dev (React)</h3>
+          <div class="course-title-row">
+            <span class="course-tech-icon react-icon"><i class="fa-brands fa-react"></i></span>
+            <h3 class="course-title">Frontend Dev (React)</h3>
+          </div>
           <p class="course-desc">
             Component lifecycle, hooks, state management, context API, and high-performance SPA architecture.
           </p>
@@ -441,7 +500,7 @@
               <div class="progress-bar bg-purple" style="width: 30%"></div>
             </div>
           </div>
-          <a href="#" class="btn btn-course-purple w-100 mt-3">
+          <a href="./page/frontend-course.html" class="btn btn-course-purple w-100 mt-3">
             Continue Learning <i class="fa-solid fa-arrow-right ms-1"></i>
           </a>
         </div>
@@ -454,7 +513,10 @@
             <span class="level-badge badge-blue">Beginner</span>
             <span class="lessons-count"><i class="fa-regular fa-book-open me-1"></i> 8 Lessons</span>
           </div>
-          <h3 class="course-title">Git & GitHub Workflow</h3>
+          <div class="course-title-row">
+            <span class="course-tech-icon git-icon"><i class="fa-brands fa-git-alt"></i></span>
+            <h3 class="course-title">Git & GitHub Workflow</h3>
+          </div>
           <p class="course-desc">
             Branches, pull requests, merge conflict resolution, team rebasing strategies, and CI/CD pipelines.
           </p>
@@ -480,7 +542,10 @@
             <span class="level-badge badge-purple-light">Beginner to Int</span>
             <span class="lessons-count"><i class="fa-regular fa-book-open me-1"></i> 14 Lessons</span>
           </div>
-          <h3 class="course-title">Tailwind CSS Mastery</h3>
+          <div class="course-title-row">
+            <span class="course-tech-icon tailwind-icon"><i class="fa-solid fa-wind"></i></span>
+            <h3 class="course-title">Tailwind CSS Mastery</h3>
+          </div>
           <p class="course-desc">
             Utility-first architecture, responsive component libraries, custom theme config tokens, and dark mode.
           </p>
@@ -506,7 +571,10 @@
             <span class="level-badge badge-dark">Advanced</span>
             <span class="lessons-count"><i class="fa-regular fa-book-open me-1"></i> 16 Lessons</span>
           </div>
-          <h3 class="course-title">Full-Stack Web Projects</h3>
+          <div class="course-title-row">
+            <span class="course-tech-icon node-icon"><i class="fa-brands fa-node-js"></i></span>
+            <h3 class="course-title">Full-Stack Web Projects</h3>
+          </div>
           <p class="course-desc">
             Build end-to-end applications with Node, Express, REST APIs, SQL database storage, and cloud host deployment.
           </p>
@@ -535,6 +603,7 @@
 
 
 <section id="prcticebycoding" class="practice-coding-section py-5">
+<section class="practice-coding-section py-5" id="practice">
   <div class="container-fluid px-4 px-lg-5">
     
     <!-- Header Area -->
@@ -669,6 +738,7 @@
 
 
 <section id="quizes" class="quiz-section py-5">
+<section class="quiz-section py-5" id="quizzes">
   <div class="container-fluid px-4 px-lg-5">
     <div class="quiz-container mx-auto">
       
@@ -748,6 +818,7 @@
 
 
 <section id="projects" class="real-projects-section py-5">
+<section class="real-projects-section py-5" id="projects">
   <div class="container-fluid px-4 px-lg-5">
     
     <!-- Section Header -->

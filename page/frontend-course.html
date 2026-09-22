@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodFlow - Learn to Code</title>
+  <meta name="description" content="CodFlow helps you learn to code with interactive lessons, practice, and real-world projects." />
+  <meta property="og:title" content="CodFlow - Learn to Code" />
+  <meta property="og:description" content="Interactive coding lessons, projects, and practice in one platform." />
+  <meta property="og:image" content="../img/codflow.png" />
+  <link rel="icon" type="image/png" href="../img/codflow.png" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  
+  <!-- Google Fonts (Inter & Fira Code) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="../css/frontend-course.css" />
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
+  <div class="container-fluid px-3">
+    <!-- Brand Logo -->
+    <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
+      <img src="../img/logo.png" alt="CodFlow logo" class="brand-logo" />
+    </a>
+    
+    <!-- Mobile Toggler -->
+    <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon small"></span>
+    </button>
+    
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link " href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link active" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Practice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Quizzes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Learning Path</a>
+        </li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <!-- Compact Search Input -->
+        <div class="search-box position-relative">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="form-control form-control-sm compact-search" placeholder="Search courses, docs..." />
+          <span class="kbd-shortcut">⌘K</span>
+        </div>
+        
+        <!-- Notification Button -->
+        <button class="icon-btn" type="button" aria-label="Notifications">
+          <i class="fa-regular fa-bell"></i>
+        </button>
+        
+        <!-- Profile Avatar -->
+        <button class="profile-avatar-btn" type="button" aria-label="User Profile">
+          <i class="fa-regular fa-user"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-section text-white py-5">
+  <div class="container-fluid px-4 px-lg-5">
+    
+    <!-- Top Bar / Breadcrumb Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom border-secondary border-opacity-25 fs-7">
+      <div class="d-flex align-items-center gap-2 text-muted">
+        <span>Courses</span> / <span>Frontend Development</span> / <strong class="text-white">React</strong>
+        <span class="badge badge-intermediate ms-2">INTERMEDIATE</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <span class="text-muted d-flex align-items-center gap-1">
+          <span class="status-dot"></span> Track Active • 30% Complete
+        </span>
+        <button class="btn btn-sm btn-dark-custom d-flex align-items-center gap-2">
+          <i class="bi bi-list-task"></i> Jump to Lessons
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="row g-4 align-items-center">
+      
+      <!-- Left Column: Course Details -->
+      <div class="col-lg-6">
+        <div class="mb-3">
+          <span class="badge badge-path">
+            <i class="bi bi-grid-fill me-1"></i> Production Ready Path
+          </span>
+        </div>
+        
+        <h1 class="display-5 fw-bold mb-3">
+          Frontend Development <span class="text-accent">(React)</span>
+        </h1>
+        
+        <p class="text-muted lead fs-6 mb-4">
+          Master component lifecycle, hooks, state management, Context API, and high-performance SPA architecture. Built for developers ready to build enterprise grade client interfaces.
+        </p>
+
+        <!-- Meta Info Row -->
+        <div class="d-flex flex-wrap gap-3 text-muted fs-7 mb-4">
+          <span><i class="bi bi-sliders me-1 text-cyan"></i> Intermediate</span>
+          <span><i class="bi bi-book me-1 text-cyan"></i> 18 Lessons</span>
+          <span><i class="bi bi-clock me-1 text-cyan"></i> 8-10 Hours</span>
+          <span><i class="bi bi-star-fill text-warning me-1"></i> <strong class="text-white">4.9</strong> (4,120 developers)</span>
+        </div>
+
+        <!-- Progress Box -->
+        <div class="progress-card p-3 rounded-3 mb-4">
+          <div class="d-flex justify-content-between text-muted fs-7 mb-2">
+            <span>Course Progress: 30%</span>
+            <span>5 of 18 Lessons Completed</span>
+          </div>
+          <div class="progress custom-progress">
+            <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex gap-3">
+          <button class="btn btn-gradient px-4 py-2 fw-medium d-flex align-items-center gap-2">
+            Continue Learning (Lesson 05) <i class="bi bi-arrow-right"></i>
+          </button>
+          <button class="btn btn-dark-custom px-4 py-2 fw-medium d-flex align-items-center gap-2">
+            <i class="bi bi-journal-text"></i> View Curriculum
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Column: Code Editor Mockup -->
+      <div class="col-lg-6">
+        <div class="code-editor-card rounded-3 overflow-hidden shadow-lg border border-secondary border-opacity-25">
+          <!-- Editor Header -->
+          <div class="editor-header d-flex justify-content-between align-items-center px-3 py-2">
+            <div class="d-flex align-items-center gap-2">
+              <span class="dot bg-danger"></span>
+              <span class="dot bg-warning"></span>
+              <span class="dot bg-success"></span>
+              <span class="filename ms-2">Counter.jsx</span>
+            </div>
+            <div class="fs-7 text-muted d-flex align-items-center gap-1">
+              <span class="status-dot"></span> React 18+ Fiber
+            </div>
+          </div>
+
+          <!-- Code Content -->
+          <div class="editor-body p-4 font-monospace fs-7">
+            <div class="text-muted mb-2">;</div>
+            <div><span class="keyword">import</span> { useState } <span class="keyword">from</span> <span class="string">"react"</span></div>
+            <br>
+            <div><span class="keyword">function</span> <span class="function">Counter</span>() {</div>
+            <div class="ps-3"><span class="keyword">const</span> [count, setCount] = <span class="function">useState</span>(<span class="number">0</span>);</div>
+            <br>
+            <div class="ps-3"><span class="keyword">return</span> (</div>
+            <div class="ps-4">&lt;<span class="tag">button</span></div>
+            <div class="ps-5"><span class="attr">className</span>=<span class="string">"interactive-btn"</span></div>
+            <div class="ps-5"><span class="attr">onClick</span>={() =&gt; <span class="function">setCount</span>(count + <span class="number">1</span>)}&gt;</div>
+            <div class="ps-5">Count: {count}</div>
+            <div class="ps-4">&lt;/<span class="tag">button</span>&gt;</div>
+            <div class="ps-3">);</div>
+            <div>}</div>
+            <br>
+            <div><span class="keyword">export default</span> Counter;</div>
+          </div>
+
+          <!-- Editor Footer -->
+          <div class="editor-footer d-flex justify-content-between align-items-center px-3 py-2 border-top border-secondary border-opacity-10 fs-8">
+            <div class="d-flex gap-2">
+              <span class="badge bg-secondary bg-opacity-25 text-muted fw-normal">React</span>
+              <span class="badge bg-secondary bg-opacity-25 text-muted fw-normal">Hooks</span>
+              <span class="badge bg-secondary bg-opacity-25 text-muted fw-normal">SPA</span>
+              <span class="badge bg-secondary bg-opacity-25 text-muted fw-normal">Performance</span>
+            </div>
+            <div class="text-success fs-8">
+              <i class="bi bi-check-circle me-1"></i> 0 errors
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="feature-section py-5">
+  <div class="container-fluid px-4 px-lg-5">
+    
+    <!-- Header Subtitle & Title -->
+    <div class="mb-4">
+      <span class="sub-heading text-uppercase fw-semibold">Architecture Foundation</span>
+      <h2 class="section-title fw-bold text-white mt-1 mb-2">Build Modern React Applications</h2>
+      <p class="section-description">
+        Move beyond the basics and learn how to build scalable, reusable, and high-performance applications with idiomatic patterns.
+      </p>
+    </div>
+
+    <!-- 3-Column Card Grid -->
+    <div class="row g-4">
+      
+      <!-- Card 1: Components -->
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card h-100 p-4 rounded-4">
+          <div class="icon-box icon-box-blue mb-4">
+            <i class="bi bi-layout-sidebar-inset"></i>
+          </div>
+          <h3 class="card-title text-white fw-bold h5 mb-3">Components</h3>
+          <p class="card-text text-secondary">
+            Build reusable and maintainable React components with composable props, compound design paradigms, and clean, modular interfaces.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2: State Management -->
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card h-100 p-4 rounded-4">
+          <div class="icon-box icon-box-purple mb-4">
+            <i class="bi bi-gear-wide-connected"></i>
+          </div>
+          <h3 class="card-title text-white fw-bold h5 mb-3">State Management</h3>
+          <p class="card-text text-secondary">
+            Manage application state with precision using Hooks, Context API, Redux Toolkit, Zustand, and atomic state primitives without redundant renders.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3: Performance -->
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card h-100 p-4 rounded-4">
+          <div class="icon-box icon-box-cyan mb-4">
+            <i class="bi bi-lightning-charge-fill"></i>
+          </div>
+          <h3 class="card-title text-white fw-bold h5 mb-3">Performance</h3>
+          <p class="card-text text-secondary">
+            Optimize React applications with memoization, code-splitting, lazy loading, and build lightning-fast, production-grade SPAs with zero junk rerenders.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="curriculum-section py-5">
+  <div class="container-fluid px-4 px-lg-5">
+    
+    <!-- Top Header -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
+      <div>
+        <span class="sub-heading text-uppercase fw-semibold">SYLLABUS BREAKDOWN</span>
+        <h2 class="section-title fw-bold text-white mt-1 mb-1">Course Curriculum</h2>
+        <p class="text-secondary fs-7 mb-0">18 detailed modules designed for progressive mastery from core mechanics to scaling.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="status-filter-group d-flex align-items-center p-1 rounded-3">
+        <button class="filter-btn active">ALL (18)</button>
+        <button class="filter-btn">Completed (4)</button>
+        <button class="filter-btn">Remaining (14)</button>
+      </div>
+    </div>
+
+    <!-- Curriculum Items List (All 18 Lessons) -->
+    <div class="d-flex flex-column gap-2">
+      
+      <!-- Lesson 01 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-completed">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 01</span>
+              <span class="badge badge-completed">Completed</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>25m</span>
+            </div>
+            <h4 class="lesson-title mb-1">React Architecture & Virtual DOM</h4>
+            <p class="lesson-desc mb-0">Reconciliation algorithm, Fiber engine reconciliation, and diffing tree operations.</p>
+          </div>
+        </div>
+        <button class="btn btn-review border-0">Review</button>
+      </div>
+
+      <!-- Lesson 02 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-completed">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 02</span>
+              <span class="badge badge-completed">Completed</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>38m</span>
+            </div>
+            <h4 class="lesson-title mb-1">Advanced Components & Props Drilling</h4>
+            <p class="lesson-desc mb-0">Component composition, children pass-through patterns, and prop interface safety.</p>
+          </div>
+        </div>
+        <button class="btn btn-review border-0">Review</button>
+      </div>
+
+      <!-- Lesson 03 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-completed">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 03</span>
+              <span class="badge badge-completed">Completed</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>55m</span>
+            </div>
+            <h4 class="lesson-title mb-1">Component Lifecycle & Mounting</h4>
+            <p class="lesson-desc mb-0">Mounting, rendering phases, committing mutations, and unmounting cleanup.</p>
+          </div>
+        </div>
+        <button class="btn btn-review border-0">Review</button>
+      </div>
+
+      <!-- Lesson 04 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-completed">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 04</span>
+              <span class="badge badge-completed">Completed</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>48m</span>
+            </div>
+            <h4 class="lesson-title mb-1">useState & Complex State Patterns</h4>
+            <p class="lesson-desc mb-0">Functional updates, asynchronous state batching in React 18, and deep immutable updates.</p>
+          </div>
+        </div>
+        <button class="btn btn-review border-0">Review</button>
+      </div>
+
+      <!-- Lesson 05: Active -->
+      <div class="curriculum-item item-active p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/><path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num text-white">Lesson 05</span>
+              <span class="badge badge-active">Active Lesson</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>45m</span>
+            </div>
+            <h4 class="lesson-title text-white mb-1">useEffect & Side Effect Management</h4>
+            <p class="lesson-desc text-secondary mb-0">Master cleanup functions, dependencies array traps, race condition cancellation, and external subscriptions.</p>
+          </div>
+        </div>
+        <button class="btn btn-continue fw-medium">Continue Lesson <i class="fa-solid fa-arrow-right ms-1"></i></button>
+      </div>
+
+      <!-- Lesson 06 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 06</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>42m</span>
+            </div>
+            <h4 class="lesson-title mb-1">useRef & useMemo</h4>
+            <p class="lesson-desc mb-0">DOM reference persistence and heavy calculation memoization primitives.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 07 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 07</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>48m</span>
+            </div>
+            <h4 class="lesson-title mb-1">useCallback & Memoization</h4>
+            <p class="lesson-desc mb-0">Stable callback identities and avoiding child component tree recalculation.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 08 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 08</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>56m</span>
+            </div>
+            <h4 class="lesson-title mb-1">Custom Hooks Architecture</h4>
+            <p class="lesson-desc mb-0">Extracting cross-cutting UI logic into headless, testable hook functions.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 09 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 09</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>41m</span>
+            </div>
+            <h4 class="lesson-title mb-1">Context API & Provider Pattern</h4>
+            <p class="lesson-desc mb-0">Global theme, authentication scoping, and eliminating deep prop pipelines.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 10 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 10</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>60m</span>
+            </div>
+            <h4 class="lesson-title mb-1">Advanced State Management (Zustand/Redux)</h4>
+            <p class="lesson-desc mb-0">Global immutable stores, action dispatchers, selectors, and sliced state patterns.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 11 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 11</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>38m</span>
+            </div>
+            <h4 class="lesson-title mb-1">Component Composition & Slots</h4>
+            <p class="lesson-desc mb-0">Inversion of control, polymorphic components, and high flexibility design APIs.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 12 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 12</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>58m</span>
+            </div>
+            <h4 class="lesson-title mb-1">React Router 6 & Dynamic Routes</h4>
+            <p class="lesson-desc mb-0">Nested routes, URL params, query loaders, action mutations, and navigation guards.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 13 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 13</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>55m</span>
+            </div>
+            <h4 class="lesson-title mb-1">REST API Integration & TanStack Query</h4>
+            <p class="lesson-desc mb-0">Server-state caching, background revalidation, optimistic UI, and mutation lifecycle.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 14 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 14</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>48m</span>
+            </div>
+            <h4 class="lesson-title mb-1">Error Boundaries & Suspense Loading</h4>
+            <p class="lesson-desc mb-0">Declarative error capture, fallback skeletons, and async render boundaries.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 15 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 15</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>58m</span>
+            </div>
+            <h4 class="lesson-title mb-1">Web Vitals & Performance Optimization</h4>
+            <p class="lesson-desc mb-0">LCP, INP, CLS benchmarks, React DevTools profiler tracing, and flame graphs.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 16 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 16</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>45m</span>
+            </div>
+            <h4 class="lesson-title mb-1">Dynamic Imports & Code Splitting</h4>
+            <p class="lesson-desc mb-0">Webpack & Vite bundle auditing, React.lazy chunks, and route-level code isolation.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 17 -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 17</span>
+              <span class="badge badge-locked">Locked</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>68m</span>
+            </div>
+            <h4 class="lesson-title mb-1">Production SPA Architecture & Deployment</h4>
+            <p class="lesson-desc mb-0">CI/CD pipelines, environmental variables, Dockerization, and CDN asset caching.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+      <!-- Lesson 18: Capstone -->
+      <div class="curriculum-item p-3 rounded-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <div class="status-icon icon-locked">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="lesson-num">Lesson 18 - Capstone</span>
+              <span class="badge badge-locked">Final Project</span>
+              <span class="duration-text"><i class="fa-regular fa-clock me-1"></i>2h Capstone</span>
+            </div>
+            <h4 class="lesson-title mb-1">Production Task Management Dashboard</h4>
+            <p class="lesson-desc mb-0">End-to-end full SPA implementation with full authentication, state, and APIs.</p>
+          </div>
+        </div>
+        <div class="locked-icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#475569" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v4H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V3a2 2 0 0 0-2-2M7 3a1 1 0 0 1 2 0v4H7z"/></svg></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="mastery-section py-5">
+  <div class="container-fluid px-4 px-lg-5">
+    
+    <!-- Top Row: Outcomes & Skill Mastery -->
+    <div class="row g-4 mb-4">
+      
+      <!-- Left Card: What You Will Master -->
+      <div class="col-lg-8">
+        <div class="mastery-card h-100 p-4 p-md-5 rounded-4">
+          <span class="sub-heading text-uppercase fw-semibold">LEARNING OUTCOMES</span>
+          <h2 class="card-title fw-bold text-white mt-1 mb-2">What You Will Master</h2>
+          <p class="text-secondary fs-7 mb-4">Specific engineering capabilities verified through integrated tests and live sandboxes.</p>
+          
+          <div class="row g-3">
+            <!-- Column 1 -->
+            <div class="col-md-6 d-flex flex-column gap-3">
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Understand React component lifecycle</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Work with useEffect & dependencies</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Optimize compute with useMemo</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Create custom reusable Hooks</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Manage complex state with Redux / Zustand</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Use React Router for declarative routing</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Handle loading, caching and error states</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Architect production single page apps</span>
+              </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-md-6 d-flex flex-column gap-3">
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Use useState effectively in production</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Understand useRef for DOM & mutability</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Eliminate rerenders with useCallback</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Use Context API for clean global state</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Build reusable component systems</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Connect React to REST & GraphQL APIs</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Optimize bundle sizes & code-splitting</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-slate-300 fs-7">
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#38bdf8" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                <span>Apply professional React design patterns</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Card: Skill Mastery Telemetry -->
+      <div class="col-lg-4">
+        <div class="mastery-card h-100 p-4 p-md-5 rounded-4 d-flex flex-column justify-content-between">
+          <div>
+            <span class="sub-heading text-uppercase fw-semibold">TELEMETRY RADAR</span>
+            <h2 class="card-title fw-bold text-white mt-1 mb-2">Skill Mastery</h2>
+            <p class="text-secondary fs-7 mb-4">Live proficiency score based on submitted exercises.</p>
+
+            <!-- Skill Bars -->
+            <div class="d-flex flex-column gap-3 mb-4">
+              <div>
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <span class="text-white fw-medium">React Components</span>
+                  <span class="text-secondary">86%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 86%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <span class="text-white fw-medium">Hooks Mastery</span>
+                  <span class="text-secondary">76%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 76%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <span class="text-white fw-medium">State Management</span>
+                  <span class="text-secondary">45%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill fill-cyan" style="width: 45%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <span class="text-white fw-medium">Context API</span>
+                  <span class="text-secondary">36%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill fill-cyan" style="width: 36%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <span class="text-white fw-medium">Performance Tuning</span>
+                  <span class="text-secondary">20%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill fill-dark" style="width: 20%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projected Completion Box -->
+          <div class="projected-box text-center p-3 rounded-3">
+            <span class="d-block text-secondary fs-8 mb-1">Projected Completion</span>
+            <span class="d-block text-white fw-bold fs-6">Sunday, March 29</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Row: 4 Metric Cards -->
+    <div class="row g-3">
+      
+      <!-- Metric 1: Progress -->
+      <div class="col-xl-3 col-sm-6">
+        <div class="metric-card p-3 rounded-3 d-flex align-items-center gap-3">
+          <div class="metric-icon metric-purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+          </div>
+          <div>
+            <span class="d-block text-uppercase text-secondary fs-8 fw-semibold">PROGRESS</span>
+            <span class="d-block text-white fs-5 fw-bold mb-0">5 / 18</span>
+            <span class="d-block text-secondary fs-8">Lessons Mastered</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metric 2: Challenges -->
+      <div class="col-xl-3 col-sm-6">
+        <div class="metric-card p-3 rounded-3 d-flex align-items-center gap-3">
+          <div class="metric-icon metric-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M4.854 4.146a.5.5 0 0 1 0 .708L3.207 6.5l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2a.5.5 0 0 1 .708 0zm3 0a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L9.293 6.5 7.646 4.854a.5.5 0 0 1 0-.708z"/></svg>
+          </div>
+          <div>
+            <span class="d-block text-uppercase text-secondary fs-8 fw-semibold">CHALLENGES</span>
+            <span class="d-block text-white fs-5 fw-bold mb-0">10 / 30</span>
+            <span class="d-block text-secondary fs-8">Coding Exercises</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metric 3: Evaluation -->
+      <div class="col-xl-3 col-sm-6">
+        <div class="metric-card p-3 rounded-3 d-flex align-items-center gap-3">
+          <div class="metric-icon metric-cyan">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M0 0h16v16H0z" fill="none"/><path d="M2.5 13a.5.5 0 0 1-.5-.5V2a.5.5 0 0 1 1 0v10h10a.5.5 0 0 1 0 1z"/><path d="M5.354 8.354a.5.5 0 0 0 .708 0L8 6.414l1.646 1.647a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L10 6.293 8.354 4.646a.5.5 0 0 0-.708 0l-2.5 2.5a.5.5 0 0 0 0 .708"/></svg>
+          </div>
+          <div>
+            <span class="d-block text-uppercase text-secondary fs-8 fw-semibold">EVALUATION</span>
+            <span class="d-block text-white fs-5 fw-bold mb-0">78%</span>
+            <span class="d-block text-secondary fs-8">Quiz Average</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metric 4: Capstone -->
+      <div class="col-xl-3 col-sm-6">
+        <div class="metric-card p-3 rounded-3 d-flex align-items-center gap-3">
+          <div class="metric-icon metric-slate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8.5l-1.5 1.5-1.5-1.5L8.5 11l-3-3-3 3-1.354-1.354A.5.5 0 0 1 1 9.293V2a2 2 0 0 1 2-2h11a.5.5 0 0 1 .778.085zM3.5 1a1 1 0 0 0-1 1v6.293l1.146-1.147a.5.5 0 0 1 .708 0L7.5 10.293l3-3 3 3V1z"/></svg>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-1">
+              <span class="d-block text-uppercase text-secondary fs-8 fw-semibold">CAPSTONE</span>
+            </div>
+            <span class="d-block text-white fs-5 fw-bold mb-0">0 / 1</span>
+            <span class="d-block text-secondary fs-8">Project Ready</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="codflow-footer pt-5 pb-4">
+  <div class="container-fluid px-4 px-lg-5">
+    
+    <!-- Main Links & Info Row -->
+    <div class="row g-4 pb-4">
+      
+      <!-- Column 1: Brand & Bio -->
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <a href="#" class="footer-brand d-inline-flex align-items-center text-decoration-none mb-3">
+          <span class="brand-brackets me-2">&lt; / &gt;</span>
+          <span class="brand-text">CodFlow</span>
+        </a>
+        <p class="footer-bio mb-4">
+          An interactive high-performance developer workspace crafted for focused technical learning, algorithm practice, and production-ready portfolio builds.
+        </p>
+        <!-- Social Icon Buttons -->
+        <div class="d-flex align-items-center gap-2">
+          <a href="#" class="footer-social-btn" aria-label="Terminal">
+            <i class="fa-solid fa-terminal"></i>
+          </a>
+          <a href="#" class="footer-social-btn" aria-label="Code">
+            <i class="fa-solid fa-code"></i>
+          </a>
+          <a href="#" class="footer-social-btn" aria-label="Community">
+            <i class="fa-regular fa-comment-dots"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Curriculum Links -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">CURRICULUM</h6>
+        <ul class="list-unstyled footer-links mb-0">
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Practice</a></li>
+          <li><a href="#">Learning Path</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Evaluation Links -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">EVALUATION</h6>
+        <ul class="list-unstyled footer-links mb-0">
+          <li><a href="#">Quizzes</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Certifications</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Platform Links -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">PLATFORM</h6>
+        <ul class="list-unstyled footer-links mb-0">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5: System Status -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">SYSTEM</h6>
+        <div class="system-status-indicator mb-2">
+          <span class="status-dot"></span> Kernels Online
+        </div>
+        <div class="system-version">
+          v2.4.0-stable
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Divider Line -->
+    <hr class="footer-divider my-4">
+
+    <!-- Bottom Copyright & Legal Links -->
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-2">
+      <p class="copyright-text mb-2 mb-sm-0">
+        © 2025 CodFlow Dev Systems Inc. All rights reserved.
+      </p>
+      <div class="footer-legal-links d-flex align-items-center gap-3">
+        <a href="#">Terms</a>
+        <a href="#">Telemetry</a>
+        <a href="#">Status</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
