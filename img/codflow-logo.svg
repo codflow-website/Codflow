@@ -1,0 +1,29 @@
+<svg width="560" height="180" viewBox="0 0 560 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="18" y1="18" x2="152" y2="152" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C6BFF"/>
+      <stop offset="1" stop-color="#21D4FD"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="50" y1="30" x2="110" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A7F3D0"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(0 0)">
+    <rect x="18" y="18" width="132" height="132" rx="32" fill="#0F172A"/>
+    <rect x="18" y="18" width="132" height="132" rx="32" fill="url(#bgGrad)" opacity="0.18"/>
+    <rect x="30" y="30" width="108" height="108" rx="26" stroke="url(#bgGrad)" stroke-width="4"/>
+
+    <path d="M89 53C75 53 64 64 64 78V90C64 104 75 115 89 115H101C111 115 119 107 119 97V93H102V97H92C88 97 85 94 85 90V78C85 74 88 71 92 71H112V53H89Z" fill="url(#accentGrad)"/>
+    <path d="M96 60L76 80L96 100" stroke="#F8FAFC" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M111 60L131 80L111 100" stroke="#E2E8F0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+    <circle cx="109" cy="80" r="7" fill="#F8FAFC"/>
+  </g>
+
+  <g transform="translate(180 12)">
+    <text x="0" y="92" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-weight="800" font-size="70">Cod</text>
+    <text x="190" y="92" fill="#7C6BFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-weight="800" font-size="70">Flow</text>
+    <text x="4" y="122" fill="#94A3B8" font-family="Monaco, Consolas, monospace" font-size="20" letter-spacing="3">// LEARN • BUILD • SHIP</text>
+  </g>
+</svg>
