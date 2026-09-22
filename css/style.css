@@ -627,11 +627,39 @@ body {
   border-color: #2e3a54;
 }
 
+.course-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.course-tech-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.js-icon { color: #f7df1e; background: rgba(247, 223, 30, 0.12); }
+.html-icon { color: #ff7a59; background: rgba(255, 122, 89, 0.12); }
+.css-icon { color: #4dabf7; background: rgba(77, 171, 247, 0.12); }
+.react-icon { color: #61dafb; background: rgba(97, 218, 251, 0.12); }
+.git-icon { color: #f05033; background: rgba(240, 80, 51, 0.12); }
+.tailwind-icon { color: #38bdf8; background: rgba(56, 189, 248, 0.12); }
+.node-icon { color: #68a063; background: rgba(104, 160, 99, 0.12); }
+
 .course-title {
   font-size: 1.25rem;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 12px;
+  margin: 0;
 }
 
 .course-desc {
