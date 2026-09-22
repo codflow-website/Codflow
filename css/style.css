@@ -8,8 +8,12 @@ body {
 
 /* Dark Theme Base */
 .bg-dark-custom {
-  background-color: #0b0f19;
+  background-color: rgba(11, 15, 25, 0.95);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
 }
 
 /* Compact Brand Logo */
