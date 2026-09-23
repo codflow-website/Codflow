@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodFlow - Tailwind CSS</title>
+    <meta name="description"
+        content="CodFlow helps you learn to code with interactive lessons, practice, and real-world projects." />
+    <meta property="og:title" content="CodFlow - JavaScript" />
+    <meta property="og:description" content="Interactive coding lessons, projects, and practice in one platform." />
+    <meta property="og:image" content="img/codflow.png" />
+    <link rel="icon" type="image/png" href="../img/codflow.png" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Google Fonts (Inter & Fira Code) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="../css/tailwindcss.css" />
+</head>
+
+<body>
+
+    <nav class="navbar-sticky navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
+        <div class="container-fluid px-3">
+            <!-- Brand Logo -->
+            <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
+                <img src="../img/logo.png" alt="CodFlow logo" class="brand-logo" />
+            </a>
+
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon small"></span>
+            </button>
+
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link " href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link active" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Quizzes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Learning Path</a>
+                    </li>
+                </ul>
+
+                <!-- Right Controls -->
+                <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+                    <!-- Compact Search Input -->
+                    <div class="search-box position-relative">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" class="form-control form-control-sm compact-search"
+                            placeholder="Search courses, docs...">
+                        <!-- <span class="kbd-shortcut"></span> -->
+                    </div>
+
+                    <!-- Notification Button -->
+                    <button class="icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+
+                    <!-- Profile Avatar -->
+                    <button class="profile-avatar-btn" type="button" aria-label="User Profile">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Tailwind CSS Hero Section -->
+    <section class="tw-hero-section py-5">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="row align-items-center gy-4">
+
+                <!-- Left Column: Content -->
+                <div class="col-lg-6">
+                    <!-- Breadcrumbs -->
+                    <nav aria-label="breadcrumb" class="mb-3">
+                        <ol class="breadcrumb custom-breadcrumb font-monospace m-0">
+                            <li class="breadcrumb-item"><a href="#">Courses</a></li>
+                            <li class="breadcrumb-item"><a href="#">CSS</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Tailwind CSS</li>
+                        </ol>
+                    </nav>
+
+                    <!-- Tag Prefix -->
+                    <div class="code-tag-prefix font-monospace mb-1">&lt;course id="tw-mastery"&gt;</div>
+
+                    <!-- Main Title -->
+                    <h1 class="hero-title fw-bold text-white mb-3">
+                        Tailwind CSS <span class="gradient-text-purple">Mastery</span>
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="hero-description text-secondary-custom mb-4">
+                        Master utility-first architecture, responsive component libraries, custom theme config tokens,
+                        and dark mode workflows.
+                    </p>
+
+                    <!-- Course Meta Badges -->
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-4 font-monospace">
+                        <span class="meta-pill"><span class="badge-dot-cyan me-1"></span> Beg. - Inter.</span>
+                        <span class="meta-pill"><i class="fa-regular fa-bookmark me-1 text-secondary"></i> 14
+                            Lessons</span>
+                        <span class="meta-pill"><i class="fa-regular fa-clock me-1 text-secondary"></i> 6-8 Hours</span>
+                        <span class="meta-pill text-warning"><i class="fa-solid fa-star me-1 text-warning"></i> 4.9
+                            <span class="text-secondary ms-1">(1.8k)</span></span>
+                    </div>
+
+                    <!-- Course Progress Card -->
+                    <div class="progress-card p-3 mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2 font-monospace small">
+                            <span class="text-white fw-semibold">
+                                <i class="fa-regular fa-clock text-info me-1"></i> Course Progress
+                            </span>
+                            <span class="text-secondary">50% (7 of 14 Completed)</span>
+                        </div>
+                        <div class="progress custom-progress">
+                            <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 50%;"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <!-- Action CTA Buttons -->
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#continuelesson" class="btn btn-primary-gradient px-4 py-2 fw-semibold">Continue Lesson 05 <i
+                                class="fa-solid fa-arrow-right ms-1"></i></a>
+                        <a href="#coursecurriculum" class="btn btn-outline-custom px-4 py-2 fw-semibold"><i
+                                class="fa-regular fa-list-alt me-2"></i>View Curriculum</a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Code Editor & Live Preview Card -->
+                <div class="col-lg-6 position-relative">
+                    <!-- Floating Top Track Badge -->
+                    <div class="floating-track-badge font-monospace">
+                        <span class="badge-dot-cyan me-1">●</span> BEGINNER <i
+                            class="fa-solid fa-arrow-right mx-1 small"></i> INTERMEDIATE
+                    </div>
+
+                    <!-- Editor Card -->
+                    <div class="editor-card mt-4">
+                        <!-- Window Header -->
+                        <div class="editor-header d-flex align-items-center justify-content-between px-3 py-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="window-dot red"></span>
+                                <span class="window-dot yellow"></span>
+                                <span class="window-dot green"></span>
+                                <span class="file-name ms-2 font-monospace">Component.jsx</span>
+                            </div>
+                            <span class="status-ready font-monospace small"><span class="green-dot me-1">●</span>
+                                Tailwind Ready</span>
+                        </div>
+
+                        <!-- Code Body -->
+                        <div class="editor-body p-3 font-monospace">
+                            <pre class="m-0"><code><span class="code-comment">// CodFlow Interactive Live Preview</span>
+<span class="code-keyword">export default function</span> <span class="code-func">CourseCard</span>() {
+  <span class="code-keyword">return</span> (
+    <span class="code-tag">&lt;div</span> <span class="code-attr">class</span>=<span class="code-str">"flex items-center justify-between rounded-xl bg-slate-900 p-4"</span><span class="code-tag">&gt;</span>
+      <span class="code-tag">&lt;h2</span> <span class="code-attr">class</span>=<span class="code-str">"text-2xl font-bold text-white"</span><span class="code-tag">&gt;</span>
+        Tailwind CSS
+      <span class="code-tag">&lt;/h2&gt;</span>
+      <span class="code-tag">&lt;button</span> <span class="code-attr">class</span>=<span class="code-str">"rounded-lg bg-violet-500 px-5 py-3 text-white"</span><span class="code-tag">&gt;</span>
+        Learn More
+      <span class="code-tag">&lt;/button&gt;</span>
+    <span class="code-tag">&lt;/div&gt;</span>
+  );
+}</code></pre>
+                        </div>
+
+                        <!-- Rendered Virtual Output Area -->
+                        <div class="preview-section p-3">
+                            <div
+                                class="d-flex justify-content-between align-items-center font-monospace small mb-2 text-secondary">
+                                <span>RENDERED VIRTUAL OUTPUT</span>
+                                <span class="text-cyan">HOT RELOADED</span>
+                            </div>
+
+                            <!-- Live Output Box -->
+                            <div
+                                class="virtual-output-box p-3 d-flex align-items-center justify-content-between rounded-3 mb-3">
+                                <h2 class="h4 text-white fw-bold m-0">Tailwind CSS</h2>
+                                <button type="button" class="btn btn-purple-preview px-4 py-2">Learn More</button>
+                            </div>
+
+                            <!-- Tag Pills -->
+                            <div class="d-flex flex-wrap gap-2 font-monospace">
+                                <span class="output-tag">Tailwind CSS</span>
+                                <span class="output-tag active-tag">Responsive</span>
+                                <span class="output-tag">Dark Mode</span>
+                                <span class="output-tag">Components</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Overview & Principles Section -->
+    <section class="overview-section py-5">
+        <div class="container-fluid px-lg-5 px-3">
+            <!-- Section Header -->
+            <div class="mb-5">
+                <div class="section-subtitle font-monospace mb-2">// OVERVIEW &amp; PRINCIPLES</div>
+                <h2 class="section-title fw-bold text-white mb-3">Master Modern Tailwind CSS</h2>
+                <p class="section-description text-secondary-custom m-0">
+                    Learn how to build scalable and responsive interfaces faster using Tailwind's utility-first workflow
+                    and reusable design patterns.
+                </p>
+            </div>
+
+            <!-- 3 Feature Cards -->
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="principle-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="icon-box icon-purple mb-4">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <h3 class="h5 text-white fw-bold mb-3">Utility First</h3>
+                            <p class="text-secondary-custom small mb-4">
+                                Build bespoke responsive interfaces directly in markup without writing context-switching
+                                custom CSS rules.
+                            </p>
+                        </div>
+                        <div class="code-pill font-monospace small text-purple">
+                            p-4 m-2 flex gap-4
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="principle-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="icon-box icon-cyan mb-4">
+                                <i class="fa-solid fa-laptop text-cyan"></i>
+                            </div>
+                            <h3 class="h5 text-white fw-bold mb-3">Responsive Design</h3>
+                            <p class="text-secondary-custom small mb-4">
+                                Construct dynamic layout transitions seamlessly across mobile, tablet, desktop, and
+                                ultra-wide viewports.
+                            </p>
+                        </div>
+                        <div class="code-pill font-monospace small text-cyan">
+                            sm: md: lg: xl: 2xl:
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="principle-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="icon-box icon-blue mb-4">
+                                <i class="fa-solid fa-palette text-blue"></i>
+                            </div>
+                            <h3 class="h5 text-white fw-bold mb-3">Design System</h3>
+                            <p class="text-secondary-custom small mb-4">
+                                Standardize brand colors, typography, fluid modular scales, token semantics, and
+                                reusable production components.
+                            </p>
+                        </div>
+                        <div class="code-pill font-monospace small text-blue">
+                            tailwind.config.js
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Course Curriculum Section -->
+    <section id="coursecurriculum" class="curriculum-section py-5">
+        <div class="container-fluid px-lg-5 px-3">
+            <!-- Section Header -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
+                <div>
+                    <div class="section-subtitle font-monospace mb-1">// FULL PROGRESSION</div>
+                    <h2 class="section-title fw-bold text-white mb-2">Course Curriculum</h2>
+                    <div class="text-secondary-custom font-monospace small">
+                        14 lessons • Beginner to Intermediate • 50% Complete
+                    </div>
+                </div>
+                <!-- Header Badges -->
+                <div class="d-flex flex-wrap gap-2 font-monospace small">
+                    <span class="status-chip chip-completed"><i class="fa-solid fa-check me-1"></i> 4 Completed</span>
+                    <span class="status-chip chip-progress"><i class="fa-regular fa-play-circle me-1"></i> 1 In
+                        Progress</span>
+                    <span class="status-chip chip-locked"><i class="fa-solid fa-lock me-1"></i> 9 Up Next</span>
+                </div>
+            </div>
+
+            <!-- Lesson List Container -->
+            <div class="curriculum-list d-flex flex-column gap-3">
+
+                <!-- Lesson 01 (Completed) -->
+                <div class="lesson-card completed p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-check"><i class="fa-solid fa-check"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold">
+                                <span class="lesson-num text-success me-1">01</span> Introduction to Tailwind CSS
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Philosophy, utility architecture vs
+                                traditional BEM, and environment setup.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">25m</span>
+                        <span class="badge badge-completed">Completed</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 02 (Completed) -->
+                <div class="lesson-card completed p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-check"><i class="fa-solid fa-check"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold">
+                                <span class="lesson-num text-success me-1">02</span> Utility Classes &amp; Fundamentals
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Core syntax patterns, box model
+                                mechanics, borders, and rounded radiuses.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">30m</span>
+                        <span class="badge badge-completed">Completed</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 03 (Completed) -->
+                <div class="lesson-card completed p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-check"><i class="fa-solid fa-check"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold">
+                                <span class="lesson-num text-success me-1">03</span> Colors, Typography &amp; Spacing
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Palette tokens, font families,
+                                tracking, leading, and 4pt layout scales.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">35m</span>
+                        <span class="badge badge-completed">Completed</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 04 (Completed) -->
+                <div class="lesson-card completed p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-check"><i class="fa-solid fa-check"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold">
+                                <span class="lesson-num text-success me-1">04</span> Flexbox &amp; Grid
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Building resilient application layouts
+                                with auto-fit, justify, and alignment primitives.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">40m</span>
+                        <span class="badge badge-completed">Completed</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 05 (In Progress - Active Highlight) -->
+                <div class="lesson-card active-progress p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-play"><i class="fa-solid fa-play ms-1"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold">
+                                <span class="lesson-num text-purple me-1">05</span> Responsive Design
+                                <span class="badge badge-in-progress ms-2">In Progress</span>
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Mobile-first breakpoint thinking,
+                                min-width modifiers, and multi-device view switching.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">45m</span>
+                        <a id="continuelesson" href="#" class="btn btn-purple-sm px-3 py-1">Continue Lesson <i
+                                class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Lesson 06 (Locked) -->
+                <div class="lesson-card locked p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-lock"><i class="fa-solid fa-lock"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold text-secondary">
+                                <span class="lesson-num me-1">06</span> Hover, Focus &amp; States
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Pseudo-class variants, group-hover,
+                                peer states, and focus rings.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">35m</span>
+                        <span class="badge badge-locked">Locked</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 07 (Locked) -->
+                <div class="lesson-card locked p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-lock"><i class="fa-solid fa-lock"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold text-secondary">
+                                <span class="lesson-num me-1">07</span> Transitions &amp; Animations
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">GPU-accelerated transformations, cubic
+                                béziers, pulse, spin, and custom keyframes.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">40m</span>
+                        <span class="badge badge-locked">Locked</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 08 (Locked) -->
+                <div class="lesson-card locked p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-lock"><i class="fa-solid fa-lock"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold text-secondary">
+                                <span class="lesson-num me-1">08</span> Forms &amp; UI Components
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Accessible form inputs, custom check
+                                controls, select menus, and tooltips.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">50m</span>
+                        <span class="badge badge-locked">Locked</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 09 (Locked) -->
+                <div class="lesson-card locked p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-lock"><i class="fa-solid fa-lock"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold text-secondary">
+                                <span class="lesson-num me-1">09</span> Reusable Components
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Component abstraction with React/Vue,
+                                clsx, tailwind-merge, and compound variants.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">45m</span>
+                        <span class="badge badge-locked">Locked</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 10 (Locked) -->
+                <div class="lesson-card locked p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-lock"><i class="fa-solid fa-lock"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold text-secondary">
+                                <span class="lesson-num me-1">10</span> Custom Theme Configuration
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Configuring theme.extend, custom scale
+                                multipliers, and plugin integrations.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">50m</span>
+                        <span class="badge badge-locked">Locked</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 11 (Locked) -->
+                <div class="lesson-card locked p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-lock"><i class="fa-solid fa-lock"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold text-secondary">
+                                <span class="lesson-num me-1">11</span> Custom Colors &amp; Design Tokens
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">CSS Variables bridge, semantic color
+                                pairing, and design system token mapping.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">40m</span>
+                        <span class="badge badge-locked">Locked</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 12 (Locked) -->
+                <div class="lesson-card locked p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-lock"><i class="fa-solid fa-lock"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold text-secondary">
+                                <span class="lesson-num me-1">12</span> Dark Mode Implementation
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Class-based dark mode vs media queries,
+                                token switching, and zero-flash hydration.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">35m</span>
+                        <span class="badge badge-locked">Locked</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 13 (Locked) -->
+                <div class="lesson-card locked p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-lock"><i class="fa-solid fa-lock"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold text-secondary">
+                                <span class="lesson-num me-1">13</span> Component Architecture
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Scalable folder structures, shared UI
+                                primitives, and design team conventions.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">55m</span>
+                        <span class="badge badge-locked">Locked</span>
+                    </div>
+                </div>
+
+                <!-- Lesson 14 (Capstone Project) -->
+                <div class="lesson-card locked capstone-lesson p-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="lesson-icon icon-award"><i class="fa-solid fa-award"></i></div>
+                        <div>
+                            <div class="lesson-title font-monospace fw-semibold text-secondary">
+                                <span class="lesson-num me-1">14</span> Final Tailwind Project
+                                <span class="badge badge-capstone ms-2">Capstone</span>
+                            </div>
+                            <div class="lesson-desc text-secondary-custom small">Build and ship a high-performance
+                                modern responsive analytics dashboard.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 font-monospace small">
+                        <span class="text-secondary-custom">2 Hours</span>
+                        <span class="badge badge-locked">Locked</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- What You Will Learn & Telemetry Section -->
+    <section class="learn-telemetry-section py-5">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="row gy-4 align-items-center">
+
+                <!-- Left Side: What You Will Learn -->
+                <div class="col-lg-7">
+                    <div class="section-subtitle font-monospace mb-1">// LEARNING OBJECTIVES</div>
+                    <h2 class="section-title fw-bold text-white mb-2">What You Will Learn</h2>
+                    <p class="section-description text-secondary-custom mb-4">
+                        Every essential concept codified for production engineers.
+                    </p>
+
+                    <!-- 2-Column Checklist Grid -->
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled d-flex flex-column gap-3 m-0">
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Understand utility-first CSS</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Work with colors &amp; typography</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Build layouts with CSS Grid</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Use hover and focus states</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Build reusable components</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Customize colors &amp; typography</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Create scalable UI systems</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled d-flex flex-column gap-3 m-0">
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Spacing and sizing utilities</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Build layouts with Flexbox</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Create responsive interfaces</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Create transitions &amp; animations</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Create custom theme tokens</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Implement dark mode</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2 text-cyan">
+                                    <i class="fa-solid fa-check small"></i>
+                                    <span>Build a complete Tailwind project</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Skill Mastery Card -->
+                <div class="col-lg-5">
+                    <div class="skill-card p-4">
+                        <div class="section-subtitle font-monospace mb-1">// TELEMETRY METRICS</div>
+                        <h3 class="h4 text-white fw-bold mb-4">Skill Mastery</h3>
+
+                        <div class="d-flex flex-column gap-3 font-monospace">
+                            <!-- Progress Item 1 -->
+                            <div>
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="text-secondary-custom">Tailwind Fundamentals</span>
+                                    <span class="text-white">90%</span>
+                                </div>
+                                <div class="progress skill-progress-bg">
+                                    <div class="progress-bar bar-purple" style="width: 90%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Progress Item 2 -->
+                            <div>
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="text-secondary-custom">Responsive Design</span>
+                                    <span class="text-white">80%</span>
+                                </div>
+                                <div class="progress skill-progress-bg">
+                                    <div class="progress-bar bar-cyan" style="width: 80%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Progress Item 3 -->
+                            <div>
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="text-secondary-custom">Components</span>
+                                    <span class="text-white">60%</span>
+                                </div>
+                                <div class="progress skill-progress-bg">
+                                    <div class="progress-bar bar-light-blue" style="width: 60%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Progress Item 4 -->
+                            <div>
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="text-secondary-custom">Theme Configuration</span>
+                                    <span class="text-white">40%</span>
+                                </div>
+                                <div class="progress skill-progress-bg">
+                                    <div class="progress-bar bar-orange" style="width: 40%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Progress Item 5 -->
+                            <div>
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="text-secondary-custom">Dark Mode</span>
+                                    <span class="text-white">30%</span>
+                                </div>
+                                <div class="progress skill-progress-bg">
+                                    <div class="progress-bar bar-violet" style="width: 30%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Real-Time Sandbox Section -->
+    <section class="sandbox-section py-5">
+        <div class="container-fluid px-lg-5 px-3">
+            <!-- Section Header -->
+            <div class="mb-4">
+                <div class="section-subtitle font-monospace mb-1">// REAL-TIME SANDBOX</div>
+                <h2 class="section-title fw-bold text-white mb-2">Practice Tailwind CSS</h2>
+                <p class="section-description text-secondary-custom m-0">
+                    Write utility classes and see your design update instantly.
+                </p>
+            </div>
+
+            <!-- Sandbox Editor Container -->
+            <div class="sandbox-container p-4">
+                <div class="row g-4">
+
+                    <!-- Left Side: Code Editor Panel -->
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="font-monospace text-secondary-custom small">
+                                <i class="fa-solid fa-code me-1"></i> Utility Playground Editor
+                            </span>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-dark-custom btn-sm font-monospace px-3">Reset</button>
+                                <button class="btn btn-purple-sm btn-sm font-monospace px-3">
+                                    <i class="fa-solid fa-play me-1"></i> Run Preview
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Code Area Box -->
+                        <div class="code-editor-box p-3 font-monospace text-white-50 small mb-3">
+                            <pre class="m-0"><code>&lt;div class="rounded-xl bg-violet-600 p-6 text-white shadow-xl flex flex-col gap-3"&gt;
+  &lt;h3 class="text-xl font-bold"&gt;Hello CodFlow&lt;/h3&gt;
+  &lt;p class="text-violet-100 text-sm"&gt;Build modern interfaces faster with utilities.&lt;/p&gt;
+  &lt;button class="self-start rounded-lg bg-white px-4 py-2 text-violet-900 font-semibold"&gt;Get Started&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+
+                        <!-- Tip Footer -->
+                        <div class="tip-text font-monospace small text-secondary-custom">
+                            Tip: Try changing <span class="text-pink">bg-violet-600</span> to <span
+                                class="text-cyan">bg-cyan-600</span> and click Run.
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Live Canvas Preview -->
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="font-monospace text-secondary-custom small">
+                                <i class="fa-regular fa-eye me-1"></i> Live Canvas Preview
+                            </span>
+                            <span class="status-chip chip-completed font-monospace small py-1 px-2">
+                                <i class="fa-solid fa-check me-1"></i> Preview Updated
+                            </span>
+                        </div>
+
+                        <!-- Live Canvas Frame -->
+                        <div class="canvas-preview-box p-4 d-flex align-items-center justify-content-center">
+                            <div class="preview-card p-4 rounded-3 text-white d-flex flex-column gap-3 w-100">
+                                <h3 class="fw-bold fs-4 m-0">Hello CodFlow</h3>
+                                <p class="m-0 text-white-50 small">Build modern interfaces faster with utilities.</p>
+                                <div>
+                                    <button
+                                        class="btn btn-light fw-semibold text-purple-dark px-3 py-2 btn-sm rounded-2">
+                                        Get Started
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breakpoint Viewport Lab Section -->
+    <section class="responsive-lab-section py-5">
+        <div class="container-fluid px-lg-5 px-3">
+
+            <!-- Header & Viewport Controls -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-3">
+                <div>
+                    <div class="section-subtitle font-monospace mb-1">// BREAKPOINT VIEWPORT LAB</div>
+                    <h2 class="section-title fw-bold text-white mb-2">Master Responsive Design</h2>
+                    <p class="section-description text-secondary-custom m-0">
+                        Simulate breakpoints on fluid component layouts dynamically.
+                    </p>
+                </div>
+
+                <!-- Viewport Switcher Buttons -->
+                <div
+                    class="viewport-toggle-bg p-1 rounded-3 d-inline-flex font-monospace align-self-start align-self-md-auto">
+                    <button class="btn btn-viewport active d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>Desktop (100%)</span>
+                    </button>
+                    <button class="btn btn-viewport text-secondary-custom d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-tablet-screen-button"></i>
+                        <span>Tablet (75%)</span>
+                    </button>
+                    <button class="btn btn-viewport text-secondary-custom d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>Mobile (380px)</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Card Container -->
+            <div class="lab-container p-4">
+
+                <!-- Classes Display Bar -->
+                <div
+                    class="classes-bar p-3 rounded-2 font-monospace small mb-4 d-flex align-items-center gap-2 flex-wrap">
+                    <span class="text-cyan fw-bold">Classes:</span>
+                    <span class="code-badge">grid</span>
+                    <span class="code-badge">grid-cols-1</span>
+                    <span class="code-badge">md:grid-cols-2</span>
+                    <span class="code-badge">lg:grid-cols-3</span>
+                </div>
+
+                <!-- 3 Responsive Cards Grid -->
+                <div class="row g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="lab-card p-4 h-100">
+                            <div class="card-number font-monospace text-cyan small mb-2">Card #1</div>
+                            <h3 class="h5 text-white fw-bold mb-2">Flexible Containers</h3>
+                            <p class="text-secondary-custom small m-0">
+                                Adapts cleanly from stacked mobile units to fluid wide grids.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="lab-card p-4 h-100">
+                            <div class="card-number font-monospace text-cyan small mb-2">Card #2</div>
+                            <h3 class="h5 text-white fw-bold mb-2">Adaptive Typography</h3>
+                            <p class="text-secondary-custom small m-0">
+                                Scale font-size seamlessly via responsive variant prefixes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="lab-card p-4 h-100">
+                            <div class="card-number font-monospace text-cyan small mb-2">Card #3</div>
+                            <h3 class="h5 text-white fw-bold mb-2">Fluid Breakpoints</h3>
+                            <p class="text-secondary-custom small m-0">
+                                Tailwind's 640px, 768px, 1024px, 1280px standard boundaries.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Progress Telemetry & Footer Wrapper -->
+    <section class="footer-wrapper-section pt-5">
+        <div class="container-fluid px-lg-5 px-3">
+
+            <!-- Progress Telemetry Banner Card -->
+            <div class="telemetry-banner-card p-4 p-md-5 mb-5">
+                <div class="row align-items-center gy-4">
+
+                    <!-- Left Details -->
+                    <div class="col-lg-7">
+                        <div class="section-subtitle font-monospace mb-1">// PROGRESS TELEMETRY</div>
+                        <h2 class="h2 text-white fw-bold mb-3">Your Course Progress: 50%</h2>
+                        <p class="text-secondary-custom mb-4">
+                            You have completed 7 of 14 lessons and 16 of 30 exercises. Pick up where you left off in
+                            Lesson 05: Responsive Design.
+                        </p>
+
+                        <!-- Metric Small Boxes -->
+                        <div class="d-flex flex-wrap gap-3">
+                            <div class="metric-box px-3 py-2 text-center rounded-3">
+                                <div class="fw-bold text-white fs-5">7/14</div>
+                                <div class="text-secondary-custom font-monospace extra-small">Lessons</div>
+                            </div>
+                            <div class="metric-box px-3 py-2 text-center rounded-3">
+                                <div class="fw-bold text-white fs-5">16/30</div>
+                                <div class="text-secondary-custom font-monospace extra-small">Exercises</div>
+                            </div>
+                            <div class="metric-box px-3 py-2 text-center rounded-3">
+                                <div class="fw-bold text-emerald fs-5">84%</div>
+                                <div class="text-secondary-custom font-monospace extra-small">Quiz Avg</div>
+                            </div>
+                            <div class="metric-box px-3 py-2 text-center rounded-3">
+                                <div class="fw-bold text-warning fs-5">0/1</div>
+                                <div class="text-secondary-custom font-monospace extra-small">Project</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Circular Chart & CTA -->
+                    <div class="col-lg-5 d-flex flex-column align-items-lg-end align-items-center gap-4">
+                        <!-- Circular Progress Indicator -->
+                        <div
+                            class="progress-circle-wrapper position-relative d-flex align-items-center justify-content-center">
+                            <svg class="progress-ring" width="120" height="120">
+                                <circle class="progress-ring-bg" stroke="#1c253d" stroke-width="10" fill="transparent"
+                                    r="48" cx="60" cy="60" />
+                                <circle class="progress-ring-circle" stroke="#a855f7" stroke-width="10"
+                                    stroke-dasharray="301.59" stroke-dashoffset="150.79" stroke-linecap="round"
+                                    fill="transparent" r="48" cx="60" cy="60" />
+                            </svg>
+                            <div class="position-absolute text-center">
+                                <div class="fw-bold text-white fs-4 leading-none">50%</div>
+                                <div class="text-secondary-custom font-monospace extra-small">COMPLETE</div>
+                            </div>
+                        </div>
+
+                        <!-- Continue Button -->
+                        <a href="#"
+                            class="btn btn-purple-cta px-4 py-2 font-semibold text-white d-inline-flex align-items-center gap-2 rounded-3 text-decoration-none">
+                            <span>Continue Learning</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Main Footer Container -->
+        <footer class="main-footer pt-4 pb-4">
+            <div class="container-fluid px-lg-5 px-3">
+                <div class="row gy-4 mb-5">
+
+                    <!-- Brand Info Column -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="text-cyan fw-bold font-monospace fs-5">&lt; / &gt;</span>
+                            <span class="fw-bold text-white fs-4">CodFlow</span>
+                        </div>
+                        <p class="text-secondary-custom small pe-lg-4 mb-4">
+                            An interactive high-performance developer workspace crafted for focused technical learning,
+                            algorithm practice, and production-ready portfolio builds.
+                        </p>
+
+                        <!-- Social Icons -->
+                        <div class="d-flex gap-2">
+                            <a href="#" class="social-icon bg-youtube"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="social-icon bg-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon bg-telegram"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="#" class="social-icon bg-tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#" class="social-icon bg-instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Footer Links: Curriculum -->
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="footer-title font-monospace text-secondary-custom small fw-semibold mb-3">CURRICULUM
+                        </div>
+                        <ul class="list-unstyled d-flex flex-column gap-2 small m-0">
+                            <li><a href="#" class="footer-link">Courses</a></li>
+                            <li><a href="#" class="footer-link">Practice</a></li>
+                            <li><a href="#" class="footer-link">Learning Path</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer Links: Evaluation -->
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="footer-title font-monospace text-secondary-custom small fw-semibold mb-3">EVALUATION
+                        </div>
+                        <ul class="list-unstyled d-flex flex-column gap-2 small m-0">
+                            <li><a href="#" class="footer-link">Quizzes</a></li>
+                            <li><a href="#" class="footer-link">Projects</a></li>
+                            <li><a href="#" class="footer-link">Certifications</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer Links: Platform -->
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="footer-title font-monospace text-secondary-custom small fw-semibold mb-3">PLATFORM
+                        </div>
+                        <ul class="list-unstyled d-flex flex-column gap-2 small m-0">
+                            <li><a href="#" class="footer-link">About</a></li>
+                            <li><a href="#" class="footer-link">Contact</a></li>
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- System Info Column -->
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="footer-title font-monospace text-secondary-custom small fw-semibold mb-3">SYSTEM
+                        </div>
+                        <div class="font-monospace small mb-2 d-flex align-items-center gap-2">
+                            <span class="status-dot"></span>
+                            <span class="text-emerald">Kernels Online</span>
+                        </div>
+                        <div class="font-monospace text-secondary-custom extra-small">
+                            v2.4.0-stable
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Border Line & Copyright -->
+                <div
+                    class="footer-bottom pt-4 border-top border-dark-subtle d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                    <div class="text-secondary-custom extra-small">
+                        © 2025 CodFlow Dev Systems Inc. All rights reserved.
+                    </div>
+                    <div class="d-flex gap-4 font-monospace extra-small">
+                        <a href="#" class="footer-link">Terms</a>
+                        <a href="#" class="footer-link">Telemetry</a>
+                        <a href="#" class="footer-link">Status</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
