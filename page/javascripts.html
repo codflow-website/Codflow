@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodFlow - JavaScripts</title>
+    <meta name="description"
+        content="CodFlow helps you learn to code with interactive lessons, practice, and real-world projects." />
+    <meta property="og:title" content="CodFlow - JavaScript" />
+    <meta property="og:description" content="Interactive coding lessons, projects, and practice in one platform." />
+    <meta property="og:image" content="img/codflow.png" />
+    <link rel="icon" type="image/png" href="../img/codflow.png" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Google Fonts (Inter & Fira Code) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="../css/javascripts.css" />
+</head>
+
+<body>
+    <nav class="navbar-sticky navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
+        <div class="container-fluid px-3">
+            <!-- Brand Logo -->
+            <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
+                <img src="../img/logo.png" alt="CodFlow logo" class="brand-logo" />
+            </a>
+
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon small"></span>
+            </button>
+
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link " href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link active" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Quizzes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Learning Path</a>
+                    </li>
+                </ul>
+
+                <!-- Right Controls -->
+                <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+                    <!-- Compact Search Input -->
+                    <div class="search-box position-relative">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" class="form-control form-control-sm compact-search"
+                            placeholder="Search courses, docs...">
+                        <!-- <span class="kbd-shortcut"></span> -->
+                    </div>
+
+                    <!-- Notification Button -->
+                    <button class="icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+
+                    <!-- Profile Avatar -->
+                    <button class="profile-avatar-btn" type="button" aria-label="User Profile">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Body Content -->
+    <div class="container-fluid px-lg-5 py-4">
+        <!-- Breadcrumb Path -->
+        <div class="small text-secondary mb-4">
+            Courses / JavaScript / <span class="text-cyan">Fundamentals</span>
+        </div>
+
+        <!-- Main Side-by-Side Flex Layout -->
+        <div class="main-wrapper">
+
+            <!-- LEFT CONTENT COLUMN -->
+            <div class="left-content">
+                <!-- Track Badge -->
+                <span class="badge badge-track rounded-pill px-3 py-2 mb-3 d-inline-flex align-items-center gap-1">
+                    <i class="bi bi-circle-fill text-purple me-1" style="font-size: 6px;"></i> BEGINNER TRACK
+                </span>
+
+                <!-- Course Main Title -->
+                <h1 class="display-5 fw-bold text-white mb-3">
+                    JavaScript <span class="text-purple">Fundamentals</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="text-secondary mb-4 lead fs-6">
+                    Learn variables, functions, arrays, loops, DOM manipulation, and modern ES6+ syntax patterns through
+                    concise lessons and hands-on coding.
+                </p>
+
+                <!-- Meta Information Badges -->
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <span class="badge badge-meta rounded-pill px-3 py-2"><i class="bi bi-circle-fill text-info me-1"
+                            style="font-size: 6px;"></i> Beginner</span>
+                    <span class="badge badge-meta rounded-pill px-3 py-2"><i class="bi bi-layers text-purple me-1"></i>
+                        12 Lessons</span>
+                    <span class="badge badge-meta rounded-pill px-3 py-2"><i class="bi bi-clock me-1"></i> 4-6
+                        Hours</span>
+                    <span class="badge badge-meta rounded-pill px-3 py-2"><i
+                            class="bi bi-star-fill text-warning me-1"></i> 4.9 (1.4k reviews)</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-3 mb-5">
+                    <button class="btn btn-violet"><a class="text-decoration-none text-white" href="#continuelesson">Continue Learning </a><i class="bi bi-arrow-right ms-1"></i></button>
+                    <button class="btn btn-outline-custom"><a class="text-decoration-none text-white" href="#coursecurriculum">View Curriculum</a></button>
+                </div>
+
+                <!-- Course Progress Card -->
+                <div class="custom-card p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="small text-secondary d-flex align-items-center gap-2">
+                            <i class="bi bi-circle-fill text-cyan" style="font-size: 6px;"></i> Overall Course Progress
+                        </span>
+                        <span class="fw-bold text-white small">75% Complete</span>
+                    </div>
+
+                    <!-- Progress Bar Gradient -->
+                    <div class="progress progress-custom mb-3">
+                        <div class="progress-bar progress-bar-fill" role="progressbar" style="width: 75%;"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between small text-secondary">
+                        <span>9 of 12 lessons completed</span>
+                        <span>Next: Lesson 06 (Functions)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE FLOATING CODE CARD -->
+            <div class="right-card-wrapper">
+                <div class="custom-card p-4">
+
+                    <!-- Card Header Section -->
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="bg-warning text-dark fw-bold rounded-3 p-2 d-flex align-items-center justify-content-center"
+                            style="width:42px; height:42px; font-size: 0.9rem;">
+                            JS
+                        </div>
+                        <div>
+                            <h6 class="text-white mb-0 fw-bold">JavaScript Fundamentals</h6>
+                            <small class="text-secondary">12 Lessons • <span class="text-cyan">75%
+                                    Complete</span></small>
+                        </div>
+                        <span
+                            class="badge bg-success bg-opacity-25 text-success ms-auto border border-success rounded-1 px-2 py-1"
+                            style="font-size: 0.7rem;">ENROLLED</span>
+                    </div>
+
+                    <!-- Code Editor Window Terminal -->
+                    <div class="terminal-box p-3 mb-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="window-dot bg-danger me-1"></span>
+                            <span class="window-dot bg-warning me-1"></span>
+                            <span class="window-dot bg-success"></span>
+                            <span class="ms-auto text-secondary small">student.js</span>
+                            <span class="ms-3 text-secondary small" style="font-size: 0.75rem;">utf-8</span>
+                        </div>
+
+                        <!-- Syntax Code Lines -->
+                        <div class="text-light small">
+                            <div class="d-flex"><span class="code-num me-3">1</span>
+                                <div><span class="code-kw">const</span> <span class="code-var">student</span> = {</div>
+                            </div>
+                            <div class="d-flex"><span class="code-num me-3">2</span>
+                                <div class="ps-3">name: <span class="code-str">"Dara"</span>,</div>
+                            </div>
+                            <div class="d-flex"><span class="code-num me-3">3</span>
+                                <div class="ps-3">level: <span class="code-str">"Beginner"</span></div>
+                            </div>
+                            <div class="d-flex"><span class="code-num me-3">4</span>
+                                <div>};</div>
+                            </div>
+                            <div class="d-flex"><span class="code-num me-3">5</span>
+                                <div><span class="code-fn">console</span>.log(<span
+                                        class="code-var">student</span>.name);</div>
+                            </div>
+                        </div>
+
+                        <!-- Terminal Output Footer -->
+                        <div
+                            class="border-top border-secondary border-opacity-25 mt-3 pt-2 d-flex justify-content-between align-items-center text-secondary small">
+                            <span>&gt; "Dara" // Output ready</span>
+                            <span class="badge bg-dark text-secondary border border-secondary"
+                                style="font-size: 0.65rem;">ES2024</span>
+                        </div>
+                    </div>
+
+                    <!-- Card Bottom Link -->
+                    <div class="d-flex justify-content-between align-items-center small">
+                        <span class="text-secondary">Lesson 06 currently open</span>
+                        <a href="#" class="text-purple text-decoration-none fw-semibold">Resume Unit &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- COURSE CURRICULUM SECTION -->
+    <div id="coursecurriculum" class="curriculum-section mt-5 pt-3">
+
+        <!-- Section Header -->
+        <div class="d-flex justify-content-between align-items-end mb-4">
+            <div>
+                <span class="section-tag font-monospace">SYLLABUS BREAKDOWN</span>
+                <h2 class="h3 fw-bold text-white mb-1">Course Curriculum</h2>
+                <p class="text-secondary small mb-0">14 structured lessons • 6 completed • 1 currently active</p>
+            </div>
+            <button class="btn btn-outline-custom btn-sm">Toggle Details</button>
+        </div>
+
+        <!-- Lesson List Container -->
+        <div class="lesson-list d-flex flex-column gap-2">
+
+            <!-- Lesson 01 -->
+            <div class="lesson-card completed">
+                <div class="lesson-status">
+                    <i class="fa-solid fa-check text-success"></i>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num">Lesson 01</span>
+                        <span class="badge bg-success bg-opacity-25 text-success rounded-5">Completed</span>
+                    </div>
+                    <h6 class="lesson-title">What is JS, runtime engines, executing code</h6>
+                </div>
+                <div class="lesson-meta ms-auto d-flex align-items-center gap-3">
+                    <span class="lesson-time">25m</span>
+                    <i class="fa-solid fa-chevron-right icon-arrow"></i>
+                </div>
+            </div>
+
+            <!-- Lesson 02 -->
+            <div class="lesson-card completed">
+                <div class="lesson-status">
+                    <i class="fa-solid fa-check text-success"></i>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num">Lesson 02</span>
+                        <span class="badge bg-success bg-opacity-25 text-success rounded-5">Completed</span>
+                    </div>
+                    <h6 class="lesson-title">let, const, var, primitives vs objects</h6>
+                </div>
+                <div class="lesson-meta ms-auto d-flex align-items-center gap-3">
+                    <span class="lesson-time">30m</span>
+                    <i class="fa-solid fa-chevron-right icon-arrow"></i>
+                </div>
+            </div>
+
+            <!-- Lesson 03 -->
+            <div class="lesson-card completed">
+                <div class="lesson-status">
+                    <i class="fa-solid fa-check text-success"></i>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num">Lesson 03</span>
+                        <span class="badge bg-success bg-opacity-25 text-success rounded-5">Completed</span>
+                    </div>
+                    <h6 class="lesson-title">Arithmetic, logical, comparison, ternary</h6>
+                </div>
+                <div class="lesson-meta ms-auto d-flex align-items-center gap-3">
+                    <span class="lesson-time">35m</span>
+                    <i class="fa-solid fa-chevron-right icon-arrow"></i>
+                </div>
+            </div>
+
+            <!-- Lesson 04 -->
+            <div class="lesson-card completed">
+                <div class="lesson-status">
+                    <i class="fa-solid fa-check text-success"></i>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num">Lesson 04</span>
+                        <span class="badge bg-success bg-opacity-25 text-success rounded-5">Completed</span>
+                    </div>
+                    <h6 class="lesson-title">if/else, switch case, truthy and falsy</h6>
+                </div>
+                <div class="lesson-meta ms-auto d-flex align-items-center gap-3">
+                    <span class="lesson-time">20m</span>
+                    <i class="fa-solid fa-chevron-right icon-arrow"></i>
+                </div>
+            </div>
+
+            <!-- Lesson 05 -->
+            <div class="lesson-card completed">
+                <div class="lesson-status">
+                    <i class="fa-solid fa-check text-success"></i>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num">Lesson 05</span>
+                        <span class="badge bg-success bg-opacity-25 text-success rounded-5">Completed</span>
+                    </div>
+                    <h6 class="lesson-title">Iteration, break, continue, infinite loop safety</h6>
+                </div>
+                <div class="lesson-meta ms-auto d-flex align-items-center gap-3">
+                    <span class="lesson-time">40m</span>
+                    <i class="fa-solid fa-chevron-right icon-arrow"></i>
+                </div>
+            </div>
+
+            <!-- Lesson 06 (ACTIVE LESSON) -->
+            <div class="lesson-card active">
+                <div class="lesson-status">
+                    <div class="play-btn-circle">
+                        <i class="fa-solid fa-play text-purple"></i>
+                    </div>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num text-purple">Lesson 06</span>
+                        <span class="badge bg-purple-subtle text-purple border border-purple-subtle">• Active
+                            Lesson</span>
+                    </div>
+                    <h5 class="lesson-title text-white fw-bold fs-6 mb-1">Lesson 06: Functions & Scope</h5>
+                    <p class="text-secondary small mb-0">Function declarations, parameters, return values & arrow
+                        functions</p>
+                </div>
+                <div id="continuelesson" class="lesson-meta ms-auto d-flex align-items-center gap-4">
+                    <span class="lesson-time">35m</span>
+                    <button class="btn btn-purple-bright">Continue Lesson <i
+                            class="fa-solid fa-arrow-right ms-1"></i></button>
+                </div>
+            </div>
+
+            <!-- Lesson 07 (LOCKED) -->
+            <div class="lesson-card locked">
+                <div class="lesson-status">
+                    <i class="fa-solid fa-lock text-secondary opacity-50"></i>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num text-secondary">Lesson 07</span>
+                        <span class="text-secondary small">Locked</span>
+                    </div>
+                    <h6 class="lesson-title text-secondary">Push, pop, slice, splice, map, filter basics •</h6>
+                </div>
+                <div class="lesson-meta ms-auto d-flex align-items-center gap-3">
+                    <span class="lesson-time text-secondary opacity-50">45m</span>
+                </div>
+            </div>
+
+            <!-- Lesson 08 (LOCKED) -->
+            <div class="lesson-card locked">
+                <div class="lesson-status">
+                    <i class="fa-solid fa-lock text-secondary opacity-50"></i>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num text-secondary">Lesson 08</span>
+                        <span class="text-secondary small">Locked</span>
+                    </div>
+                    <h6 class="lesson-title text-secondary">Properties, methods, dot vs bracket notation</h6>
+                </div>
+                <div class="lesson-meta ms-auto d-flex align-items-center gap-3">
+                    <span class="lesson-time text-secondary opacity-50">58m</span>
+                </div>
+            </div>
+
+            <!-- Lesson 09 (LOCKED) -->
+            <div class="lesson-card locked">
+                <div class="lesson-status">
+                    <i class="fa-solid fa-lock text-secondary opacity-50"></i>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num text-secondary">Lesson 09</span>
+                        <span class="text-secondary small">Locked</span>
+                    </div>
+                    <h6 class="lesson-title text-secondary">querySelector, modifying HTML & CSS styles dynamically</h6>
+                </div>
+                <div class="lesson-meta ms-auto d-flex align-items-center gap-3">
+                    <span class="lesson-time text-secondary opacity-50">55m</span>
+                </div>
+            </div>
+
+            <!-- Lesson 10 (LOCKED) -->
+            <div class="lesson-card locked">
+                <div class="lesson-status">
+                    <i class="fa-solid fa-lock text-secondary opacity-50"></i>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num text-secondary">Lesson 10</span>
+                        <span class="text-secondary small">Locked</span>
+                    </div>
+                    <h6 class="lesson-title text-secondary">addEventListener, click, submit, keyboard events</h6>
+                </div>
+                <div class="lesson-meta ms-auto d-flex align-items-center gap-3">
+                    <span class="lesson-time text-secondary opacity-50">40m</span>
+                </div>
+            </div>
+
+            <!-- Lesson 11 (LOCKED) -->
+            <div class="lesson-card locked">
+                <div class="lesson-status">
+                    <i class="fa-solid fa-lock text-secondary opacity-50"></i>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num text-secondary">Lesson 11</span>
+                        <span class="text-secondary small">Locked</span>
+                    </div>
+                    <h6 class="lesson-title text-secondary">Destructuring, template literals, spread operator</h6>
+                </div>
+                <div class="lesson-meta ms-auto d-flex align-items-center gap-3">
+                    <span class="lesson-time text-secondary opacity-50">30m</span>
+                </div>
+            </div>
+
+            <!-- Lesson 12 (CAPSTONE PROJECT) -->
+            <div class="lesson-card capstone locked">
+                <div class="lesson-status">
+                    <div class="capstone-icon">
+                        <i class="fa-solid fa-award text-purple"></i>
+                    </div>
+                </div>
+                <div class="lesson-content">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <span class="lesson-num text-purple">Lesson 12 • Capstone</span>
+                        <span class="badge bg-purple-subtle text-purple rounded-5">Final Project</span>
+                    </div>
+                    <h6 class="lesson-title text-white">Interactive To-Do List Application</h6>
+                </div>
+                <div class="lesson-meta ms-auto d-flex align-items-center gap-3">
+                    <span class="lesson-time text-secondary opacity-50">2h Capstone</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- CORE COMPETENCIES / WHAT YOU WILL LEARN SECTION -->
+    <div class="competencies-section mt-5 pt-4">
+        <div class="row g-4">
+
+            <!-- LEFT COLUMN: What You Will Learn -->
+            <div class="col-lg-7">
+                <span class="section-tag font-monospace">CORE COMPETENCIES</span>
+                <h2 class="h3 fw-bold text-white mb-2">What You Will Learn</h2>
+                <p class="text-secondary small mb-4">
+                    Every topic is crafted to deliver practical, deployable JavaScript capabilities for real-world
+                    frontend and fullstack roles.
+                </p>
+
+                <!-- Competency Grid -->
+                <div class="row g-3">
+
+                    <!-- Feature Item 1 -->
+                    <div class="col-md-6">
+                        <div class="competency-card">
+                            <i class="fa-solid fa-check text-cyan me-2"></i>
+                            <span>Understand JavaScript fundamentals & V8 execution</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature Item 2 -->
+                    <div class="col-md-6">
+                        <div class="competency-card">
+                            <i class="fa-solid fa-check text-cyan me-2"></i>
+                            <span>Work with variables, hoisting, and primitive data types</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature Item 3 -->
+                    <div class="col-md-6">
+                        <div class="competency-card">
+                            <i class="fa-solid fa-check text-cyan me-2"></i>
+                            <span>Master conditional logic, comparisons, and loops</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature Item 4 -->
+                    <div class="col-md-6">
+                        <div class="competency-card">
+                            <i class="fa-solid fa-check text-cyan me-2"></i>
+                            <span>Create reusable functions and handle parameters</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature Item 5 -->
+                    <div class="col-md-6">
+                        <div class="competency-card">
+                            <i class="fa-solid fa-check text-cyan me-2"></i>
+                            <span>Manipulate complex arrays and nested objects</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature Item 6 -->
+                    <div class="col-md-6">
+                        <div class="competency-card">
+                            <i class="fa-solid fa-check text-cyan me-2"></i>
+                            <span>Directly manipulate the DOM tree safely</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature Item 7 -->
+                    <div class="col-md-6">
+                        <div class="competency-card">
+                            <i class="fa-solid fa-check text-cyan me-2"></i>
+                            <span>Handle user events and browser interactions</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature Item 8 -->
+                    <div class="col-md-6">
+                        <div class="competency-card">
+                            <i class="fa-solid fa-check text-cyan me-2"></i>
+                            <span>Write modern, clean ES6+ code patterns</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature Item 9 (Full Width) -->
+                    <div class="col-12">
+                        <div class="competency-card">
+                            <i class="fa-solid fa-check text-cyan me-2"></i>
+                            <span>Build reactive interactive web UI widgets without external frameworks</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Skill Progression Card -->
+            <div class="col-lg-5">
+                <div class="skill-progression-card p-4">
+
+                    <!-- Header -->
+                    <div class="d-flex justify-content-between align-items-start mb-4">
+                        <div>
+                            <h5 class="fw-bold text-white mb-1 fs-6">Skill Progression</h5>
+                            <p class="text-secondary small mb-0 opacity-75" style="font-size: 0.75rem;">
+                                Telemetry based on your exercise validations
+                            </p>
+                        </div>
+                        <span class="badge badge-level font-monospace px-2 py-1">Level 2 Dev</span>
+                    </div>
+
+                    <!-- Skill Item 1 -->
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1 font-monospace small">
+                            <span class="text-light">JavaScript Basics</span>
+                            <span class="text-cyan">90%</span>
+                        </div>
+                        <div class="progress progress-skill">
+                            <div class="progress-bar bg-green-teal" role="progressbar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Item 2 -->
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1 font-monospace small">
+                            <span class="text-light">Functions & Scope</span>
+                            <span class="text-purple">75%</span>
+                        </div>
+                        <div class="progress progress-skill">
+                            <div class="progress-bar bg-purple-glow" role="progressbar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Item 3 -->
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1 font-monospace small">
+                            <span class="text-light">Arrays & Objects</span>
+                            <span class="text-cyan">60%</span>
+                        </div>
+                        <div class="progress progress-skill">
+                            <div class="progress-bar bg-cyan-bright" role="progressbar" style="width: 60%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Item 4 -->
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1 font-monospace small">
+                            <span class="text-light">DOM Manipulation</span>
+                            <span class="text-warning">45%</span>
+                        </div>
+                        <div class="progress progress-skill">
+                            <div class="progress-bar bg-orange-gold" role="progressbar" style="width: 45%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Item 5 -->
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-1 font-monospace small">
+                            <span class="text-light">Modern ES6+ Syntax</span>
+                            <span class="text-purple">30%</span>
+                        </div>
+                        <div class="progress progress-skill">
+                            <div class="progress-bar bg-purple-glow" role="progressbar" style="width: 30%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer Info -->
+                    <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25 font-monospace"
+                        style="font-size: 0.725rem;">
+                        <span class="text-secondary opacity-75">Calculated via 18 automated check tests</span>
+                        <span class="text-cyan fw-bold">+240 XP Earned</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- INTERACTIVE SANDBOX / PRACTICE WHAT YOU LEARN SECTION -->
+    <div class="sandbox-section mt-5 pt-4">
+
+        <!-- Section Title Header -->
+        <div class="text-center mb-5">
+            <span class="badge badge-sandbox rounded-pill px-3 py-2 mb-3 d-inline-flex align-items-center gap-2">
+                <i class="fa-solid fa-bolt text-warning"></i> Interactive Sandbox
+            </span>
+            <h2 class="display-6 fw-bold text-white mb-2">Practice What You Learn</h2>
+            <p class="text-secondary small mb-0">
+                Write JavaScript and execute code directly in your browser. Verify function return logic immediately.
+            </p>
+        </div>
+
+        <!-- Sandbox Main Layout Grid -->
+        <div class="row g-4 align-items-stretch">
+
+            <!-- LEFT PANEL: Challenge Information -->
+            <div class="col-lg-5">
+                <div class="sandbox-card p-4 h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <!-- Challenge Header -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-cyan font-monospace small">Challenge #06-A</span>
+                            <span
+                                class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1 font-monospace"
+                                style="font-size: 0.7rem;">+50 XP</span>
+                        </div>
+
+                        <!-- Challenge Title & Description -->
+                        <h4 class="fw-bold text-white mb-3">Write an Addition Function</h4>
+                        <p class="text-secondary small mb-4">
+                            Define a function named <code class="code-inline">add</code> that takes two numeric
+                            arguments
+                            <code class="code-inline">a</code> and <code class="code-inline">b</code>, and returns their
+                            sum.
+                        </p>
+
+                        <!-- Test Criteria Box -->
+                        <div class="test-criteria-box p-3 mb-4">
+                            <div class="text-secondary font-monospace mb-2"
+                                style="font-size: 0.7rem; letter-spacing: 0.5px;">TEST CRITERIA:</div>
+                            <div class="d-flex justify-content-between align-items-center font-monospace small">
+                                <span class="text-light">Input: <span class="text-warning">add(5, 3)</span></span>
+                                <span class="text-cyan">Expected: 8</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Info -->
+                    <div
+                        class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25 text-secondary small">
+                        <span>Difficulty: Beginner</span>
+                        <a href="#" class="text-cyan text-decoration-none fw-semibold">View Documentation <i
+                                class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.75rem;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT PANEL: Code Editor & Console Output -->
+            <div class="col-lg-7">
+                <div class="sandbox-card p-0 overflow-hidden h-100 d-flex flex-column">
+
+                    <!-- Editor Header Bar -->
+                    <div
+                        class="editor-header px-3 py-2 d-flex align-items-center border-bottom border-secondary border-opacity-25">
+                        <div class="d-flex gap-1 me-3">
+                            <span class="window-dot bg-danger"></span>
+                            <span class="window-dot bg-warning"></span>
+                            <span class="window-dot bg-success"></span>
+                        </div>
+                        <span class="text-secondary font-monospace small">solution.js</span>
+                        <button class="btn btn-purple-bright btn-sm ms-auto py-1 px-3 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-play" style="font-size: 0.7rem;"></i> Run Code
+                        </button>
+                    </div>
+
+                    <!-- Code Input Area -->
+                    <div class="editor-body p-3 font-monospace flex-grow-1">
+                        <div class="d-flex"><span class="code-num me-3">1</span>
+                            <div><span class="code-kw">function</span> <span class="code-fn">add</span>(<span
+                                    class="code-param">a</span>, <span class="code-param">b</span>) {</div>
+                        </div>
+                        <div class="d-flex"><span class="code-num me-3">2</span>
+                            <div class="ps-3"><span class="code-kw">return</span> <span class="code-param">a</span> +
+                                <span class="code-param">b</span>;
+                            </div>
+                        </div>
+                        <div class="d-flex"><span class="code-num me-3">3</span>
+                            <div>}</div>
+                        </div>
+                        <div class="d-flex"><span class="code-num me-3">4</span>
+                            <div>&nbsp;</div>
+                        </div>
+                        <div class="d-flex"><span class="code-num me-3">5</span>
+                            <div><span class="code-fn">console</span>.log(<span class="code-fn">add</span>(<span
+                                    class="code-num-val">5</span>, <span class="code-num-val">3</span>));</div>
+                        </div>
+                    </div>
+
+                    <!-- Console Output Area -->
+                    <div class="console-box p-3 border-top border-secondary border-opacity-25 font-monospace">
+                        <div class="d-flex justify-content-between align-items-center mb-2" style="font-size: 0.75rem;">
+                            <span class="text-secondary d-flex align-items-center gap-2">
+                                <span class="console-dot"></span> Console Output
+                            </span>
+                            <span class="text-success opacity-75">1/1 tests passed in 4ms</span>
+                        </div>
+                        <div class="console-output text-light small ms-1">
+                            <div class="text-secondary mb-1">&gt; 8</div>
+                            <div class="text-success"><i class="fa-solid fa-check me-2"></i>Test Passed: add(5, 3)
+                                returned 8</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- COURSE PROGRESS SUMMARY & FOOTER SECTION -->
+    <div class="progress-summary-section mt-5 pt-4">
+
+        <!-- Main Progress Summary Card -->
+        <div class="summary-card p-4 p-md-5 mb-5">
+
+            <!-- Summary Header -->
+            <div class="d-flex justify-content-between align-items-start mb-4 flex-wrap gap-3">
+                <div>
+                    <span class="section-tag font-monospace text-uppercase">YOUR PROGRESS</span>
+                    <h2 class="h3 fw-bold text-white mb-1">Course Progress Summary</h2>
+                    <p class="text-secondary small mb-0">You are consistently outpacing the beginner benchmark.</p>
+                </div>
+                <button class="btn btn-purple-bright px-4 py-2 d-flex align-items-center gap-2">
+                    Keep Going <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem;"></i>
+                </button>
+            </div>
+
+            <!-- Stats Cards Grid -->
+            <div class="row g-3">
+
+                <!-- Stat 1: Course Status -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="stat-box p-3 h-100 d-flex align-items-center gap-3">
+                        <div class="progress-ring-container">
+                            <svg class="progress-ring" width="54" height="54">
+                                <circle class="progress-ring-bg" cx="27" cy="27" r="22"></circle>
+                                <circle class="progress-ring-circle" cx="27" cy="27" r="22"></circle>
+                            </svg>
+                            <span class="progress-ring-text">75%</span>
+                        </div>
+                        <div>
+                            <div class="text-secondary small">Course Status</div>
+                            <div class="fw-bold text-white fs-6">Completed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stat 2: Lessons Completed -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="stat-box p-3 h-100 d-flex flex-column justify-content-center">
+                        <div class="text-secondary small mb-1">Lessons Completed</div>
+                        <div class="fw-bold text-white fs-5 mb-2">9 <span class="text-secondary fs-6 fw-normal">/
+                                12</span></div>
+                        <div class="progress progress-stat">
+                            <div class="progress-bar bg-cyan-line" role="progressbar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stat 3: Practice Solved -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="stat-box p-3 h-100 d-flex flex-column justify-content-center">
+                        <div class="text-secondary small mb-1">Practice Solved</div>
+                        <div class="fw-bold text-white fs-5 mb-2">18 <span class="text-secondary fs-6 fw-normal">/
+                                24</span></div>
+                        <div class="progress progress-stat">
+                            <div class="progress-bar bg-blue-line" role="progressbar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stat 4: Average Quiz Score -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="stat-box p-3 h-100 d-flex flex-column justify-content-center">
+                        <div class="text-secondary small mb-1">Average Quiz Score</div>
+                        <div class="fw-bold text-success fs-5 mb-2">86%</div>
+                        <div class="progress progress-stat">
+                            <div class="progress-bar bg-green-line" role="progressbar" style="width: 86%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="pt-4 border-top border-secondary border-opacity-25 pb-4">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 font-monospace small">
+
+                <!-- Brand & Copyright -->
+                <div class="d-flex align-items-center gap-2 text-secondary" style="font-size: 0.75rem;">
+                    <span
+                        class="badge bg-primary-subtle text-primary border border-primary-subtle px-1 py-0 me-1">&lt;/&gt;</span>
+                    <span class="fw-bold text-light me-2">CodFlow</span>
+                    <span>© 2025 CodFlow IDE &amp; Learning Platform. Built for developers.</span>
+                </div>
+
+                <!-- Links -->
+                <div class="d-flex gap-4 text-secondary" style="font-size: 0.75rem;">
+                    <a href="#" class="footer-link">Documentation</a>
+                    <a href="#" class="footer-link">API Playground</a>
+                    <a href="#" class="footer-link">System Status</a>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
