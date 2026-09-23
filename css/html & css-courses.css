@@ -1,0 +1,713 @@
+body {
+  background-color: #0a0d18;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Dark Theme Base */
+.bg-dark-custom {
+  background-color: #0b0f19;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Compact Brand Logo */
+.brand-logo {
+  height: 38px;
+  width: auto;
+}
+
+/* Navigation Links */
+.custom-nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #94a3b8 !important;
+  padding: 0.35rem 0.75rem !important;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.custom-nav-link:hover {
+  color: #f8fafc !important;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.custom-nav-link.active {
+  color: #ffffff !important;
+  background-color: #272042; /* Highlight pill matching your dark-purple accent */
+}
+
+/* Compact Search Box */
+.search-box {
+  width: 220px;
+}
+
+.compact-search {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #e2e8f0 !important;
+  font-size: 0.8rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2.5rem !important;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.compact-search::placeholder {
+  color: #64748b;
+}
+
+.compact-search:focus {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: #6366f1 !important;
+  box-shadow: none !important;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.65rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.kbd-shortcut {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.65rem;
+  color: #64748b;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+  pointer-events: none;
+}
+
+/* Icon Buttons & Profile */
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: #f8fafc;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.profile-avatar-btn {
+  background: #272042;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #c084fc;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.profile-avatar-btn:hover {
+  background: #342a58;
+  color: #ffffff;
+}
+
+/* Hero */
+.hero-section {
+  padding: 42px 0 56px;
+  background:
+    radial-gradient(circle at 67% 22%, rgba(80,67,180,.18), transparent 35%),
+    linear-gradient(180deg, #111932 0%, #0b1326 75%);
+  border-bottom: 1px solid #111b32;
+}
+
+.breadcrumb-line {
+  font: 0.85rem 'Fira Code', monospace;
+  color: #8794b2;
+  margin-bottom: 12px;
+}
+
+.eyebrow {
+  color: var(--cyan);
+  font: 0.75rem 'Fira Code', monospace;
+  letter-spacing: .45px;
+  margin-bottom: 5px;
+}
+
+h1, h2, h3, p { margin-top: 0; }
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+h1 span { color: #6d4ae7; }
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -.3px;
+}
+
+.hero-text {
+  max-width: 680px;
+  color: #b4bfd7;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 13px;
+}
+
+.badge-pill {
+  background: #141e39;
+  border: 1px solid #28365a;
+  border-radius: 5px;
+  color: #b7c2dc;
+  padding: 4px 8px;
+  font-size: 0.825rem;
+}
+
+.badge-pill i { color: #a890ff; }
+.badge-pill.rating i { color: var(--yellow); }
+.badge-pill small { color: #7986a2; }
+
+.badge-pill i,
+.btn-primary-custom i,
+.btn-outline-custom i,
+.code-footer i,
+.locked-note > i {
+  margin-right: 0.35rem;
+}
+
+.progress-card {
+  max-width: 670px;
+  background: #151f38;
+  border: 1px solid #263354;
+  border-radius: 7px;
+  padding: 10px 12px;
+}
+
+.progress-card strong { color: #dce5fb; font-size: 0.85rem; }
+.muted { color: var(--muted); }
+
+.progress-dark {
+  height: 6px;
+  background: #27324d;
+  border-radius: 20px;
+}
+
+.progress-dark .progress-bar {
+  background: linear-gradient(90deg, #8b5cf6, #168df4);
+  border-radius: inherit;
+}
+
+.tiny {
+  font: 0.75rem 'Fira Code', monospace;
+  color: #73809d;
+}
+
+.cyan { color: var(--cyan); }
+
+.btn-primary-custom,
+.btn-outline-custom {
+  border-radius: 5px;
+  font-size: 0.875rem;
+  padding: 7px 12px;
+  font-weight: 600;
+}
+
+.btn-primary-custom {
+  color: #fff;
+  background: linear-gradient(100deg, #7545e7, #5d46db);
+  border: 0;
+}
+
+.btn-outline-custom {
+  color: #b9c3d8;
+  background: #171f35;
+  border: 1px solid #2d3b5c;
+}
+
+/* Code card */
+.code-window {
+  background: #111625;
+  border: 1px solid #1e2638;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.code-top {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 16px;
+  background: #0c0f1a;
+  border-bottom: 1px solid #1e2638;
+  font: 0.8rem 'Fira Code', monospace;
+}
+
+.dots { display: flex; gap: 4px; }
+.dots i { width: 7px; height: 7px; border-radius: 50%; background: #f05b42; }
+.dots i:nth-child(2) { background: #f1b738; }
+.dots i:nth-child(3) { background: #1ac77d; }
+
+.file-tab { color: #36c8f0; }
+.file-name { color: #7887a7; }
+.utf { margin-left: auto; color: #8e99b1; }
+
+.code-window pre {
+  min-height: 220px;
+  margin: 0;
+  padding: 20px;
+  background: #0d111d;
+  color: #e2e8f0;
+  font: 0.875rem/1.8 'Fira Code', monospace;
+  white-space: pre-wrap;
+}
+
+.comment { color: #6b7794; }
+.tag { color: #ff79c6; }
+.attr { color: #8be9fd; }
+.str { color: #f1fa8c; }
+.selector { color: #50fa7b; }
+.prop { color: #8be9fd; }
+.num { color: #bd93f9; }
+
+.code-footer {
+  min-height: 35px;
+  padding: 12px 20px;
+  background: #080b13;
+  border-top: 1px solid #1e2638;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font: 0.8rem 'Fira Code', monospace;
+}
+
+.green-tag {
+  margin-left: auto;
+  background: #0e2731;
+  color: var(--green);
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+/* Sections */
+.section-block {
+  padding: 56px 0;
+}
+
+.section-subtitle {
+  color: #7f8ba6;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+/* Outcomes */
+.outcome-card {
+  min-height: 190px;
+  padding: 22px;
+  background: #203360;
+  border: 1px solid #2a3d70;
+  border-radius: 7px;
+}
+
+.outcome-icon {
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 9px;
+  color: #ddd3ff;
+  background: #554295;
+  font-size: 1rem;
+}
+
+.outcome-icon.cyan-bg { background: #155a72; color: #5ce0ff; }
+.outcome-icon.blue { background: #28559a; color: #c0dcff; }
+
+.outcome-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.outcome-card p {
+  color: #aab7d0;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.outcome-card small {
+  color: #7586a9;
+  font: 0.775rem 'Fira Code', monospace;
+}
+
+/* Curriculum */
+.curriculum { padding-top: 20px; }
+
+.mini-btn {
+  color: #8997b5;
+  background: #141d34;
+  border: 1px solid #202e4d;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+.lesson-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lesson {
+  min-height: 56px;
+  padding: 12px 16px;
+  background: #141e36;
+  border: 1px solid #192540;
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 30px 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.lesson > div {
+  min-width: 0;
+}
+
+.lesson small {
+  display: block;
+  color: #7d8ba8;
+  font: 0.725rem 'Fira Code', monospace;
+}
+
+.lesson small b {
+  color: var(--green);
+  background: #073729;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  margin-left: 4px;
+}
+
+.lesson strong {
+  display: block;
+  color: #dce4f5;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.lesson time,
+.lesson > i {
+  color: #7b89a4;
+  font: 0.775rem 'Fira Code', monospace;
+}
+
+.status-icon {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #1b2742;
+  color: #63728f;
+  font-size: 0.9rem;
+}
+
+.completed .status-icon {
+  background: #0b4b3d;
+  color: #13db91;
+}
+
+.active-lesson {
+  min-height: 92px;
+  background: #203360;
+  border-color: #304b86;
+}
+
+.status-icon.active {
+  background: #c2a3ff;
+  color: #321867;
+}
+
+.active-label {
+  color: #c9b4ff !important;
+  background: #392a69 !important;
+}
+
+.active-lesson p {
+  color: #8290aa;
+  font-size: 0.825rem;
+  line-height: 1.5;
+  margin: 5px 0 0;
+}
+
+.continue-btn {
+  color: #321766;
+  background: #c2a3ff;
+  border-radius: 5px;
+  padding: 7px 11px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.locked { opacity: .72; }
+
+.capstone {
+  background: #131e37;
+}
+
+.purple-icon {
+  background: #352a62;
+  color: #b995ff;
+}
+
+.capstone small b {
+  color: #d2b7ff;
+  background: #34255d;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.skills-grid > div {
+  background: #151f36;
+  border: 1px solid #1e2b47;
+  border-radius: 5px;
+  color: #aebad0;
+  padding: 12px 14px;
+  line-height: 1.45;
+  font-size: 0.85rem;
+}
+
+.skills-grid > div::first-letter { color: var(--green); }
+
+.mastery-card,
+.telemetry-card,
+.project-card {
+  background: #203360;
+  border: 1px solid #2a3d70;
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.mastery-card { height: 100%; }
+
+.purple-label,
+.cyan-label {
+  border-radius: 4px;
+  padding: 2px 5px;
+  font: 0.725rem 'Fira Code', monospace;
+}
+
+.purple-label { background: #3b2c64; color: #c7aeff; }
+.cyan-label { background: #0c3d4b; color: #44d7f4; }
+
+.skill-row {
+  position: relative;
+  margin-top: 10px;
+  font: 0.8rem 'Fira Code', monospace;
+  color: #abb8d1;
+}
+
+.skill-row b {
+  float: right;
+  color: var(--green);
+  font-weight: 400;
+}
+
+.skill-row > div {
+  clear: both;
+  height: 4px;
+  background: #2c3c64;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+.skill-row > div i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--green);
+}
+
+.skill-row:nth-of-type(4) > div i { background: #42d6ef; }
+.skill-row:nth-of-type(5) > div i { background: #a990f5; }
+.skill-row:nth-of-type(6) > div i { background: #287fe5; }
+.skill-row:nth-of-type(7) > div i { background: #e2aa3c; }
+
+.mastery-footer {
+  border-top: 1px solid #30446f;
+  margin-top: 12px;
+  padding-top: 8px;
+  color: #7182a2;
+  font: 0.775rem 'Fira Code', monospace;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mastery-footer strong { color: #dce5fa; font-weight: 400; }
+
+/* Bottom */
+.telemetry-card { height: 100%; }
+
+.metric {
+  min-height: 56px;
+  background: #151f39;
+  border: 1px solid #27365b;
+  border-radius: 5px;
+  padding: 14px;
+}
+
+.metric small {
+  display: block;
+  color: #72809e;
+  font: 0.75rem 'Fira Code', monospace;
+}
+
+.metric strong {
+  display: block;
+  color: #f0f4ff;
+  font-size: 1.8rem;
+  margin-top: 4px;
+}
+
+.metric em {
+  font-style: normal;
+  font-size: 0.8rem;
+  color: #8793ad;
+}
+
+.green-text { color: var(--green) !important; }
+
+.project-card { height: 100%; }
+
+.project-card h3 {
+  font-size: 1.25rem;
+  margin: 7px 0 5px;
+}
+
+.project-card p {
+  color: #a6b3cd;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.tech {
+  background: #182d51;
+  color: #54aaff;
+  border-radius: 4px;
+  padding: 3px 6px;
+  font: 0.75rem 'Fira Code', monospace;
+}
+
+.tech.green { color: #23dd99; background: #12382e; }
+
+.locked-note {
+  padding: 6px 8px;
+  border: 1px solid #2c3d62;
+  border-radius: 5px;
+  color: #71809e;
+  font-size: 0.8rem;
+}
+
+.locked-note span {
+  float: right;
+  background: #0f1830;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #1d2944;
+  padding: 15px 0;
+  color: #66748f;
+  font: 0.75rem 'Fira Code', monospace;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .nav-links { margin-top: 12px !important; }
+  .hero-section { padding-top: 12px; }
+  .code-window { min-height: 0; }
+}
+
+@media (max-width: 767.98px) {
+  body { font-size: 0.875rem; }
+
+  .section-block { padding: 40px 0; }
+
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.75rem; }
+
+  .skills-grid { grid-template-columns: 1fr; }
+
+  .lesson {
+    grid-template-columns: 28px 1fr auto;
+    padding: 12px;
+  }
+
+  .lesson > i { display: none; }
+  .lesson .continue-btn { grid-column: 2 / -1; justify-self: start; }
+  .active-lesson { padding-bottom: 10px; }
+
+  .lesson time {
+    font-size: 0.7rem;
+  }
+
+  .outcome-card { min-height: auto; }
+
+  .footer { line-height: 1.8; }
+}
+
+@media (max-width: 480px) {
+  .hero-section { padding: 30px 0 40px; }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+
+  .badge-pill { font-size: 0.75rem; }
+  .code-window pre { font-size: 0.75rem; }
+  .code-footer { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .green-tag { margin-left: 0; }
+
+  .lesson strong { font-size: 0.875rem; }
+  .lesson small { font-size: 0.65rem; }
+
+  .skills-grid > div { font-size: 0.8rem; }
+}
