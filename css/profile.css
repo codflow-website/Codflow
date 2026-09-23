@@ -1,0 +1,348 @@
+body {
+  background-color: #0a0d18;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0b0f19; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* Dark Theme Base */
+.bg-dark-custom {
+  background-color: rgba(11, 15, 25, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+/* Compact Brand Logo */
+.brand-logo {
+  height: 38px;
+  width: auto;
+}
+
+/* Navigation Links */
+.custom-nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #94a3b8 !important;
+  padding: 0.35rem 0.75rem !important;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.custom-nav-link:hover {
+  color: #f8fafc !important;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.custom-nav-link.active {
+  color: #ffffff !important;
+  background-color: #272042; /* Highlight pill matching your dark-purple accent */
+}
+
+/* Compact Search Box */
+.search-box {
+  width: 220px;
+}
+
+.compact-search {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #e2e8f0 !important;
+  font-size: 0.8rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2.5rem !important;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.compact-search::placeholder {
+  color: #64748b;
+}
+
+.compact-search:focus {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: #6366f1 !important;
+  box-shadow: none !important;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.65rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.kbd-shortcut {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.65rem;
+  color: #64748b;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+  pointer-events: none;
+}
+
+/* Icon Buttons & Profile */
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: #f8fafc;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.profile-avatar-btn {
+  background: #272042;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #c084fc;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.profile-avatar-btn:hover {
+  background: #342a58;
+  color: #ffffff;
+}
+
+
+
+
+/* Background & Global Colors */
+.profile-workspace {
+  background-color: #060913;
+  color: #94a3b8;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Typography & Utility Colors */
+.fs-7 { font-size: 0.88rem; }
+.fs-8 { font-size: 0.78rem; }
+.fs-9 { font-size: 0.70rem; }
+
+.text-cyan { color: #38bdf8 !important; }
+.text-purple { color: #c084fc !important; }
+.text-amber { color: #fbbf24 !important; }
+.text-green { color: #22c55e !important; }
+.text-slate { color: #64748b !important; }
+
+.bg-cyan-subtle { background-color: rgba(56, 189, 248, 0.12) !important; }
+.bg-purple-subtle { background-color: rgba(192, 132, 252, 0.12) !important; }
+.bg-amber-subtle { background-color: rgba(251, 191, 36, 0.12) !important; }
+.bg-danger-subtle { background-color: rgba(248, 113, 113, 0.12) !important; }
+.bg-primary-subtle { background-color: rgba(96, 165, 250, 0.12) !important; }
+.bg-success-subtle { background-color: rgba(34, 197, 94, 0.12) !important; }
+.bg-slate-subtle { background-color: rgba(100, 116, 139, 0.12) !important; }
+
+/* Dashboard Cards */
+.dash-card {
+  background-color: #0c1220;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* User Avatar & Info */
+.profile-avatar-wrapper {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, #38bdf8, #a855f7);
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stat-box {
+  background-color: #10192e;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.profile-link:hover span {
+  color: #38bdf8 !important;
+}
+
+/* Badges & Buttons */
+.badge-active-status {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.badge-pro {
+  background-color: rgba(168, 85, 247, 0.1);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.badge-meta {
+  background-color: #121c33;
+  color: #64748b;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.badge-in-progress {
+  background-color: rgba(56, 189, 248, 0.9);
+  color: #060913;
+}
+
+.badge-completed {
+  background-color: rgba(34, 197, 94, 0.9);
+  color: #060913;
+}
+
+.btn-action {
+  background-color: #121a2d;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+}
+
+.btn-action:hover {
+  background-color: #1b2640;
+}
+
+.btn-purple-gradient {
+  background: linear-gradient(90deg, #a855f7, #8b5cf6);
+  border: none;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+}
+
+.btn-purple-gradient:hover {
+  opacity: 0.92;
+}
+
+.btn-action-sm {
+  background-color: #141f36;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.btn-action-sm:hover {
+  background-color: #1e2c4d;
+}
+
+.btn-green-outline {
+  background-color: transparent;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  color: #22c55e;
+}
+
+.btn-green-outline:hover {
+  background-color: rgba(34, 197, 94, 0.1);
+}
+
+/* Custom Progress Bars */
+.custom-progress {
+  height: 6px;
+  background-color: #070b14;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bg-cyan-gradient {
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+}
+
+.bg-cyan { background-color: #38bdf8; }
+.bg-purple { background-color: #c084fc; }
+.bg-green { background-color: #22c55e; }
+
+/* Commit Matrix Cards */
+.day-card {
+  background-color: #10182b;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.day-active {
+  background-color: #172442;
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+/* Skill Tags & Specialization Box */
+.skill-tag {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.track-box {
+  background-color: #090f1b;
+  border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+/* Course Cards */
+.course-card {
+  background-color: #090e1a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+}
+
+.course-thumb {
+  height: 100px;
+}
+
+.course-thumb img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Settings Box & Custom Switch */
+.setting-box {
+  background-color: #090e1a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.custom-switch {
+  background-color: #1e293b;
+  border-color: #334155;
+  cursor: pointer;
+}
+
+.custom-switch:checked {
+  background-color: #a855f7;
+  border-color: #a855f7;
+}
