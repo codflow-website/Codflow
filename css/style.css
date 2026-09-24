@@ -12,6 +12,12 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
 /* Compact Brand Logo */
 .brand-logo {
   height: 38px;
