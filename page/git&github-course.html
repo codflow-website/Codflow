@@ -91,314 +91,131 @@
   </nav>
 
 
-  <section class="hero-section py-5">
-    <div class="container-fluid px-4 px-lg-5">
-      <div class="row g-4 align-items-center">
 
-        <!-- Left Column: Course Details -->
-        <div class="col-lg-6">
-          <!-- Breadcrumb -->
-          <div class="breadcrumb-text mb-3">
-            Courses / Developer Tools / <span class="text-cyan">Git &amp; GitHub</span>
-          </div>
 
-          <!-- Badges & Rating -->
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <span class="badge badge-teal d-flex align-items-center gap-1">
-              <!-- SVG Git Icon -->
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M21.61 10.74l-8.35-8.35a2.4 2.4 0 0 0-3.39 0l-1.5 1.5 3.32 3.32a2.38 2.38 0 0 1 2.87 2.87l3.22 3.22a2.41 2.41 0 0 0 3.83-2.56zM8.38 5.39l-4.5 4.5a2.4 2.4 0 0 0 0 3.39l8.35 8.35a2.4 2.4 0 0 0 3.39 0l4.08-4.08-3.08-3.08a2.39 2.39 0 0 1-2.22-.59l-2.61 2.61a2.4 2.4 0 1 1-1.39-.78l2.52-2.52a2.39 2.39 0 0 1 .59-2.22L8.38 5.39z" />
-              </svg>
-              BEGINNER
-            </span>
-            <span class="badge badge-dark">
-              <svg width="12" height="12" fill="currentColor" class="me-1" viewBox="0 0 16 16">
-                <path
-                  d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893V2.828zM8 3.087c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v8.528c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752V3.087z" />
-              </svg>
-              8 Lessons
-            </span>
-            <span class="badge badge-rating">
-              <span class="text-warning me-1">★ 4.8</span>
-              <span class="text-secondary">(2,840 reviews)</span>
-            </span>
-          </div>
+<section class="git-course-hero-section py-5">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="row align-items-center g-5">
+      
+      <!-- Left Content Column -->
+      <div class="col-lg-6">
+        
+        <!-- Breadcrumb Navigation -->
+        <nav class="course-breadcrumb mb-3" aria-label="breadcrumb">
+          <span class="breadcrumb-item">Courses</span>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-item">Developer Tools</span>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-item active">Git &amp; GitHub</span>
+        </nav>
 
-          <!-- Title -->
-          <h1 class="course-title fw-bold text-white mb-3">
-            Git &amp; GitHub <span class="text-purple-gradient">Workflow</span>
-          </h1>
-
-          <!-- Description -->
-          <p class="course-desc text-secondary mb-4">
-            Learn branches, pull requests, merge conflict resolution, team rebasing strategies, and automated CI/CD
-            pipelines to build software like top-tier engineering squads.
-          </p>
-
-          <!-- Stats Grid -->
-          <div class="row g-2 mb-4">
-            <div class="col-6 col-sm-3">
-              <div class="stat-card p-2 rounded-3">
-                <span class="stat-label">LEVEL</span>
-                <div class="stat-value text-white"><span class="dot dot-teal"></span>Beginner</div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-3">
-              <div class="stat-card p-2 rounded-3">
-                <span class="stat-label">DURATION</span>
-                <div class="stat-value text-white"><span class="text-purple">▮</span> 4–5 Hours</div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-3">
-              <div class="stat-card p-2 rounded-3">
-                <span class="stat-label">PRACTICE</span>
-                <div class="stat-value text-white"><span class="text-slate">⬚</span> 16 Drills</div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-3">
-              <div class="stat-card p-2 rounded-3">
-                <span class="stat-label">CAPSTONE</span>
-                <div class="stat-value text-white"><span class="text-green">◆</span> 1 Real Repo</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Progress Bar -->
-          <div class="progress-container p-3 rounded-3 mb-4">
-            <div class="d-flex justify-content-between align-items-center mb-2 fs-8">
-              <span class="text-secondary"><span class="dot dot-slate me-1"></span>Status: <strong
-                  class="text-white">Not Started</strong></span>
-              <span class="text-cyan fw-bold">0% Complete</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" style="width: 0%;"></div>
-            </div>
-          </div>
-
-          <!-- Action Buttons & Avatars -->
-          <div class="d-flex flex-wrap align-items-center gap-3">
-            <button class="btn btn-primary-gradient px-4 py-2 rounded-3 fw-semibold">
-              Start Course <svg width="14" height="14" fill="currentColor" class="ms-1" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-              </svg>
-            </button>
-            <button class="btn btn-dark-outline px-4 py-2 rounded-3 fw-semibold text-white">
-              <svg width="14" height="14" fill="currentColor" class="me-1" viewBox="0 0 16 16">
-                <path
-                  d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm9 0a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
-              </svg>
-              View Curriculum
-            </button>
-
-            <!-- Avatar Group -->
-            <div class="d-flex align-items-center ms-lg-2">
-              <div class="avatar-group d-flex">
-                <span class="avatar avatar-1">AK</span>
-                <span class="avatar avatar-2">SL</span>
-                <span class="avatar avatar-3">MR</span>
-              </div>
-              <span class="text-secondary fs-8 ms-2">+1,420 enrolled this week</span>
-            </div>
-          </div>
+        <!-- Metadata Badges Bar -->
+        <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+          <span class="badge-pill badge-cyan">
+            <span class="dot-indicator"></span> BEGINNER
+          </span>
+          <span class="badge-pill badge-dark">
+            <i class="fa-regular fa-book-open me-1"></i> 8 Lessons
+          </span>
+          <span class="badge-pill badge-dark text-warning-star">
+            <i class="fa-solid fa-star me-1"></i> 4.8 <span class="text-muted-reviews">(2,840 reviews)</span>
+          </span>
         </div>
 
-        <!-- Right Column: Interactive Terminal Sandbox -->
-        <div class="col-lg-6">
-          <div class="terminal-window rounded-4 overflow-hidden">
+        <!-- Course Title -->
+        <h1 class="course-main-title mb-3">
+          Git &amp; GitHub <span class="text-purple">Workflow</span>
+        </h1>
 
-            <!-- Terminal Header -->
-            <div class="terminal-header d-flex align-items-center justify-content-between px-3 py-2">
-              <div class="d-flex align-items-center gap-2">
-                <span class="window-dot dot-red"></span>
-                <span class="window-dot dot-yellow"></span>
-                <span class="window-dot dot-green"></span>
-              </div>
-              <div class="terminal-title text-secondary fs-8 d-flex align-items-center gap-1">
-                <svg width="12" height="12" fill="currentColor" class="text-cyan" viewBox="0 0 16 16">
-                  <path
-                    d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9M3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708z" />
-                </svg>
-                zsh — git-workflow
-              </div>
-              <div class="terminal-status fs-8 text-green d-flex align-items-center gap-1">
-                ● Repo Ready
-              </div>
-            </div>
-
-            <!-- Terminal Body / Console -->
-            <div class="terminal-body p-3 font-monospace fs-8">
-              <div class="mb-2">
-                <span class="text-cyan">➔</span> <span class="text-purple">~/projects/codflow-app</span> <span
-                  class="text-secondary">on</span> <span class="text-cyan">main</span>
-              </div>
-
-              <div class="mb-2">
-                <span class="text-secondary">$</span> <span class="text-cyan fw-bold">git</span> init
-                <div class="text-slate ps-3">Initialized empty Git repository in /codflow-app/.git/</div>
-              </div>
-
-              <div class="mb-2">
-                <span class="text-secondary">$</span> <span class="text-cyan fw-bold">git</span> checkout -b <span
-                  class="text-purple">feature/login</span>
-                <div class="text-green ps-3">✓ Switched to a new branch 'feature/login'</div>
-              </div>
-
-              <div class="mb-2">
-                <span class="text-secondary">$</span> <span class="text-cyan fw-bold">git</span> add
-                src/components/Auth.tsx
-              </div>
-
-              <div class="mb-2">
-                <span class="text-secondary">$</span> <span class="text-cyan fw-bold">git</span> commit -m <span
-                  class="text-slate">"feat: add OAuth2 flow &amp; session guards"</span>
-                <div class="text-slate ps-3">[feature/login 3c8e9f2] feat: add OAuth2 flow</div>
-              </div>
-
-              <div class="mb-3">
-                <span class="text-secondary">$</span> <span class="text-cyan fw-bold">git</span> push origin <span
-                  class="text-purple">feature/login</span>
-                <div class="text-green ps-3">
-                  ☁ Total 4 (delta 2), Branch feature/login pushed to remote
-                </div>
-              </div>
-
-              <div>
-                <span class="text-cyan">➔</span> <span class="text-purple">~/projects/codflow-app</span> <span
-                  class="cursor-blink"></span>
-              </div>
-            </div>
-
-            <!-- Terminal Footer Status Bar -->
-            <div
-              class="terminal-footer d-flex align-items-center justify-content-between px-3 py-2 fs-8 text-secondary">
-              <div class="d-flex gap-2">
-                <span class="badge badge-dark text-cyan">Git 2.45</span>
-                <span class="badge badge-dark text-secondary">GitHub Sync</span>
-              </div>
-              <div>UTF-8 • LF • Unix</div>
-            </div>
-
-          </div>
-
-          <!-- Sandbox Note -->
-          <div class="d-flex align-items-center justify-content-between px-2 mt-2 text-secondary fs-8">
-            <div class="d-flex align-items-center gap-1">
-              <svg width="12" height="12" fill="currentColor" class="text-purple" viewBox="0 0 16 16">
-                <path
-                  d="M8 1.5A6.5 6.5 0 0 0 1.5 8c0 2.38 1.27 4.46 3.17 5.59a.5.5 0 0 0 .5-.865A5.5 5.5 0 1 1 13.5 8a.5.5 0 0 0 1 0A6.5 6.5 0 0 0 8 1.5z" />
-              </svg>
-              Interactive sandbox unlocked for all 8 modules
-            </div>
-            <span class="text-uppercase fw-semibold tracking-wide text-cyan">NO INSTALL NEEDED</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section class="workflow-section py-5">
-    <div class="container-fluid px-4 px-lg-5">
-
-      <!-- Header -->
-      <div class="text-center mb-5">
-        <span class="sub-heading text-uppercase fw-semibold tracking-wider">PRODUCTION GRADE SKILLS</span>
-        <h2 class="section-title fw-bold text-white mt-2 mb-3">Master the Git &amp; GitHub Workflow</h2>
-        <p class="section-desc text-secondary mx-auto">
-          Learn how professional development teams manage code, collaborate through GitHub, resolve merge collisions
-          safely, and run continuous testing pipelines.
+        <!-- Course Description -->
+        <p class="course-main-desc mb-4">
+          Learn branches, pull requests, merge conflict resolution, team rebasing strategies, and automated CI/CD pipelines to build software like top-tier engineering squads.
         </p>
-      </div>
 
-      <!-- 3 Cards Row -->
-      <div class="row g-4">
-
-        <!-- Card 1: Branching Strategies -->
-        <div class="col-lg-4">
-          <div class="workflow-card h-100 p-4 p-xl-5 rounded-4 d-flex flex-column justify-content-between">
-            <div>
-              <!-- Icon -->
-              <div class="card-icon icon-green mb-4">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M7 1a1 1 0 0 1 1 1v2.083A6.002 6.002 0 0 1 13 10h1a1 1 0 0 1 0 2h-1a6 6 0 0 1-5 2.917V15a1 1 0 1 1-2 0v-.083A6 6 0 0 1 2 10H1a1 1 0 0 1 0-2h1a6.002 6.002 0 0 1 5-5.917V2a1 1 0 0 1 1-1m-4 9a4 4 0 0 0 4 4v-2a2 2 0 0 1-2-2zm8 0a4 4 0 0 0-4 4v-2a2 2 0 0 1 2-2z" />
-                </svg>
-              </div>
-              <!-- Content -->
-              <h3 class="card-title text-white fw-bold fs-4 mb-3">Branching Strategies</h3>
-              <p class="card-text text-secondary fs-7 mb-4">
-                Create and manage branches safely for new features, hotfixes, and parallel releases without corrupting
-                the production mainline.
-              </p>
+        <!-- Course Stats Grid Bar -->
+        <div class="row g-2 mb-4">
+          <div class="col-6 col-sm-3">
+            <div class="stat-mini-card">
+              <span class="stat-label">LEVEL</span>
+              <span class="stat-value"><span class="dot-cyan"></span> Beginner</span>
             </div>
-            <!-- Link -->
-            <a href="#"
-              class="card-link link-cyan text-decoration-none fs-8 fw-semibold d-inline-flex align-items-center gap-2">
-              Git Flow, Trunk-based &amp; Feature Flags ➔
-            </a>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="stat-mini-card">
+              <span class="stat-label">DURATION</span>
+              <span class="stat-value"><i class="fa-regular fa-clock me-1"></i> 4-5 Hours</span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="stat-mini-card">
+              <span class="stat-label">PRACTICE</span>
+              <span class="stat-value"><i class="fa-regular fa-square-check me-1"></i> 16 Drills</span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="stat-mini-card">
+              <span class="stat-label">CAPSTONE</span>
+              <span class="stat-value text-teal"><i class="fa-solid fa-diamond me-1"></i> 1 Real Repo</span>
+            </div>
           </div>
         </div>
 
-        <!-- Card 2: Team Collaboration -->
-        <div class="col-lg-4">
-          <div class="workflow-card h-100 p-4 p-xl-5 rounded-4 d-flex flex-column justify-content-between">
-            <div>
-              <!-- Icon -->
-              <div class="card-icon icon-blue mb-4">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M0 3.5A.5.5 0 0 1 .5 3H4a.5.5 0 0 1 .47.32l1.601 4.502L7.67 3.32A.5.5 0 0 1 8.14 3h3.86a.5.5 0 0 1 0 1H8.38l-1.87 5.25a.5.5 0 0 1-.94 0L3.97 4H.5a.5.5 0 0 1-.5-.5M11.5 12h-3.86a.5.5 0 0 1-.47-.32l-1.6-4.502L3.9 12.68A.5.5 0 0 1 3.43 13H.5a.5.5 0 0 1 0-1h2.93l1.87-5.25a.5.5 0 0 1 .94 0l1.6 4.502L9.57 6.32a.5.5 0 0 1 .47-.32h3.86a.5.5 0 0 1 0 1h-3.43l-1.67 4.68a.5.5 0 0 1-.47.32" />
-                </svg>
-              </div>
-              <!-- Content -->
-              <h3 class="card-title text-white fw-bold fs-4 mb-3">Team Collaboration</h3>
-              <p class="card-text text-secondary fs-7 mb-4">
-                Use pull requests, multi-reviewer code checks, atomic branch reviews, and automated commit hooks to
-                build software collaboratively.
-              </p>
-            </div>
-            <!-- Link -->
-            <a href="#"
-              class="card-link link-purple text-decoration-none fs-8 fw-semibold d-inline-flex align-items-center gap-2">
-              PR Reviews &amp; Resolution Protocols ➔
-            </a>
+        <!-- Course Progress Status Bar -->
+        <div class="course-status-card p-3 mb-4">
+          <div class="d-flex justify-content-between align-items-center mb-2 font-mono">
+            <span class="status-label"><span class="dot-grey"></span> Status: <strong class="text-white">Not Started</strong></span>
+            <span class="status-percent">0% Complete</span>
+          </div>
+          <div class="progress custom-progress">
+            <div class="progress-bar bg-gradient-purple" style="width: 0%"></div>
           </div>
         </div>
 
-        <!-- Card 3: CI/CD Automation -->
-        <div class="col-lg-4">
-          <div class="workflow-card h-100 p-4 p-xl-5 rounded-4 d-flex flex-column justify-content-between">
-            <div>
-              <!-- Icon -->
-              <div class="card-icon icon-amber mb-4">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641z" />
-                </svg>
-              </div>
-              <!-- Content -->
-              <h3 class="card-title text-white fw-bold fs-4 mb-3">CI/CD Automation</h3>
-              <p class="card-text text-secondary fs-7 mb-4">
-                Understand the fundamentals of automated testing, PR action checks, Docker build triggers, and
-                auto-deployments with GitHub Actions.
-              </p>
-            </div>
-            <!-- Link -->
-            <a href="#"
-              class="card-link link-blue text-decoration-none fs-8 fw-semibold d-inline-flex align-items-center gap-2">
-              GitHub Actions &amp; YAML Workflows ➔
-            </a>
-          </div>
+        <!-- Action Buttons -->
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <a href="#" class="btn btn-start-course">
+            Start Course <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+          <a href="#" class="btn btn-view-curriculum">
+            <i class="fa-regular fa-book-open me-2"></i> View Curriculum
+          </a>
         </div>
 
       </div>
+
+      <!-- Right Course Card Preview Column -->
+      <div class="col-lg-6">
+        <div class="course-preview-card p-4">
+          
+          <!-- Card Header Info -->
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center gap-2">
+              <div class="gitlab-icon-box">
+                <i class="fa-brands fa-gitlab"></i>
+              </div>
+              <div>
+                <h5 class="preview-title mb-0">Git &amp; github</h5>
+                <span class="preview-subtext">8 Lessons &bull; 00% Complete</span>
+              </div>
+            </div>
+            <span class="enrolled-badge">ENROLLED</span>
+          </div>
+
+          <!-- Card Thumbnail Visual -->
+          <div class="preview-image-wrapper rounded-3 overflow-hidden position-relative">
+            <img 
+              src="../img/git github.jpg" 
+              alt="Git and GitHub Workflow visual banner" 
+              class="img-fluid preview-img"
+            >
+          </div>
+
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
 
 
