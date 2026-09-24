@@ -32,60 +32,48 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
-    <div class="container-fluid px-3">
-      <!-- Brand Logo -->
-      <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
-        <img src="../img/logo.png" alt="CodFlow logo" class="brand-logo" />
-      </a>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
+  <div class="container-fluid px-3">
+    <!-- Brand Logo -->
+    <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
+      <img src="../img/logo.png" alt="CodFlow logo" class="brand-logo" />
+    </a>
+    
+    <!-- Mobile Toggler -->
+    <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon small"></span>
+    </button>
+    
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link " href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link active" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Practice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Quizzes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Learning Path</a>
+        </li>
+      </ul>
 
-      <!-- Mobile Toggler -->
-      <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon small"></span>
-      </button>
-
-      <!-- Collapsible Menu -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link " href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link active" href="#">Courses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link" href="#">Practice</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link" href="#">Quizzes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link" href="#">Learning Path</a>
-          </li>
-        </ul>
-
-        <!-- Right Controls -->
-        <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
-          <!-- Compact Search Input -->
-          <div class="search-box position-relative">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input type="text" class="form-control form-control-sm compact-search"
-              placeholder="Search courses, docs..." />
-            <span class="kbd-shortcut">⌘K</span>
-          </div>
-
-          <!-- Notification Button -->
-          <button class="icon-btn" type="button" aria-label="Notifications">
-            <i class="fa-regular fa-bell"></i>
-          </button>
-
-          <!-- Profile Avatar -->
-          <button class="profile-avatar-btn" type="button" aria-label="User Profile">
-            <i class="fa-regular fa-user"></i>
-          </button>
+      <!-- Right Controls -->
+      <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <!-- Compact Search Input -->
+        <div class="search-box position-relative">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="form-control form-control-sm compact-search" placeholder="Search courses, docs..." />
+          <span class="kbd-shortcut">⌘K</span>
         </div>
       </div>
     </div>
@@ -385,8 +373,7 @@
 
   <footer class="footer">
     <div class="container-fluid px-4 px-lg-5 d-flex justify-content-between flex-wrap gap-2">
-      <span><i class="bi bi-code-square"></i> CodFlow &nbsp; © 2026 CodFlow IDE; Learning Platform. Built for
-        developers.</span>
+      <span><i class="bi bi-code-square"></i> CodFlow &nbsp; © 2026 CodFlow IDE; Learning Platform. Built for developers.</span>
       <span>Documentation &nbsp;&nbsp; API Playground &nbsp;&nbsp; System Status</span>
     </div>
   </footer>

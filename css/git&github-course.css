@@ -1,0 +1,882 @@
+body {
+  background-color: #0a0d18;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0b0f19; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* Dark Theme Base */
+.bg-dark-custom {
+  background-color: rgba(11, 15, 25, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+/* Compact Brand Logo */
+.brand-logo {
+  height: 38px;
+  width: auto;
+}
+
+/* Navigation Links */
+.custom-nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #94a3b8 !important;
+  padding: 0.35rem 0.75rem !important;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.custom-nav-link:hover {
+  color: #f8fafc !important;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.custom-nav-link.active {
+  color: #ffffff !important;
+  background-color: #272042; /* Highlight pill matching your dark-purple accent */
+}
+
+/* Compact Search Box */
+.search-box {
+  width: 220px;
+}
+
+.compact-search {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #e2e8f0 !important;
+  font-size: 0.8rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2.5rem !important;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.compact-search::placeholder {
+  color: #64748b;
+}
+
+.compact-search:focus {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: #6366f1 !important;
+  box-shadow: none !important;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.65rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.kbd-shortcut {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.65rem;
+  color: #64748b;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+  pointer-events: none;
+}
+
+/* Icon Buttons & Profile */
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: #f8fafc;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.profile-avatar-btn {
+  background: #272042;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #c084fc;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.profile-avatar-btn:hover {
+  background: #342a58;
+  color: #ffffff;
+}
+
+/* Custom Typography & Palette */
+.hero-section {
+  background-color: #060913;
+  color: #94a3b8;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.breadcrumb-text {
+  font-size: 0.78rem;
+  font-family: monospace;
+}
+
+.text-cyan { color: #38bdf8; }
+.text-purple { color: #c084fc; }
+.text-green { color: #4ade80; }
+.text-slate { color: #64748b; }
+
+.text-purple-gradient {
+  background: linear-gradient(90deg, #a78bfa, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text; /* Standard property for future-proofing */
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* Resolves the clipping/rendering bug */
+}
+
+
+/* Badges */
+.badge-teal {
+  background-color: #022c22;
+  color: #2dd4bf;
+  font-size: 0.68rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.badge-dark {
+  background-color: #0f172a;
+  color: #94a3b8;
+  font-size: 0.68rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.badge-rating {
+  background-color: #1a1625;
+  font-size: 0.68rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Stats Row */
+.stat-card {
+  background-color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat-label {
+  font-size: 0.65rem;
+  color: #64748b;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.dot-teal { background-color: #2dd4bf; }
+.dot-slate { background-color: #64748b; }
+
+/* Progress Container */
+.progress-container {
+  background-color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.progress-track {
+  height: 4px;
+  background-color: #1e293b;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #38bdf8;
+}
+
+/* Buttons */
+.btn-primary-gradient {
+  background: linear-gradient(90deg, #6366f1, #3b82f6);
+  border: none;
+  color: #ffffff;
+}
+
+.btn-primary-gradient:hover {
+  opacity: 0.95;
+  color: #ffffff;
+}
+
+.btn-dark-outline {
+  background-color: #161f38;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-dark-outline:hover {
+  background-color: #1e293b;
+}
+
+/* Avatar Stack */
+.avatar-group .avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  font-size: 0.65rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #060913;
+  margin-left: -6px;
+}
+
+.avatar-1 { background-color: #38bdf8; color: #0f172a; margin-left: 0 !important; }
+.avatar-2 { background-color: #c084fc; color: #0f172a; }
+.avatar-3 { background-color: #2dd4bf; color: #0f172a; }
+
+/* Terminal Window */
+.terminal-window {
+  background-color: #080c16;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-header {
+  background-color: #0d1322;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.window-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-red { background-color: #ef4444; }
+.dot-yellow { background-color: #f59e0b; }
+.dot-green { background-color: #22c55e; }
+
+.terminal-footer {
+  background-color: #0d1322;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Blinking Terminal Cursor */
+.cursor-blink {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background-color: #38bdf8;
+  vertical-align: middle;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.tracking-wide {
+  letter-spacing: 0.5px;
+}
+
+
+
+
+/* Section & Typography */
+.workflow-section {
+  background-color: #080c18;
+  color: #94a3b8;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.sub-heading {
+  color: #38bdf8;
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+}
+
+.section-desc {
+  max-width: 680px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.fs-7 {
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.fs-8 {
+  font-size: 0.8rem;
+  font-family: monospace;
+}
+
+/* Workflow Cards */
+.workflow-card {
+  background-color: #151d34;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.workflow-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Icon Containers */
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-green {
+  background-color: #122b2b;
+  color: #4ade80;
+}
+
+.icon-blue {
+  background-color: #182846;
+  color: #60a5fa;
+}
+
+.icon-amber {
+  background-color: #2e2619;
+  color: #fbbf24;
+}
+
+/* Bottom Links */
+.link-cyan {
+  color: #38bdf8;
+}
+
+.link-cyan:hover {
+  color: #7dd3fc;
+}
+
+.link-purple {
+  color: #a78bfa;
+}
+
+.link-purple:hover {
+  color: #c084fc;
+}
+
+.link-blue {
+  color: #60a5fa;
+}
+
+.link-blue:hover {
+  color: #93c5fd;
+}
+
+
+
+/* Background & Outer Layout */
+.git-state-machine {
+  background-color: #060913;
+  color: #94a3b8;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.state-container {
+  background-color: #0b1120;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Typography & Subheadings */
+.sub-heading {
+  color: #38bdf8;
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+}
+
+.section-desc {
+  font-size: 0.9rem;
+}
+
+.step-num {
+  font-family: monospace;
+  font-size: 0.72rem;
+  color: #64748b;
+  letter-spacing: 0.5px;
+}
+
+.fs-7 {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.fs-8 {
+  font-size: 0.78rem;
+}
+
+/* Colors */
+.text-cyan { color: #38bdf8; }
+.text-purple { color: #c084fc; }
+.text-blue { color: #60a5fa; }
+.text-green { color: #4ade80; }
+
+/* Status Badges */
+.badge-live {
+  background-color: #0f172a;
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.dot {
+  width: 7 ;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-green {
+  background-color: #22c55e;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+}
+
+/* State Cards */
+.state-card {
+  background-color: #131c31;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.state-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+/* Command Action Buttons */
+.btn-action {
+  background-color: #0b1120;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-action:hover {
+  background-color: #0f172a;
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+/* Bottom Flow Banner */
+.lifecycle-banner {
+  background-color: #080d1a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+/* Background & Global Options */
+.practice-section {
+  background-color: #060913;
+  color: #94a3b8;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.sub-heading {
+  color: #38bdf8;
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+}
+
+.section-desc {
+  max-width: 600px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.fs-7 {
+  font-size: 0.88rem;
+}
+
+.fs-8 {
+  font-size: 0.78rem;
+}
+
+.text-cyan { color: #38bdf8; }
+.text-purple { color: #c084fc; }
+.text-slate { color: #64748b; }
+
+.italic {
+  font-style: italic;
+}
+
+/* Sandbox Wrapper */
+.sandbox-container {
+  max-width: 900px;
+  background-color: #090e1a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Top Header */
+.sandbox-header {
+  background-color: #0e1526;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-tab {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
+}
+
+.btn-tab.active {
+  background: linear-gradient(90deg, #a855f7, #8b5cf6);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.btn-tab:not(.active):hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.dot-cyan {
+  width: 6px;
+  height: 6px;
+  background-color: #38bdf8;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.8);
+}
+
+/* Challenge Header */
+.challenge-header {
+  background-color: #121a2e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.challenge-num {
+  color: #64748b;
+  letter-spacing: 0.5px;
+}
+
+.btn-run {
+  background: linear-gradient(90deg, #a855f7, #8b5cf6);
+  border: none;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn-run:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+/* Terminal Area */
+.terminal-body {
+  background-color: #070a14;
+  min-height: 200px;
+}
+
+
+
+/* Background & Global Options */
+.curriculum-section {
+  background-color: #060913;
+  color: #94a3b8;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.sub-heading {
+  color: #38bdf8;
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+}
+
+.fs-7 {
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.fs-8 {
+  font-size: 0.78rem;
+}
+
+.fs-9 {
+  font-size: 0.68rem;
+  font-family: monospace;
+}
+
+.badge-unlocked {
+  background-color: #0d1a29;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+  font-size: 0.78rem;
+  font-family: monospace;
+}
+
+/* Lesson Cards Base */
+.lesson-card {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.lesson-card:hover {
+  transform: translateY(-1px);
+}
+
+/* Active Lesson Card */
+.active-card {
+  background-color: #1a2744;
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.active-number {
+  background-color: #243862;
+  color: #38bdf8;
+  width: 48px;
+  height: 48px;
+  font-size: 1.1rem;
+}
+
+.badge-active {
+  background-color: #032b30;
+  color: #2dd4bf;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.btn-cyan-gradient {
+  background: linear-gradient(90deg, #38bdf8, #22d3ee);
+  border: none;
+  color: #060913;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+  transition: opacity 0.2s ease;
+}
+
+.btn-cyan-gradient:hover {
+  opacity: 0.9;
+  color: #060913;
+}
+
+/* Locked Lesson Card */
+.locked-card {
+  background-color: #0d1322;
+}
+
+.locked-card:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.locked-number {
+  background-color: #141c2e;
+  color: #64748b;
+  width: 48px;
+  height: 48px;
+  font-size: 1.1rem;
+}
+
+
+/* Section & Container styling */
+.outcomes-section {
+  background-color: #060913;
+  color: #94a3b8;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.outcomes-card {
+  background-color: #111a2e;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sub-heading {
+  color: #38bdf8;
+  font-size: 0.72rem;
+  letter-spacing: 1.2px;
+}
+
+.text-light-slate {
+  color: #cbd5e1;
+}
+
+.fs-7 {
+  font-size: 0.88rem;
+}
+
+.fs-8 {
+  font-size: 0.78rem;
+}
+
+/* Color definitions matching design */
+.text-cyan { color: #38bdf8; }
+.bg-cyan { background-color: #38bdf8; }
+
+.text-purple { color: #c084fc; }
+.bg-purple { background-color: #c084fc; }
+
+.text-light-blue { color: #818cf8; }
+.bg-light-blue { background-color: #818cf8; }
+
+.text-amber { color: #fbbf24; }
+.bg-amber { background-color: #fbbf24; }
+
+/* Custom Progress Bars */
+.custom-progress {
+  height: 8px;
+  background-color: #090f1d;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.custom-progress .progress-bar {
+  border-radius: 4px;
+}
+
+/* Verification Note Box */
+.verification-box {
+  background-color: #0d1322;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+
+
+
+/* Background & Typography */
+.footer-section {
+  background-color: #060913;
+  color: #94a3b8;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.brand-desc {
+  max-width: 340px;
+  line-height: 1.6;
+}
+
+.footer-title {
+  color: #94a3b8;
+  font-size: 0.72rem;
+  letter-spacing: 1.2px;
+}
+
+.fs-7 {
+  font-size: 0.88rem;
+}
+
+.fs-8 {
+  font-size: 0.78rem;
+}
+
+.text-cyan { color: #38bdf8; }
+.text-green { color: #22c55e; }
+.text-slate { color: #64748b; }
+
+/* Social Media Custom Colors */
+.btn-social {
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+  border: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn-social:hover {
+  opacity: 0.88;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-youtube {
+  background-color: #ff0000;
+}
+
+.btn-facebook {
+  background-color: #1877f2;
+}
+
+.btn-telegram {
+  background-color: #24a1de;
+}
+
+.btn-tiktok {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-tiktok:hover {
+  color: #000000;
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/* Links */
+.footer-link {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* Status Indicator Dot */
+.dot-green {
+  width: 6px;
+  height: 6px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 6px rgba(34, 197, 94, 0.8);
+}
+
+/* Bottom Divider Border */
+.footer-bottom.border-top {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}

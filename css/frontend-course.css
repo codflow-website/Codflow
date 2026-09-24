@@ -1,0 +1,745 @@
+/* ==========================================
+   1. GLOBAL RESETS & BASE STYLES
+   ========================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0a0d18;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Base Utility Classes */
+.text-muted { color: #94a3b8 !important; }
+.text-accent { color: #38bdf8 !important; }
+.text-cyan { color: #0ea5e9 !important; }
+.fs-7 { font-size: 0.85rem; }
+.fs-8 { font-size: 0.75rem; }
+
+/* ==========================================
+   2. NAVBAR STYLES
+   ========================================== */
+.bg-dark-custom {
+  background-color: rgba(11, 15, 25, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.brand-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.custom-nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #94a3b8 !important;
+  padding: 0.35rem 0.75rem !important;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.custom-nav-link:hover {
+  color: #f8fafc !important;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.custom-nav-link.active {
+  color: #ffffff !important;
+  background-color: #272042;
+}
+
+.search-box {
+  width: 220px;
+}
+
+.compact-search {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #e2e8f0 !important;
+  font-size: 0.8rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2.5rem !important;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.compact-search::placeholder {
+  color: #64748b;
+}
+
+.compact-search:focus {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: #6366f1 !important;
+  box-shadow: none !important;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.65rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.kbd-shortcut {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.65rem;
+  color: #64748b;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+  pointer-events: none;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: #f8fafc;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.profile-avatar-btn {
+  background: #272042;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #c084fc;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.profile-avatar-btn:hover {
+  background: #342a58;
+  color: #ffffff;
+}
+
+/* ==========================================
+   3. HERO SECTION STYLES
+   ========================================== */
+.hero-section {
+  background-color: #0a0d18;
+  color: #ffffff;
+}
+
+.badge-intermediate {
+  background-color: #0c2d38;
+  color: #38bdf8;
+  font-size: 0.65rem;
+  letter-spacing: 0.5px;
+  padding: 0.35em 0.65em;
+  border-radius: 4px;
+}
+
+.badge-path {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #a5b4fc;
+  font-weight: 400;
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.progress-card {
+  background-color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.custom-progress {
+  height: 6px;
+  background-color: #1f2937;
+  border-radius: 10px;
+}
+
+.custom-progress-bar {
+  background: linear-gradient(90deg, #818cf8, #38bdf8);
+  border-radius: 10px;
+}
+
+/* Buttons */
+.btn-gradient {
+  background: linear-gradient(90deg, #818cf8 0%, #3b82f6 100%);
+  color: #ffffff !important;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+  transition: opacity 0.2s ease;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+}
+
+.btn-dark-custom {
+  background-color: #1f2937;
+  color: #e5e7eb !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-dark-custom:hover {
+  background-color: #374151;
+  color: #ffffff !important;
+}
+
+/* ==========================================
+   4. CODE EDITOR MOCKUP
+   ========================================== */
+.code-editor-card {
+  background-color: #0d1117;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.editor-header, .editor-footer {
+  background-color: #161b22;
+}
+
+.editor-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.filename {
+  color: #8b949e;
+  font-size: 0.8rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.editor-body {
+  color: #c9d1d9;
+  line-height: 1.5;
+}
+
+/* Syntax Highlighting */
+.keyword { color: #ff7b72; }
+.string { color: #a5d6ff; }
+.function { color: #d2a8ff; }
+.tag { color: #7ee787; }
+.attr { color: #79c0ff; }
+.number { color: #79c0ff; }
+
+
+
+
+/* Section Container & Background */
+.feature-section {
+  background-color: #0a0d18;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Header Text Styles */
+.sub-heading {
+  color: #818cf8;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.section-description {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  max-width: 800px;
+}
+
+/* Feature Cards */
+.feature-card {
+  background-color: #161f38;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.card-text {
+  color: #94a3b8 !important;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+/* Icon Box Styles */
+.icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.icon-box-blue {
+  background-color: #1e3a8a;
+  color: #60a5fa;
+}
+
+.icon-box-purple {
+  background-color: #312e81;
+  color: #a78bfa;
+}
+
+.icon-box-cyan {
+  background-color: #0e7490;
+  color: #38bdf8;
+}
+
+
+
+/* Base Section Setup */
+.curriculum-section {
+  background-color: #0a0d18;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.sub-heading {
+  color: #818cf8;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+.fs-7 {
+  font-size: 0.85rem;
+}
+
+/* Status Filter Buttons Top Right */
+.status-filter-group {
+  background-color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.75rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  color: #ffffff;
+}
+
+.filter-btn.active {
+  background-color: #272042;
+  color: #c084fc;
+  font-weight: 500;
+}
+
+/* Curriculum Card Item */
+.curriculum-item {
+  background-color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.curriculum-item:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Active Lesson Highlight Styling */
+.item-active {
+  background: linear-gradient(90deg, #181d36 0%, #111827 100%);
+  border: 1px solid #3b82f6 !important;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.15);
+}
+
+/* Icon Box Indicators */
+.status-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-completed {
+  background-color: #064e3b;
+  color: #10b981;
+}
+
+.icon-active {
+  background-color: #3b0764;
+  color: #c084fc;
+}
+
+.icon-locked {
+  background-color: #1e293b;
+  color: #64748b;
+}
+
+/* Typography & Badges inside cards */
+.lesson-num {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.lesson-title {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.lesson-desc {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.duration-text {
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+.badge {
+  font-size: 0.65rem;
+  padding: 0.2em 0.5em;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.badge-completed {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+}
+
+.badge-active {
+  background-color: #ec4899;
+  color: #ffffff;
+}
+
+.badge-locked {
+  background-color: rgba(100, 116, 139, 0.2);
+  color: #94a3b8;
+}
+
+/* Right Side Action Buttons */
+.btn-review {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #94a3b8;
+  font-size: 0.78rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-review:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.btn-continue {
+  background: linear-gradient(90deg, #818cf8 0%, #3b82f6 100%);
+  color: #ffffff;
+  border: none;
+  font-size: 0.8rem;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: opacity 0.2s ease;
+}
+
+.btn-continue:hover {
+  opacity: 0.9;
+  color: #ffffff;
+}
+
+.locked-icon-right {
+  opacity: 0.5;
+  padding-right: 0.5rem;
+}
+
+
+/* Base Section Setup */
+.mastery-section {
+  background-color: #0a0d18;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.sub-heading {
+  color: #818cf8;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+}
+
+.text-slate-300 {
+  color: #cbd5e1;
+}
+
+.fs-7 {
+  font-size: 0.85rem;
+}
+
+.fs-8 {
+  font-size: 0.75rem;
+}
+
+/* Card Containers */
+.mastery-card {
+  background-color: #161f38;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.metric-card {
+  background-color: #161f38;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Check Icons */
+.check-icon {
+  flex-shrink: 0;
+}
+
+/* Skill Progress Bars */
+.skill-progress-bg {
+  height: 6px;
+  background-color: #0f172a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #a78bfa, #c084fc);
+  border-radius: 10px;
+}
+
+.skill-progress-fill.fill-cyan {
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+}
+
+.skill-progress-fill.fill-dark {
+  background: #334155;
+}
+
+/* Projected Box */
+.projected-box {
+  background-color: #0d1222;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Metric Icon Boxes */
+.metric-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.metric-purple {
+  background-color: #2e264f;
+  color: #a78bfa;
+}
+
+.metric-blue {
+  background-color: #1e2e4f;
+  color: #60a5fa;
+}
+
+.metric-cyan {
+  background-color: #0e384f;
+  color: #38bdf8;
+}
+
+.metric-slate {
+  background-color: #1e293b;
+  color: #94a3b8;
+}
+
+
+
+/* --- CodFlow Footer --- */
+.codflow-footer {
+  background-color: #0a0d18;
+  color: #ffffff;
+  border-top: 1px solid #1a2233;
+}
+
+/* Brand Header */
+.footer-brand .brand-brackets {
+  color: #74b9ff;
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.footer-brand .brand-text {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.footer-bio {
+  color: #8e9bb0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  max-width: 360px;
+}
+
+/* Social Buttons */
+.footer-social-btn {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid #1e2638;
+  border-radius: 8px;
+  color: #8e9bb0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer-social-btn:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #2e3a54;
+  color: #ffffff;
+}
+
+/* Navigation Headings & Links */
+.footer-heading {
+  color: #58637a;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.725rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #8e9bb0;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* System Status Column */
+.system-status-indicator {
+  color: #2ed573;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #2ed573;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px rgba(46, 213, 115, 0.6);
+}
+
+.system-version {
+  color: #58637a;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+}
+
+/* Divider & Bottom Legal Area */
+.footer-divider {
+  border-color: #1e2638;
+  opacity: 0.6;
+}
+
+.copyright-text {
+  color: #8e9bb0;
+  font-size: 0.825rem;
+}
+
+.footer-legal-links a {
+  color: #8e9bb0;
+  text-decoration: none;
+  font-size: 0.825rem;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-links a:hover {
+  color: #ffffff;
+}

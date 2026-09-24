@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodFlow - Learn to Code</title>
+    <meta name="description"
+        content="CodFlow helps you learn to code with interactive lessons, practice, and real-world projects." />
+    <meta property="og:title" content="CodFlow - Learn to Code" />
+    <meta property="og:description" content="Interactive coding lessons, projects, and practice in one platform." />
+    <meta property="og:image" content="../img/codflow.png" />
+    <link rel="icon" type="image/png" href="../img/codflow.png" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Google Fonts (Inter & Fira Code) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="../css/profile.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
+        <div class="container-fluid px-3">
+            <!-- Brand Logo -->
+            <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
+                <img src="../img/logo.png" alt="CodFlow logo" class="brand-logo" />
+            </a>
+
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon small"></span>
+            </button>
+
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link " href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link active" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Quizzes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Learning Path</a>
+                    </li>
+                </ul>
+
+                <!-- Right Controls -->
+                <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+                    <!-- Compact Search Input -->
+                    <div class="search-box position-relative">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" class="form-control form-control-sm compact-search"
+                            placeholder="Search courses, docs..." />
+                        <!-- <span class="kbd-shortcut">⌘K</span> -->
+                    </div>
+
+                    <!-- Notification Button -->
+                    <button class="icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+
+                    <!-- Profile Avatar -->
+                    <button class="profile-avatar-btn" type="button" aria-label="User Profile">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <section class="profile-workspace py-5">
+        <div class="container-fluid px-4 px-lg-5">
+
+            <!-- Top Navigation / Breadcrumb Header -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center mb-4 gap-3">
+                <div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb font-monospace fs-8 mb-1">
+                            <li class="breadcrumb-item"><a href="#" class="text-secondary text-decoration-none">Home</a>
+                            </li>
+                            <li class="breadcrumb-item"><a href="#"
+                                    class="text-secondary text-decoration-none">Developers</a></li>
+                            <li class="breadcrumb-item active text-cyan" aria-current="page">@TheaRa-dev</li>
+                        </ol>
+                    </nav>
+                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                        <h2 class="text-white fw-bold fs-3 mb-0">Developer Profile &amp; Workspace</h2>
+                        <span class="badge badge-active-status font-monospace fs-8">● Online / Active</span>
+                        <span class="badge badge-pro font-monospace fs-8">PRO MEMBER • Renews Nov 2026</span>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-2">
+                    <button
+                        class="btn btn-action px-3 py-2 rounded-3 fs-8 fw-semibold text-white d-inline-flex align-items-center gap-2">
+                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                        </svg>
+                        <span>Share Profile</span>
+                    </button>
+                    <button
+                        class="btn btn-purple-gradient px-3 py-2 rounded-3 fs-8 fw-semibold text-white d-inline-flex align-items-center gap-2">
+                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+                        </svg>
+                        <span>Edit Profile</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- LEFT SIDEBAR -->
+                <div class="col-lg-4 col-xl-3">
+                    <div class="d-flex flex-column gap-4">
+
+                        <!-- User Info Card -->
+                        <div class="dash-card p-4 rounded-4 text-center">
+                            <div class="profile-avatar-wrapper mx-auto mb-3">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+                                    alt="THEARA" class="avatar-img rounded-circle">
+                            </div>
+                            <h3 class="text-white fw-bold fs-4 mb-1">TheaRa THAT</h3>
+                            <span class="text-cyan font-monospace fs-8 d-block mb-2">@theara that_dev</span>
+                            <p class="text-secondary fs-8 mb-3">Full-Stack Learner &amp; Open Source Contributor</p>
+                            <span class="badge badge-meta font-monospace fs-9">Member since March 2024</span>
+
+                            <hr class="border-secondary-subtle my-3">
+
+                            <!-- Dev Bio -->
+                            <div class="text-start">
+                                <span class="font-monospace fs-9 text-slate text-uppercase d-block mb-1">DEV BIO</span>
+                                <p class="text-secondary fs-8 mb-0 leading-relaxed">
+                                    Building high-performance web applications with React, TypeScript, and modern CSS
+                                    architectures. Currently completing the CodFlow Full-Stack Mastery track and
+                                    contributing to developer toolkits.
+                                </p>
+                            </div>
+
+                            <hr class="border-secondary-subtle my-3">
+
+                            <!-- Stats Grid -->
+                            <div class="row g-2 text-start">
+                                <div class="col-6">
+                                    <div class="stat-box p-2 rounded-3">
+                                        <span class="font-monospace fs-9 text-slate d-block">Courses</span>
+                                        <span class="text-white fw-bold fs-5">4 Active</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="stat-box p-2 rounded-3">
+                                        <span class="font-monospace fs-9 text-slate d-block">Day Streak</span>
+                                        <span class="text-amber fw-bold fs-5">12 Days</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="stat-box p-2 rounded-3">
+                                        <span class="font-monospace fs-9 text-slate d-block">Certified</span>
+                                        <span class="text-cyan fw-bold fs-5">2 Badges</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="stat-box p-2 rounded-3">
+                                        <span class="font-monospace fs-9 text-slate d-block">Weekly</span>
+                                        <span class="text-purple fw-bold fs-5">38 Commits</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="border-secondary-subtle my-3">
+
+                            <!-- Social & Repository Links -->
+                            <div class="text-start">
+                                <span class="font-monospace fs-9 text-slate text-uppercase d-block mb-2">SOCIAL &amp;
+                                    REPOSITORY</span>
+                                <div class="d-flex flex-column gap-2 font-monospace fs-8">
+                                    <a href="#"
+                                        class="profile-link d-flex justify-content-between align-items-center text-decoration-none">
+                                        <span class="text-secondary">github.com/alex-morgan-dev</span>
+                                        <span class="text-slate">↗</span>
+                                    </a>
+                                    <a href="#"
+                                        class="profile-link d-flex justify-content-between align-items-center text-decoration-none">
+                                        <span class="text-secondary">alexmorgan.dev</span>
+                                        <span class="text-slate">↗</span>
+                                    </a>
+                                    <a href="#"
+                                        class="profile-link d-flex justify-content-between align-items-center text-decoration-none">
+                                        <span class="text-secondary">alex_dev#0912</span>
+                                        <span class="text-slate">#</span>
+                                    </a>
+                                    <a href="#"
+                                        class="profile-link d-flex justify-content-between align-items-center text-decoration-none">
+                                        <span class="text-secondary">@alex_codes</span>
+                                        <span class="text-slate">↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tier Milestone Progress -->
+                        <div class="dash-card p-4 rounded-4">
+                            <span class="font-monospace fs-9 text-slate text-uppercase d-block mb-1">TIER
+                                MILESTONE</span>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="text-white fw-bold fs-6 mb-0">Full-Stack Engineer Tier</h4>
+                                <span class="text-cyan font-monospace fw-bold fs-8">85.5%</span>
+                            </div>
+
+                            <div class="progress custom-progress mb-2">
+                                <div class="progress-bar bg-cyan-gradient" style="width: 85.5%;"></div>
+                            </div>
+
+                            <div
+                                class="d-flex justify-content-between align-items-center font-monospace fs-9 text-secondary">
+                                <span>3,420 / 4,000 XP</span>
+                                <span class="text-slate">580 XP remaining</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- MAIN CONTENT AREA -->
+                <div class="col-lg-8 col-xl-9">
+                    <div class="d-flex flex-column gap-4">
+
+                        <!-- Weekly Practice & Commit Matrix Chart -->
+                        <div class="dash-card p-4 rounded-4">
+                            <div
+                                class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center mb-3 gap-2">
+                                <div>
+                                    <h3 class="text-white fw-bold fs-5 mb-1 d-flex align-items-center gap-2">
+                                        <svg width="18" height="18" fill="currentColor" class="text-purple"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h1a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm0 4v3h4V8H6z" />
+                                        </svg>
+                                        <span>Weekly Practice &amp; Commit Matrix</span>
+                                    </h3>
+                                    <p class="text-secondary fs-8 mb-0">38 commits across algorithm challenges,
+                                        sandboxes, and lab exercises this week.</p>
+                                </div>
+
+                                <div class="d-flex align-items-center gap-3 font-monospace fs-8">
+                                    <span class="text-amber">Streak: <strong>12 Days</strong> 🔥</span>
+                                    <span class="text-secondary">Top Day: <strong>Thursday (9)</strong></span>
+                                </div>
+                            </div>
+
+                            <!-- SVG Line Chart Visual -->
+                            <div class="chart-container py-3">
+                                <svg viewBox="0 0 700 120" class="w-100 chart-svg">
+                                    <defs>
+                                        <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#c084fc" stop-opacity="0.4" />
+                                            <stop offset="100%" stop-color="#c084fc" stop-opacity="0.0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path
+                                        d="M 50,70 L 150,55 L 250,60 L 350,25 L 450,40 L 550,50 L 650,45 L 650,110 L 50,110 Z"
+                                        fill="url(#chartGradient)" />
+                                    <path d="M 50,70 L 150,55 L 250,60 L 350,25 L 450,40 L 550,50 L 650,45" fill="none"
+                                        stroke="#c084fc" stroke-width="2.5" stroke-linecap="round" />
+
+                                    <!-- Data Nodes -->
+                                    <circle cx="50" cy="70" r="4" fill="#38bdf8" />
+                                    <circle cx="150" cy="55" r="4" fill="#38bdf8" />
+                                    <circle cx="250" cy="60" r="4" fill="#38bdf8" />
+                                    <circle cx="350" cy="25" r="6" fill="#22d3ee" stroke="#ffffff" stroke-width="2" />
+                                    <circle cx="450" cy="40" r="4" fill="#38bdf8" />
+                                    <circle cx="550" cy="50" r="4" fill="#38bdf8" />
+                                    <circle cx="650" cy="45" r="4" fill="#38bdf8" />
+                                </svg>
+                            </div>
+
+                            <!-- Days Grid Bar -->
+                            <div class="row g-2 text-center font-monospace fs-8 mt-1">
+                                <div class="col">
+                                    <div class="day-card p-2 rounded-2"><span
+                                            class="text-slate d-block">Mon</span><strong class="text-white">3</strong>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="day-card p-2 rounded-2"><span
+                                            class="text-slate d-block">Tue</span><strong class="text-white">5</strong>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="day-card p-2 rounded-2"><span
+                                            class="text-slate d-block">Wed</span><strong class="text-white">4</strong>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="day-card day-active p-2 rounded-2"><span class="text-cyan d-block">Thu
+                                            ★</span><strong class="text-white">9</strong></div>
+                                </div>
+                                <div class="col">
+                                    <div class="day-card p-2 rounded-2"><span
+                                            class="text-slate d-block">Fri</span><strong class="text-white">7</strong>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="day-card p-2 rounded-2"><span
+                                            class="text-slate d-block">Sat</span><strong class="text-white">4</strong>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="day-card p-2 rounded-2"><span
+                                            class="text-slate d-block">Sun</span><strong class="text-white">6</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex justify-content-between align-items-center mt-3 font-monospace fs-8 pt-2 border-top border-secondary-subtle">
+                                <span class="text-cyan">● Thursday: 9 Commits recorded</span>
+                                <span class="text-purple">+850 XP Earned</span>
+                            </div>
+                        </div>
+
+                        <!-- Verified Skills & Competencies -->
+                        <div class="dash-card p-4 rounded-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="text-white fw-bold fs-5 mb-0 d-flex align-items-center gap-2">
+                                    <svg width="18" height="18" fill="currentColor" class="text-cyan"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01 1.026-.635.61a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l1.026-.01.61.635a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-1.026.635-.61a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-1.026.01-.61-.635zm-2.022 8.783 3.914-3.915a.75.75 0 0 1 1.06 1.06l-4.444 4.444a.75.75 0 0 1-1.06 0L5.207 9.006a.75.75 0 0 1 1.06-1.06l1.778 1.707z" />
+                                    </svg>
+                                    <span>Verified Skills &amp; Competencies</span>
+                                </h3>
+                                <span class="font-monospace fs-8 text-secondary">8 Mastered • 3 Tracks
+                                    In-Progress</span>
+                            </div>
+
+                            <!-- Skill Badges -->
+                            <div class="d-flex flex-wrap gap-2 mb-4 font-monospace fs-8">
+                                <span class="skill-tag bg-amber-subtle text-amber">JavaScript (ESNext)</span>
+                                <span class="skill-tag bg-danger-subtle text-danger">HTML5 Semantic APIs</span>
+                                <span class="skill-tag bg-primary-subtle text-primary">CSS Modern Layouts</span>
+                                <span class="skill-tag bg-cyan-subtle text-cyan">React 19 &amp; Hooks</span>
+                                <span class="skill-tag bg-purple-subtle text-purple">Git CI/CD Workflows</span>
+                            </div>
+
+                            <!-- Active Specialization Track -->
+                            <div class="track-box p-3 rounded-3">
+                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                    <span class="font-monospace fs-9 text-slate text-uppercase">ACTIVE SPECIALIZATION
+                                        TRACK</span>
+                                    <span class="text-cyan font-monospace fw-bold fs-8">75% Completed</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h4 class="text-white fw-bold fs-6 mb-0">TypeScript Enterprise Architecture</h4>
+                                    <span class="font-monospace fs-9 text-secondary">8 of 12 modules completed</span>
+                                </div>
+                                <div class="progress custom-progress mb-2">
+                                    <div class="progress-bar bg-cyan-gradient" style="width: 75%;"></div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center font-monospace fs-9">
+                                    <span class="text-secondary">Next Module: Generic Constraints &amp; Conditional
+                                        Types</span>
+                                    <a href="#" class="text-cyan text-decoration-none">Continue Track →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Enrolled Courses & Certifications -->
+                        <div class="dash-card p-4 rounded-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="text-white fw-bold fs-5 mb-0 d-flex align-items-center gap-2">
+                                    <svg width="18" height="18" fill="currentColor" class="text-purple"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                        <path
+                                            d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                    <span>Enrolled Courses &amp; Certifications</span>
+                                </h3>
+                                <a href="#" class="font-monospace fs-8 text-cyan text-decoration-none">View All
+                                    Curriculum</a>
+                            </div>
+
+                            <div class="row g-3">
+                                <!-- Course Card 1 -->
+                                <div class="col-md-4">
+                                    <div
+                                        class="course-card rounded-3 p-3 h-100 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <div class="course-thumb rounded-2 mb-2 overflow-hidden position-relative">
+                                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80"
+                                                    alt="JavaScript Fundamentals" class="w-100">
+                                                <span
+                                                    class="badge badge-in-progress position-absolute top-0 start-0 m-2 font-monospace fs-9">In
+                                                    Progress</span>
+                                            </div>
+                                            <h4 class="text-white fw-bold fs-6 mb-1">JavaScript Fundamentals</h4>
+                                            <p class="text-secondary fs-8 mb-2">Master closures, event loop, and
+                                                asynchronous JavaScript pipelines.</p>
+                                        </div>
+                                        <div>
+                                            <div
+                                                class="d-flex justify-content-between font-monospace fs-9 text-secondary mb-1">
+                                                <span>Progress</span>
+                                                <span class="text-white">75% (Lesson 06)</span>
+                                            </div>
+                                            <div class="progress custom-progress mb-3">
+                                                <div class="progress-bar bg-cyan" style="width: 75%;"></div>
+                                            </div>
+                                            <button
+                                                class="btn btn-action-sm w-100 font-monospace fs-8 text-white py-1 rounded-2">Resume
+                                                Lesson →</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Course Card 2 -->
+                                <div class="col-md-4">
+                                    <div
+                                        class="course-card rounded-3 p-3 h-100 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <div class="course-thumb rounded-2 mb-2 overflow-hidden position-relative">
+                                                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=400&q=80"
+                                                    alt="Frontend Architecture" class="w-100">
+                                                <span
+                                                    class="badge badge-in-progress position-absolute top-0 start-0 m-2 font-monospace fs-9">In
+                                                    Progress</span>
+                                            </div>
+                                            <h4 class="text-white fw-bold fs-6 mb-1">Frontend Architecture with React
+                                            </h4>
+                                            <p class="text-secondary fs-8 mb-2">State management, server components, and
+                                                production-grade hooks.</p>
+                                        </div>
+                                        <div>
+                                            <div
+                                                class="d-flex justify-content-between font-monospace fs-9 text-secondary mb-1">
+                                                <span>Progress</span>
+                                                <span class="text-white">40% (Lesson 04)</span>
+                                            </div>
+                                            <div class="progress custom-progress mb-3">
+                                                <div class="progress-bar bg-purple" style="width: 40%;"></div>
+                                            </div>
+                                            <button
+                                                class="btn btn-action-sm w-100 font-monospace fs-8 text-white py-1 rounded-2">Continue
+                                                →</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Course Card 3 -->
+                                <div class="col-md-4">
+                                    <div
+                                        class="course-card rounded-3 p-3 h-100 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <div class="course-thumb rounded-2 mb-2 overflow-hidden position-relative">
+                                                <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=400&q=80"
+                                                    alt="Git & Team Workflow" class="w-100">
+                                                <span
+                                                    class="badge badge-completed position-absolute top-0 start-0 m-2 font-monospace fs-9">Completed</span>
+                                            </div>
+                                            <h4 class="text-white fw-bold fs-6 mb-1">Git &amp; Team Workflow</h4>
+                                            <p class="text-secondary fs-8 mb-2">Interactive rebase, merge strategies,
+                                                submodules, and automated workflows.</p>
+                                        </div>
+                                        <div>
+                                            <div
+                                                class="d-flex justify-content-between font-monospace fs-9 text-secondary mb-1">
+                                                <span>Status</span>
+                                                <span class="text-green">100% Certified</span>
+                                            </div>
+                                            <div class="progress custom-progress mb-3">
+                                                <div class="progress-bar bg-green" style="width: 100%;"></div>
+                                            </div>
+                                            <button
+                                                class="btn btn-green-outline w-100 font-monospace fs-8 py-1 rounded-2">View
+                                                Certificate</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Workspace & Account Settings -->
+                        <div class="dash-card p-4 rounded-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="text-white fw-bold fs-5 mb-0 d-flex align-items-center gap-2">
+                                    <svg width="18" height="18" fill="currentColor" class="text-slate"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                                        <path
+                                            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319z" />
+                                    </svg>
+                                    <span>Workspace &amp; Account Settings</span>
+                                </h3>
+                                <span class="font-monospace fs-8 text-secondary">Quick Config</span>
+                            </div>
+
+                            <div class="row g-3 font-monospace fs-8">
+
+                                <!-- Setting 1 -->
+                                <div class="col-md-6">
+                                    <div
+                                        class="setting-box p-3 rounded-3 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="setting-icon rounded-2 p-2 bg-purple-subtle text-purple">
+                                                <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M4 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm6 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+                                                    <path
+                                                        d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zM1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9z" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="text-white fw-bold">Pro Membership</span>
+                                                    <span class="badge bg-success-subtle text-green fs-9">Active</span>
+                                                </div>
+                                                <span class="text-secondary fs-9 d-block">Renews on Nov 14, 2026</span>
+                                                <span class="text-slate fs-9">$19 / month</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="text-cyan text-decoration-none fs-9">Manage Billing →</a>
+                                    </div>
+                                </div>
+
+                                <!-- Setting 2 -->
+                                <div class="col-md-6">
+                                    <div
+                                        class="setting-box p-3 rounded-3 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="setting-icon rounded-2 p-2 bg-cyan-subtle text-cyan">
+                                                <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="text-white fw-bold">Security &amp; 2FA</span>
+                                                    <span class="badge bg-cyan-subtle text-cyan fs-9">2FA Enabled</span>
+                                                </div>
+                                                <span class="text-secondary fs-9 d-block">GitHub SSO:
+                                                    alex@codflow.dev</span>
+                                                <span class="text-slate fs-9">Last Login: Today, 10:14 AM</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="text-cyan text-decoration-none fs-9">Configure →</a>
+                                    </div>
+                                </div>
+
+                                <!-- Setting 3 -->
+                                <div class="col-md-6">
+                                    <div
+                                        class="setting-box p-3 rounded-3 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="setting-icon rounded-2 p-2 bg-slate-subtle text-slate">
+                                                <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917z" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <span class="text-white fw-bold d-block">Notifications</span>
+                                                <span class="text-secondary fs-9">Push, Discord bot &amp; weekly
+                                                    digests</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-check form-switch m-0">
+                                            <input class="form-check-input custom-switch" type="checkbox" checked>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Setting 4 -->
+                                <div class="col-md-6">
+                                    <div
+                                        class="setting-box p-3 rounded-3 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="setting-icon rounded-2 p-2 bg-purple-subtle text-purple">
+                                                <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <span class="text-white fw-bold d-block">Dark IDE Theme</span>
+                                                <span class="text-secondary fs-9">Slate 950 - Neon Violet
+                                                    Highlighter</span>
+                                            </div>
+                                        </div>
+                                        <span class="text-green fs-9">Optimized ●</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Footer Support Actions -->
+                            <div
+                                class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pt-3 mt-3 border-top border-secondary-subtle font-monospace fs-8 gap-2">
+                                <a href="#" class="text-secondary text-decoration-none">🌐 Developer Support &amp; Join
+                                    Discord Community</a>
+                                <button
+                                    class="btn btn-link text-danger text-decoration-none p-0 font-monospace fs-8 text-start">🚪
+                                    Sign Out</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodFlow - Learn to Code</title>
+  <meta name="description" content="CodFlow helps you learn to code with interactive lessons, practice, and real-world projects." />
+  <meta property="og:title" content="CodFlow - Learn to Code" />
+  <meta property="og:description" content="Interactive coding lessons, projects, and practice in one platform." />
+  <meta property="og:image" content="../img/codflow.png" />
+  <link rel="icon" type="image/png" href="../img/codflow.png" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  
+  <!-- Google Fonts (Inter & Fira Code) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="../css/git&github-course.css" />
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
+  <div class="container-fluid px-3">
+    <!-- Brand Logo -->
+    <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
+      <img src="../img/logo.png" alt="CodFlow logo" class="brand-logo" />
+    </a>
+    
+    <!-- Mobile Toggler -->
+    <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon small"></span>
+    </button>
+    
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link " href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link active" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Practice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Quizzes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#">Learning Path</a>
+        </li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <!-- Compact Search Input -->
+        <div class="search-box position-relative">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="form-control form-control-sm compact-search" placeholder="Search courses, docs..." />
+          <span class="kbd-shortcut">⌘K</span>
+        </div>
+        
+        <!-- Notification Button -->
+        <button class="icon-btn" type="button" aria-label="Notifications">
+          <i class="fa-regular fa-bell"></i>
+        </button>
+        
+              <!-- Profile Avatar -->
+        <a href="./page/profile.html" class="profile-avatar-btn" aria-label="User Profile">
+          <i class="fa-regular fa-user"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero-section py-5">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="row g-4 align-items-center">
+      
+      <!-- Left Column: Course Details -->
+      <div class="col-lg-6">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-text mb-3">
+          Courses / Developer Tools / <span class="text-cyan">Git &amp; GitHub</span>
+        </div>
+
+        <!-- Badges & Rating -->
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="badge badge-teal d-flex align-items-center gap-1">
+            <!-- SVG Git Icon -->
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M21.61 10.74l-8.35-8.35a2.4 2.4 0 0 0-3.39 0l-1.5 1.5 3.32 3.32a2.38 2.38 0 0 1 2.87 2.87l3.22 3.22a2.41 2.41 0 0 0 3.83-2.56zM8.38 5.39l-4.5 4.5a2.4 2.4 0 0 0 0 3.39l8.35 8.35a2.4 2.4 0 0 0 3.39 0l4.08-4.08-3.08-3.08a2.39 2.39 0 0 1-2.22-.59l-2.61 2.61a2.4 2.4 0 1 1-1.39-.78l2.52-2.52a2.39 2.39 0 0 1 .59-2.22L8.38 5.39z"/></svg>
+            BEGINNER
+          </span>
+          <span class="badge badge-dark">
+            <svg width="12" height="12" fill="currentColor" class="me-1" viewBox="0 0 16 16"><path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893V2.828zM8 3.087c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v8.528c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752V3.087z"/></svg>
+            8 Lessons
+          </span>
+          <span class="badge badge-rating">
+            <span class="text-warning me-1">★ 4.8</span>
+            <span class="text-secondary">(2,840 reviews)</span>
+          </span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="course-title fw-bold text-white mb-3">
+          Git &amp; GitHub <span class="text-purple-gradient">Workflow</span>
+        </h1>
+
+        <!-- Description -->
+        <p class="course-desc text-secondary mb-4">
+          Learn branches, pull requests, merge conflict resolution, team rebasing strategies, and automated CI/CD pipelines to build software like top-tier engineering squads.
+        </p>
+
+        <!-- Stats Grid -->
+        <div class="row g-2 mb-4">
+          <div class="col-6 col-sm-3">
+            <div class="stat-card p-2 rounded-3">
+              <span class="stat-label">LEVEL</span>
+              <div class="stat-value text-white"><span class="dot dot-teal"></span>Beginner</div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="stat-card p-2 rounded-3">
+              <span class="stat-label">DURATION</span>
+              <div class="stat-value text-white"><span class="text-purple">▮</span> 4–5 Hours</div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="stat-card p-2 rounded-3">
+              <span class="stat-label">PRACTICE</span>
+              <div class="stat-value text-white"><span class="text-slate">⬚</span> 16 Drills</div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="stat-card p-2 rounded-3">
+              <span class="stat-label">CAPSTONE</span>
+              <div class="stat-value text-white"><span class="text-green">◆</span> 1 Real Repo</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container p-3 rounded-3 mb-4">
+          <div class="d-flex justify-content-between align-items-center mb-2 fs-8">
+            <span class="text-secondary"><span class="dot dot-slate me-1"></span>Status: <strong class="text-white">Not Started</strong></span>
+            <span class="text-cyan fw-bold">0% Complete</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- Action Buttons & Avatars -->
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <button class="btn btn-primary-gradient px-4 py-2 rounded-3 fw-semibold">
+            Start Course <svg width="14" height="14" fill="currentColor" class="ms-1" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+          </button>
+          <button class="btn btn-dark-outline px-4 py-2 rounded-3 fw-semibold text-white">
+            <svg width="14" height="14" fill="currentColor" class="me-1" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm9 0a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/></svg>
+            View Curriculum
+          </button>
+
+          <!-- Avatar Group -->
+          <div class="d-flex align-items-center ms-lg-2">
+            <div class="avatar-group d-flex">
+              <span class="avatar avatar-1">AK</span>
+              <span class="avatar avatar-2">SL</span>
+              <span class="avatar avatar-3">MR</span>
+            </div>
+            <span class="text-secondary fs-8 ms-2">+1,420 enrolled this week</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Terminal Sandbox -->
+      <div class="col-lg-6">
+        <div class="terminal-window rounded-4 overflow-hidden">
+          
+          <!-- Terminal Header -->
+          <div class="terminal-header d-flex align-items-center justify-content-between px-3 py-2">
+            <div class="d-flex align-items-center gap-2">
+              <span class="window-dot dot-red"></span>
+              <span class="window-dot dot-yellow"></span>
+              <span class="window-dot dot-green"></span>
+            </div>
+            <div class="terminal-title text-secondary fs-8 d-flex align-items-center gap-1">
+              <svg width="12" height="12" fill="currentColor" class="text-cyan" viewBox="0 0 16 16"><path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9M3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708z"/></svg>
+              zsh — git-workflow
+            </div>
+            <div class="terminal-status fs-8 text-green d-flex align-items-center gap-1">
+              ● Repo Ready
+            </div>
+          </div>
+
+          <!-- Terminal Body / Console -->
+          <div class="terminal-body p-3 font-monospace fs-8">
+            <div class="mb-2">
+              <span class="text-cyan">➔</span> <span class="text-purple">~/projects/codflow-app</span> <span class="text-secondary">on</span> <span class="text-cyan">main</span>
+            </div>
+            
+            <div class="mb-2">
+              <span class="text-secondary">$</span> <span class="text-cyan fw-bold">git</span> init
+              <div class="text-slate ps-3">Initialized empty Git repository in /codflow-app/.git/</div>
+            </div>
+
+            <div class="mb-2">
+              <span class="text-secondary">$</span> <span class="text-cyan fw-bold">git</span> checkout -b <span class="text-purple">feature/login</span>
+              <div class="text-green ps-3">✓ Switched to a new branch 'feature/login'</div>
+            </div>
+
+            <div class="mb-2">
+              <span class="text-secondary">$</span> <span class="text-cyan fw-bold">git</span> add src/components/Auth.tsx
+            </div>
+
+            <div class="mb-2">
+              <span class="text-secondary">$</span> <span class="text-cyan fw-bold">git</span> commit -m <span class="text-slate">"feat: add OAuth2 flow &amp; session guards"</span>
+              <div class="text-slate ps-3">[feature/login 3c8e9f2] feat: add OAuth2 flow</div>
+            </div>
+
+            <div class="mb-3">
+              <span class="text-secondary">$</span> <span class="text-cyan fw-bold">git</span> push origin <span class="text-purple">feature/login</span>
+              <div class="text-green ps-3">
+                ☁ Total 4 (delta 2), Branch feature/login pushed to remote
+              </div>
+            </div>
+
+            <div>
+              <span class="text-cyan">➔</span> <span class="text-purple">~/projects/codflow-app</span> <span class="cursor-blink"></span>
+            </div>
+          </div>
+
+          <!-- Terminal Footer Status Bar -->
+          <div class="terminal-footer d-flex align-items-center justify-content-between px-3 py-2 fs-8 text-secondary">
+            <div class="d-flex gap-2">
+              <span class="badge badge-dark text-cyan">Git 2.45</span>
+              <span class="badge badge-dark text-secondary">GitHub Sync</span>
+            </div>
+            <div>UTF-8 • LF • Unix</div>
+          </div>
+
+        </div>
+
+        <!-- Sandbox Note -->
+        <div class="d-flex align-items-center justify-content-between px-2 mt-2 text-secondary fs-8">
+          <div class="d-flex align-items-center gap-1">
+            <svg width="12" height="12" fill="currentColor" class="text-purple" viewBox="0 0 16 16"><path d="M8 1.5A6.5 6.5 0 0 0 1.5 8c0 2.38 1.27 4.46 3.17 5.59a.5.5 0 0 0 .5-.865A5.5 5.5 0 1 1 13.5 8a.5.5 0 0 0 1 0A6.5 6.5 0 0 0 8 1.5z"/></svg>
+            Interactive sandbox unlocked for all 8 modules
+          </div>
+          <span class="text-uppercase fw-semibold tracking-wide text-cyan">NO INSTALL NEEDED</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="workflow-section py-5">
+  <div class="container-fluid px-4 px-lg-5">
+    
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <span class="sub-heading text-uppercase fw-semibold tracking-wider">PRODUCTION GRADE SKILLS</span>
+      <h2 class="section-title fw-bold text-white mt-2 mb-3">Master the Git &amp; GitHub Workflow</h2>
+      <p class="section-desc text-secondary mx-auto">
+        Learn how professional development teams manage code, collaborate through GitHub, resolve merge collisions safely, and run continuous testing pipelines.
+      </p>
+    </div>
+
+    <!-- 3 Cards Row -->
+    <div class="row g-4">
+      
+      <!-- Card 1: Branching Strategies -->
+      <div class="col-lg-4">
+        <div class="workflow-card h-100 p-4 p-xl-5 rounded-4 d-flex flex-column justify-content-between">
+          <div>
+            <!-- Icon -->
+            <div class="card-icon icon-green mb-4">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M7 1a1 1 0 0 1 1 1v2.083A6.002 6.002 0 0 1 13 10h1a1 1 0 0 1 0 2h-1a6 6 0 0 1-5 2.917V15a1 1 0 1 1-2 0v-.083A6 6 0 0 1 2 10H1a1 1 0 0 1 0-2h1a6.002 6.002 0 0 1 5-5.917V2a1 1 0 0 1 1-1m-4 9a4 4 0 0 0 4 4v-2a2 2 0 0 1-2-2zm8 0a4 4 0 0 0-4 4v-2a2 2 0 0 1 2-2z"/>
+              </svg>
+            </div>
+            <!-- Content -->
+            <h3 class="card-title text-white fw-bold fs-4 mb-3">Branching Strategies</h3>
+            <p class="card-text text-secondary fs-7 mb-4">
+              Create and manage branches safely for new features, hotfixes, and parallel releases without corrupting the production mainline.
+            </p>
+          </div>
+          <!-- Link -->
+          <a href="#" class="card-link link-cyan text-decoration-none fs-8 fw-semibold d-inline-flex align-items-center gap-2">
+            Git Flow, Trunk-based &amp; Feature Flags ➔
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2: Team Collaboration -->
+      <div class="col-lg-4">
+        <div class="workflow-card h-100 p-4 p-xl-5 rounded-4 d-flex flex-column justify-content-between">
+          <div>
+            <!-- Icon -->
+            <div class="card-icon icon-blue mb-4">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H4a.5.5 0 0 1 .47.32l1.601 4.502L7.67 3.32A.5.5 0 0 1 8.14 3h3.86a.5.5 0 0 1 0 1H8.38l-1.87 5.25a.5.5 0 0 1-.94 0L3.97 4H.5a.5.5 0 0 1-.5-.5M11.5 12h-3.86a.5.5 0 0 1-.47-.32l-1.6-4.502L3.9 12.68A.5.5 0 0 1 3.43 13H.5a.5.5 0 0 1 0-1h2.93l1.87-5.25a.5.5 0 0 1 .94 0l1.6 4.502L9.57 6.32a.5.5 0 0 1 .47-.32h3.86a.5.5 0 0 1 0 1h-3.43l-1.67 4.68a.5.5 0 0 1-.47.32"/>
+              </svg>
+            </div>
+            <!-- Content -->
+            <h3 class="card-title text-white fw-bold fs-4 mb-3">Team Collaboration</h3>
+            <p class="card-text text-secondary fs-7 mb-4">
+              Use pull requests, multi-reviewer code checks, atomic branch reviews, and automated commit hooks to build software collaboratively.
+            </p>
+          </div>
+          <!-- Link -->
+          <a href="#" class="card-link link-purple text-decoration-none fs-8 fw-semibold d-inline-flex align-items-center gap-2">
+            PR Reviews &amp; Resolution Protocols ➔
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3: CI/CD Automation -->
+      <div class="col-lg-4">
+        <div class="workflow-card h-100 p-4 p-xl-5 rounded-4 d-flex flex-column justify-content-between">
+          <div>
+            <!-- Icon -->
+            <div class="card-icon icon-amber mb-4">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641z"/>
+              </svg>
+            </div>
+            <!-- Content -->
+            <h3 class="card-title text-white fw-bold fs-4 mb-3">CI/CD Automation</h3>
+            <p class="card-text text-secondary fs-7 mb-4">
+              Understand the fundamentals of automated testing, PR action checks, Docker build triggers, and auto-deployments with GitHub Actions.
+            </p>
+          </div>
+          <!-- Link -->
+          <a href="#" class="card-link link-blue text-decoration-none fs-8 fw-semibold d-inline-flex align-items-center gap-2">
+            GitHub Actions &amp; YAML Workflows ➔
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="git-state-machine py-5">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="state-container p-4 p-xl-5 rounded-4">
+      
+      <!-- Top Header -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4 gap-3">
+        <div>
+          <span class="sub-heading text-uppercase fw-semibold tracking-wider">LIFECYCLE ARCHITECTURE</span>
+          <h2 class="section-title fw-bold text-white mt-1 mb-2">Interactive Git State Machine</h2>
+          <p class="section-desc text-secondary mb-0">
+            Track how code files transition through memory zones to remote repositories.
+          </p>
+        </div>
+        <div class="badge badge-live d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill">
+          <span class="dot dot-green"></span>
+          <span>Live State Explorer</span>
+        </div>
+      </div>
+
+      <!-- 4 Memory Zones Cards -->
+      <div class="row g-3 mb-4">
+        
+        <!-- 01. Workspace -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="state-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="step-num">01. WORKSPACE</span>
+                <!-- Folder Icon -->
+                <svg width="18" height="18" class="text-cyan" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M.5 3l.04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H13.174a2 2 0 0 0 1.991-1.819l.637-7A1.99 1.99 0 0 0 15.46 3.87L15.5 3H.5zM2 4h12v1H2V4z"/>
+                </svg>
+              </div>
+              <h3 class="card-title text-white fw-bold fs-5 mb-2">Working Directory</h3>
+              <p class="card-desc text-secondary fs-7 mb-4">
+                Untracked or modified files on disk.
+              </p>
+            </div>
+            <button class="btn btn-action w-100 d-flex align-items-center justify-content-between px-3 py-2 rounded-3 text-cyan font-monospace fs-8">
+              <span>git add .</span>
+              <span class="arrow">➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 02. Index -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="state-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="step-num">02. INDEX</span>
+                <!-- Checklist Icon -->
+                <svg width="18" height="18" class="text-purple" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                  <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                </svg>
+              </div>
+              <h3 class="card-title text-white fw-bold fs-5 mb-2">Staging Area</h3>
+              <p class="card-desc text-secondary fs-7 mb-4">
+                Snapshot of changes prepared for the next commit.
+              </p>
+            </div>
+            <button class="btn btn-action w-100 d-flex align-items-center justify-content-between px-3 py-2 rounded-3 text-cyan font-monospace fs-8">
+              <span>git commit</span>
+              <span class="arrow">➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 03. Local Storage -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="state-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="step-num">03. LOCAL STORAGE</span>
+                <!-- Database Icon -->
+                <svg width="18" height="18" class="text-blue" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                  <path d="M5 4h6v1H5V4zm0 3h6v1H5V7zm0 3h4v1H5v-1z"/>
+                </svg>
+              </div>
+              <h3 class="card-title text-white fw-bold fs-5 mb-2">Local Repository</h3>
+              <p class="card-desc text-secondary fs-7 mb-4">
+                Committed commits locked into the local .git database.
+              </p>
+            </div>
+            <button class="btn btn-action w-100 d-flex align-items-center justify-content-between px-3 py-2 rounded-3 text-cyan font-monospace fs-8">
+              <span>git push</span>
+              <span class="arrow">➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 04. Cloud Origin -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="state-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="step-num">04. CLOUD ORIGIN</span>
+                <!-- Cloud Icon -->
+                <svg width="18" height="18" class="text-green" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M4.406 3.342A5.53 5.5 0 0 1 8 2c2.69 0 4.923 1.93 5.365 4.502a5.13 5.13 0 0 1 2.378 2.062A4.5 4.5 0 0 1 11.5 15h-7a4.5 4.5 0 0 1-.5-8.972 6.028 6.028 0 0 1 0-2.686z"/>
+                </svg>
+              </div>
+              <h3 class="card-title text-white fw-bold fs-5 mb-2">GitHub Remote</h3>
+              <p class="card-desc text-secondary fs-7 mb-4">
+                Shared cloud origin where PRs and team reviews occur.
+              </p>
+            </div>
+            <button class="btn btn-action w-100 d-flex align-items-center justify-content-between px-3 py-2 rounded-3 text-green font-monospace fs-8">
+              <span>PR Merge</span>
+              <!-- Check Icon -->
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Lifecycle Banner -->
+      <div class="lifecycle-banner p-3 rounded-3 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 font-monospace fs-8">
+        <div class="d-flex flex-wrap align-items-center gap-2 text-center text-md-start">
+          <span class="text-cyan">Working Dir</span>
+          <span class="text-secondary">--add➔</span>
+          <span class="text-cyan">Staged</span>
+          <span class="text-secondary">--commit➔</span>
+          <span class="text-cyan">Local Repo</span>
+          <span class="text-secondary">--push➔</span>
+          <span class="text-cyan">Remote</span>
+          <span class="text-secondary">--PR➔</span>
+          <span class="text-cyan">Production Main</span>
+        </div>
+        <div class="text-secondary">
+          Synced via SHA-1 Hashes
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="practice-section py-5">
+  <div class="container-fluid px-4 px-lg-5">
+    
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <span class="sub-heading text-uppercase fw-semibold tracking-wider">HANDS-ON SIMULATION</span>
+      <h2 class="section-title fw-bold text-white mt-2 mb-3">Practice Git Commands</h2>
+      <p class="section-desc text-secondary mx-auto">
+        Learn Git by executing real commands in an emulated CLI sandbox without breaking local repos.
+      </p>
+    </div>
+
+    <!-- Main Sandbox Container -->
+    <div class="sandbox-container rounded-4 overflow-hidden mx-auto">
+      
+      <!-- Top Navigation Header -->
+      <div class="sandbox-header d-flex flex-column flex-sm-row justify-content-between align-items-sm-center p-3 px-4 gap-3">
+        <!-- Drill Tabs -->
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn btn-tab active px-3 py-2 rounded-3 fs-8 fw-semibold">
+            Drill 1: Branch Creation
+          </button>
+          <button class="btn btn-tab px-3 py-2 rounded-3 fs-8 fw-semibold text-secondary">
+            Drill 2: Push to GitHub
+          </button>
+        </div>
+
+        <!-- Emulated CLI Status -->
+        <div class="cli-status fs-8 text-cyan d-flex align-items-center gap-2">
+          <span class="dot dot-cyan"></span>
+          <span>Emulated Git CLI v2.45</span>
+        </div>
+      </div>
+
+      <!-- Challenge Instruction Sub-header -->
+      <div class="challenge-header d-flex flex-column flex-md-row justify-content-between align-items-md-center p-4 gap-3">
+        <div>
+          <span class="challenge-num text-uppercase font-monospace fs-8">CHALLENGE 01 OF 02</span>
+          <h3 class="text-white fw-bold fs-5 mt-1 mb-2">Create a new branch called feature/navbar</h3>
+          <p class="text-secondary fs-7 mb-0">
+            Use the checkout flag that creates and switches into the target branch atomically.
+          </p>
+        </div>
+
+        <!-- Run Command Button -->
+        <div class="flex-shrink-0">
+          <button class="btn btn-run px-4 py-2 rounded-3 text-white fw-semibold d-inline-flex align-items-center gap-2">
+            <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+              <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+            </svg>
+            <span>Run Command</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Terminal Body -->
+      <div class="terminal-body p-4 p-md-5 font-monospace fs-8">
+        <div class="command-line mb-3">
+          <span class="text-cyan">student@codflow-box</span>
+          <span class="text-secondary">:</span>
+          <span class="text-purple">~/workspace</span>
+          <span class="text-secondary">$</span>
+          <span class="text-white fw-bold ms-2">git checkout -b feature/navbar</span>
+        </div>
+
+        <div class="terminal-hint text-slate italic">
+          // Click "Run Command" above to execute this instruction in the virtual container...
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="curriculum-section py-5">
+  <div class="container-fluid px-4 px-lg-5">
+    
+    <!-- Section Header -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4 gap-3">
+      <div>
+        <span class="sub-heading text-uppercase fw-semibold tracking-wider">DETAILED SYLLABUS</span>
+        <h2 class="section-title fw-bold text-white mt-1 mb-1">Course Curriculum</h2>
+        <p class="section-desc text-secondary mb-0 fs-8 font-monospace">
+          8 lessons • Beginner level • 4–5 Hours Total with interactive terminal drills
+        </p>
+      </div>
+      <div class="badge badge-unlocked d-inline-flex align-items-center gap-2 px-3 py-2 rounded-3">
+        <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-2zM3 5a2 2 0 0 1 2-2h3a1 1 0 0 1 0 2H5a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 1 2 0v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5z"/>
+        </svg>
+        <span>Lesson 1 Unlocked</span>
+      </div>
+    </div>
+
+    <!-- Curriculum List -->
+    <div class="d-flex flex-column gap-3">
+
+      <!-- Lesson 01 (Active) -->
+      <div class="lesson-card active-card p-3 p-md-4 rounded-4 d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+          <div class="lesson-number active-number rounded-3 d-flex align-items-center justify-content-center fw-bold">
+            01
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="badge badge-active text-uppercase fs-9">● ACTIVE LESSON</span>
+              <span class="text-secondary font-monospace fs-8">30 min</span>
+            </div>
+            <h3 class="lesson-title text-white fw-bold fs-5 mb-1">Git Fundamentals</h3>
+            <p class="lesson-desc text-secondary fs-7 mb-0">
+              Core version control logic, Initializing your first repository, understanding internal hashing, and staging mechanics.
+            </p>
+          </div>
+        </div>
+        <div class="flex-shrink-0 ms-2">
+          <button class="btn btn-cyan-gradient px-3 py-2 rounded-3 fw-semibold fs-8 d-inline-flex align-items-center gap-1 text-nowrap">
+            <span>Start Lesson</span>
+            <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Lesson 02 (Locked) -->
+      <div class="lesson-card locked-card p-3 p-md-4 rounded-4 d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+          <div class="lesson-number locked-number rounded-3 d-flex align-items-center justify-content-center fw-bold">
+            02
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1 font-monospace fs-8 text-secondary">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+              </svg>
+              <span>LOCKED</span>
+              <span>35 min</span>
+            </div>
+            <h3 class="lesson-title text-white fw-bold fs-5 mb-1">Git Status, Add &amp; Commit</h3>
+            <p class="lesson-desc text-secondary fs-7 mb-0">
+              Inspecting modified files with git diff, stage targeting, writing atomic semantic commit messages conforming to Conventional Commits.
+            </p>
+          </div>
+        </div>
+        <div class="flex-shrink-0 text-secondary fs-8 font-monospace d-none d-sm-flex align-items-center gap-1">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+          </svg>
+          <span>Requires Lesson 1</span>
+        </div>
+      </div>
+
+      <!-- Lesson 03 (Locked) -->
+      <div class="lesson-card locked-card p-3 p-md-4 rounded-4 d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+          <div class="lesson-number locked-number rounded-3 d-flex align-items-center justify-content-center fw-bold">
+            03
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1 font-monospace fs-8 text-secondary">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+              </svg>
+              <span>LOCKED</span>
+              <span>40 min</span>
+            </div>
+            <h3 class="lesson-title text-white fw-bold fs-5 mb-1">Branches &amp; Merging</h3>
+            <p class="lesson-desc text-secondary fs-7 mb-0">
+              Pointer manipulations, fast-forward merges, three-way recursive merges, safe branch deletion, and git switch vs checkout.
+            </p>
+          </div>
+        </div>
+        <div class="flex-shrink-0 text-secondary fs-8 font-monospace d-none d-sm-flex align-items-center gap-1">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+          </svg>
+          <span>Requires Lesson 2</span>
+        </div>
+      </div>
+
+      <!-- Lesson 04 (Locked) -->
+      <div class="lesson-card locked-card p-3 p-md-4 rounded-4 d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+          <div class="lesson-number locked-number rounded-3 d-flex align-items-center justify-content-center fw-bold">
+            04
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1 font-monospace fs-8 text-secondary">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+              </svg>
+              <span>LOCKED</span>
+              <span>45 min</span>
+            </div>
+            <h3 class="lesson-title text-white fw-bold fs-5 mb-1">GitHub &amp; Remote Repositories</h3>
+            <p class="lesson-desc text-secondary fs-7 mb-0">
+              Configuring SSH keys, managing upstream remotes, tracking branches, difference between git fetch vs git pull.
+            </p>
+          </div>
+        </div>
+        <div class="flex-shrink-0 text-secondary fs-8 font-monospace d-none d-sm-flex align-items-center gap-1">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+          </svg>
+          <span>Requires Lesson 3</span>
+        </div>
+      </div>
+
+      <!-- Lesson 05 (Locked) -->
+      <div class="lesson-card locked-card p-3 p-md-4 rounded-4 d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+          <div class="lesson-number locked-number rounded-3 d-flex align-items-center justify-content-center fw-bold">
+            05
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1 font-monospace fs-8 text-secondary">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+              </svg>
+              <span>LOCKED</span>
+              <span>45 min</span>
+            </div>
+            <h3 class="lesson-title text-white fw-bold fs-5 mb-1">Pull Requests &amp; Code Review</h3>
+            <p class="lesson-desc text-secondary fs-7 mb-0">
+              Drafting high-context PR templates, reviewing inline diffs, requested alterations, and collaborative review sign-offs.
+            </p>
+          </div>
+        </div>
+        <div class="flex-shrink-0 text-secondary fs-8 font-monospace d-none d-sm-flex align-items-center gap-1">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+          </svg>
+          <span>Requires Lesson 4</span>
+        </div>
+      </div>
+
+      <!-- Lesson 06 (Locked) -->
+      <div class="lesson-card locked-card p-3 p-md-4 rounded-4 d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+          <div class="lesson-number locked-number rounded-3 d-flex align-items-center justify-content-center fw-bold">
+            06
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1 font-monospace fs-8 text-secondary">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+              </svg>
+              <span>LOCKED</span>
+              <span>50 min</span>
+            </div>
+            <h3 class="lesson-title text-white fw-bold fs-5 mb-1">Merge Conflict Resolution</h3>
+            <p class="lesson-desc text-secondary fs-7 mb-0">
+              Reading conflict markers (&lt;&lt;&lt;&lt;, ====, &gt;&gt;&gt;&gt;), aborting merges, handling collision flags, and visual VS Code conflict solvers.
+            </p>
+          </div>
+        </div>
+        <div class="flex-shrink-0 text-secondary fs-8 font-monospace d-none d-sm-flex align-items-center gap-1">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+          </svg>
+          <span>Requires Lesson 5</span>
+        </div>
+      </div>
+
+      <!-- Lesson 07 (Locked) -->
+      <div class="lesson-card locked-card p-3 p-md-4 rounded-4 d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+          <div class="lesson-number locked-number rounded-3 d-flex align-items-center justify-content-center fw-bold">
+            07
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1 font-monospace fs-8 text-secondary">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+              </svg>
+              <span>LOCKED</span>
+              <span>40 min</span>
+            </div>
+            <h3 class="lesson-title text-white fw-bold fs-5 mb-1">Team Rebasing Strategies</h3>
+            <p class="lesson-desc text-secondary fs-7 mb-0">
+              Comparing git rebase vs git merge, squash rebase procedures, golden rules of public history rewrites, and commit sanitization.
+            </p>
+          </div>
+        </div>
+        <div class="flex-shrink-0 text-secondary fs-8 font-monospace d-none d-sm-flex align-items-center gap-1">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+          </svg>
+          <span>Requires Lesson 6</span>
+        </div>
+      </div>
+
+      <!-- Lesson 08 (Locked) -->
+      <div class="lesson-card locked-card p-3 p-md-4 rounded-4 d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+          <div class="lesson-number locked-number rounded-3 d-flex align-items-center justify-content-center fw-bold">
+            08
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1 font-monospace fs-8 text-secondary">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+              </svg>
+              <span>LOCKED</span>
+              <span>45 min</span>
+            </div>
+            <h3 class="lesson-title text-white fw-bold fs-5 mb-1">Introduction to CI/CD with GitHub Actions</h3>
+            <p class="lesson-desc text-secondary fs-7 mb-0">
+              Writing .github/workflows YAML scripts, automatic pull-request linting, test execution runs, and deployment webhooks.
+            </p>
+          </div>
+        </div>
+        <div class="flex-shrink-0 text-secondary fs-8 font-monospace d-none d-sm-flex align-items-center gap-1">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 0-2 2v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zm1 6V3a1 1 0 0 0-2 0v4h2z"/>
+          </svg>
+          <span>Requires Lesson 7</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="outcomes-section py-5">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="row g-4">
+
+      <!-- Left Card: What You Will Learn -->
+      <div class="col-lg-7">
+        <div class="outcomes-card p-4 p-md-5 rounded-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <span class="sub-heading text-uppercase font-monospace">OUTCOMES &amp; CRITERIA</span>
+            <h2 class="card-title text-white fw-bold fs-3 mt-1 mb-4">What You Will Learn</h2>
+
+            <!-- Grid Checklist -->
+            <div class="row g-3">
+              <!-- Column 1 -->
+              <div class="col-md-6 d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Understand Git fundamentals</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Track file changes precisely</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Work with parallel branches</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Push and pull from GitHub</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Review code with teammates</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Understand rebase workflows</span>
+                </div>
+              </div>
+
+              <!-- Column 2 -->
+              <div class="col-md-6 d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Create and manage repositories</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Create meaningful atomic commits</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Merge branches safely</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Create actionable pull requests</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Resolve merge conflicts</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="check-icon text-cyan flex-shrink-0">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-light-slate fs-7">Understand basic CI/CD pipelines</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Card: Skill Mastery Targets -->
+      <div class="col-lg-5">
+        <div class="outcomes-card p-4 p-md-5 rounded-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <span class="sub-heading text-uppercase font-monospace">CURRICULUM WEIGHT</span>
+            <h2 class="card-title text-white fw-bold fs-3 mt-1 mb-1">Skill Mastery Targets</h2>
+            <p class="text-secondary fs-8 mb-4">Target skill proficiency upon course completion.</p>
+
+            <!-- Skill Progress Bars -->
+            <div class="d-flex flex-column gap-3 font-monospace">
+
+              <!-- Skill 1 -->
+              <div>
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <span class="text-white">Git Basics &amp; Local Commits</span>
+                  <span class="text-cyan">90%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-cyan" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div>
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <span class="text-white">Branching &amp; Tree Operations</span>
+                  <span class="text-purple">60%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-purple" style="width: 60%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div>
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <span class="text-white">GitHub Remotes &amp; Collaboration</span>
+                  <span class="text-light-blue">50%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-light-blue" style="width: 50%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 4 -->
+              <div>
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <span class="text-white">Pull Requests &amp; Conflict Solving</span>
+                  <span class="text-cyan">30%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-cyan" style="width: 30%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 5 -->
+              <div>
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <span class="text-white">CI/CD &amp; Automated Pipeline Triggers</span>
+                  <span class="text-amber">15%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-amber" style="width: 15%;"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Footer Note Box -->
+          <div class="verification-box rounded-3 p-3 mt-4 d-flex align-items-center gap-3">
+            <svg class="text-cyan flex-shrink-0" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+            <span class="text-secondary font-monospace fs-8">
+              Verified skills recorded on your CodFlow developer profile.
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer-section pt-5 pb-4">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="row g-4 pb-4">
+
+      <!-- Column 1: Brand & Description -->
+      <div class="col-lg-4 col-md-12 mb-3 mb-lg-0">
+        <!-- Logo -->
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="text-cyan font-monospace fw-bold fs-5">&lt; / &gt;</span>
+          <span class="text-white fw-bold fs-4">CodFlow</span>
+        </div>
+
+        <p class="brand-desc text-secondary fs-7 mb-4">
+          An interactive high-performance developer workspace crafted for focused technical learning, algorithm practice, and production-ready portfolio builds.
+        </p>
+
+        <!-- Social Media Buttons -->
+        <div class="d-flex align-items-center gap-2">
+          <!-- YouTube -->
+          <a href="#" class="btn btn-social btn-youtube rounded-2 d-inline-flex align-items-center justify-content-center" aria-label="YouTube">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022 1.085.006.767-.006.767-.022 1.085-.01.104c-.048.519-.119 1.023-.22 1.402a2.007 2.007 0 0 1-1.415 1.42c-1.123.303-5.288.333-6.11.335h-.089c-.822-.003-4.987-.033-6.11-.335a2.01 2.01 0 0 1-1.415-1.42c-.101-.38-.172-.883-.22-1.402l-.01-.104-.022-1.085L0 8l.006-.767.022-1.085.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c1.123-.303 5.288-.333 6.11-.335zM6.54 5.093v5.814l5.217-2.907L6.54 5.093z"/>
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a href="#" class="btn btn-social btn-facebook rounded-2 d-inline-flex align-items-center justify-content-center" aria-label="Facebook">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+          </a>
+
+          <!-- Telegram -->
+          <a href="#" class="btn btn-social btn-telegram rounded-2 d-inline-flex align-items-center justify-content-center" aria-label="Telegram">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM12.193 4.218a.333.333 0 0 0-.342-.036L2.614 7.828a.333.333 0 0 0 .012.613l2.457.818 1.05 3.327a.333.333 0 0 0 .584.095l1.62-1.92 2.65 1.954a.333.333 0 0 0 .521-.2l1.68-8.3z"/>
+            </svg>
+          </a>
+
+          <!-- TikTok -->
+          <a href="#" class="btn btn-social btn-tiktok rounded-2 d-inline-flex align-items-center justify-content-center" aria-label="TikTok">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5c.28 0 .55.023.81.067V8.14A3 3 0 1 0 9 11V0z"/>
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="#" class="btn btn-social btn-instagram rounded-2 d-inline-flex align-items-center justify-content-center" aria-label="Instagram">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a3.109 3.109 0 1 0 0 6.217 3.109 3.109 0 0 0 0-6.217zm0 1.441a1.668 1.668 0 1 1 0 3.335 1.668 1.668 0 0 1 0-3.335z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Curriculum -->
+      <div class="col-6 col-sm-3 col-lg-2">
+        <h6 class="footer-title text-uppercase font-monospace mb-3">CURRICULUM</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 fs-7 mb-0">
+          <li><a href="#" class="footer-link">Courses</a></li>
+          <li><a href="#" class="footer-link">Practice</a></li>
+          <li><a href="#" class="footer-link">Learning Path</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Evaluation -->
+      <div class="col-6 col-sm-3 col-lg-2">
+        <h6 class="footer-title text-uppercase font-monospace mb-3">EVALUATION</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 fs-7 mb-0">
+          <li><a href="#" class="footer-link">Quizzes</a></li>
+          <li><a href="#" class="footer-link">Projects</a></li>
+          <li><a href="#" class="footer-link">Certifications</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Platform -->
+      <div class="col-6 col-sm-3 col-lg-2">
+        <h6 class="footer-title text-uppercase font-monospace mb-3">PLATFORM</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 fs-7 mb-0">
+          <li><a href="#" class="footer-link">About</a></li>
+          <li><a href="#" class="footer-link">Contact</a></li>
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5: System -->
+      <div class="col-6 col-sm-3 col-lg-2">
+        <h6 class="footer-title text-uppercase font-monospace mb-3">SYSTEM</h6>
+        <div class="d-flex flex-column gap-2 font-monospace fs-8">
+          <div class="d-flex align-items-center gap-2 text-green">
+            <span class="dot dot-green"></span>
+            <span>Kernels Online</span>
+          </div>
+          <span class="text-slate">v2.4.0-stable</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Border & Copyright Bar -->
+    <div class="footer-bottom pt-4 border-top border-secondary-subtle d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+      <span class="text-secondary fs-7">
+        © 2025 CodFlow Dev Systems Inc. All rights reserved.
+      </span>
+      <div class="d-flex align-items-center gap-4 fs-7">
+        <a href="#" class="footer-link">Terms</a>
+        <a href="#" class="footer-link">Telemetry</a>
+        <a href="#" class="footer-link">Status</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
