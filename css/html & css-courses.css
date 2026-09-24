@@ -263,6 +263,61 @@ h2 {
   border: 1px solid #2d3b5c;
 }
 
+.btn-primary-custom,
+.btn-outline-custom,
+.mini-btn,
+.continue-btn,
+.progress-card,
+.code-window,
+.outcome-card,
+.lesson,
+.skills-grid > div,
+.mastery-card,
+.telemetry-card,
+.project-card,
+.metric {
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.btn-primary-custom:hover,
+.btn-outline-custom:hover,
+.mini-btn:hover,
+.continue-btn:hover,
+.progress-card:hover,
+.code-window:hover,
+.outcome-card:hover,
+.lesson:hover,
+.skills-grid > div:hover,
+.mastery-card:hover,
+.telemetry-card:hover,
+.project-card:hover,
+.metric:hover {
+  transform: translateY(-3px);
+  border-color: #526da8;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+.btn-primary-custom:hover,
+.btn-outline-custom:hover,
+.mini-btn:hover,
+.continue-btn:hover {
+  color: #ffffff;
+}
+
+.lesson.locked:hover {
+  opacity: 0.9;
+}
+
+.tech {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.tech:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+}
+
 /* Code card */
 .code-window {
   background: #111625;
@@ -280,6 +335,14 @@ h2 {
   background: #0c0f1a;
   border-bottom: 1px solid #1e2638;
   font: 0.8rem 'Fira Code', monospace;
+}
+
+.course-preview-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
 }
 
 .dots { display: flex; gap: 4px; }
