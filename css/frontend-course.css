@@ -151,82 +151,191 @@ body {
 /* ==========================================
    3. HERO SECTION STYLES
    ========================================== */
-.hero-section {
+/* --- React Course Hero / Banner Section --- */
+.react-course-hero-section {
   background-color: #0a0d18;
   color: #ffffff;
 }
 
-.badge-intermediate {
-  background-color: #0c2d38;
-  color: #38bdf8;
-  font-size: 0.65rem;
-  letter-spacing: 0.5px;
-  padding: 0.35em 0.65em;
-  border-radius: 4px;
+/* Badge Top Tag */
+.path-badge {
+  background-color: rgba(128, 117, 229, 0.12);
+  color: #a29bfe;
+  border: 1px solid rgba(128, 117, 229, 0.25);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+  padding: 4px 14px;
+  border-radius: 6px;
 }
 
-.badge-path {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #a5b4fc;
-  font-weight: 400;
-  padding: 0.4em 0.8em;
-  border-radius: 20px;
+/* Title & Description */
+.course-main-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.text-cyan {
+  color: #00cec9;
+}
+
+.course-main-desc {
+  color: #8e9bb0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Metadata Bar */
+.course-meta-bar {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: #8e9bb0;
+}
+
+.meta-item {
   display: inline-flex;
   align-items: center;
 }
 
-.status-dot {
-  width: 6px;
-  height: 6px;
-  background-color: #22c55e;
-  border-radius: 50%;
-  display: inline-block;
+.text-warning-star {
+  color: #f1c40f;
 }
 
-.progress-card {
-  background-color: #111827;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.text-muted-meta {
+  color: #58637a;
+}
+
+/* Progress Card */
+.course-progress-card {
+  background-color: #121829;
+  border: 1px solid #1e273c;
+  border-radius: 10px;
+}
+
+.font-mono {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+}
+
+.progress-title {
+  color: #8e9bb0;
+  font-weight: 600;
+}
+
+.lessons-status {
+  color: #a29bfe;
 }
 
 .custom-progress {
   height: 6px;
-  background-color: #1f2937;
+  background-color: #1a2235;
   border-radius: 10px;
+  overflow: hidden;
 }
 
-.custom-progress-bar {
-  background: linear-gradient(90deg, #818cf8, #38bdf8);
-  border-radius: 10px;
+.bg-gradient-blue {
+  background: linear-gradient(90deg, #a29bfe 0%, #0984e3 100%) !important;
 }
 
-/* Buttons */
-.btn-gradient {
-  background: linear-gradient(90deg, #818cf8 0%, #3b82f6 100%);
-  color: #ffffff !important;
+/* Action Buttons */
+.btn-continue-learning {
+  background: linear-gradient(135deg, #a29bfe 0%, #0984e3 100%);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 12px 24px;
+  border-radius: 8px;
   border: none;
+  box-shadow: 0 4px 18px rgba(9, 132, 227, 0.35);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-continue-learning:hover {
+  opacity: 0.95;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-view-curriculum {
+  background-color: rgba(255, 255, 255, 0.03);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 12px 22px;
   border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
-  transition: opacity 0.2s ease;
+  border: 1px solid #1e2638;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
 }
 
-.btn-gradient:hover {
-  opacity: 0.9;
+.btn-view-curriculum:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #314269;
+  color: #ffffff;
 }
 
-.btn-dark-custom {
-  background-color: #1f2937;
-  color: #e5e7eb !important;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  transition: background-color 0.2s ease;
+/* Image Column & Floating Tech Overlay */
+.course-image-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #1e2638;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.btn-dark-custom:hover {
-  background-color: #374151;
-  color: #ffffff !important;
+.course-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
+/* Tech Stack Icons Overlay */
+.tech-stack-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(10, 13, 24, 0) 0%, rgba(10, 13, 24, 0.85) 100%);
+  backdrop-filter: blur(4px);
+}
+
+.tech-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.icon-html {
+  background-color: #e44d26;
+  color: #ffffff;
+}
+
+.icon-css {
+  background-color: #1572b6;
+  color: #ffffff;
+}
+
+.icon-js {
+  background-color: #f7df1e;
+  color: #000000;
+}
+
+.icon-react {
+  background-color: #00d8ff;
+  color: #000000;
+}
 /* ==========================================
    4. CODE EDITOR MOCKUP
    ========================================== */
@@ -626,120 +735,122 @@ body {
   border-top: 1px solid #1a2233;
 }
 
-/* Brand Header */
-.footer-brand .brand-brackets {
-  color: #74b9ff;
-  font-family: 'Fira Code', monospace;
-  font-weight: 700;
-  font-size: 1.2rem;
+
+
+/* Background & Typography */
+.footer-section {
+  background-color: #060913;
+  color: #94a3b8;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  padding-top: 1.25rem !important;
+  padding-bottom: 0.9rem !important;
 }
 
-.footer-brand .brand-text {
+.brand-desc {
+  max-width: 340px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.footer-title {
+  color: #94a3b8;
+  font-size: 0.72rem;
+  letter-spacing: 1.2px;
+}
+
+.fs-7 {
+  font-size: 0.88rem;
+}
+
+.fs-8 {
+  font-size: 0.78rem;
+}
+
+.text-cyan { color: #38bdf8; }
+.text-green { color: #22c55e; }
+.text-slate { color: #64748b; }
+
+/* Social Media Custom Colors */
+.btn-social {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
   color: #ffffff;
-  font-size: 1.35rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-}
-
-.footer-bio {
-  color: #8e9bb0;
-  font-size: 0.875rem;
-  line-height: 1.6;
-  max-width: 360px;
-}
-
-/* Social Buttons */
-.footer-social-btn {
-  width: 36px;
-  height: 36px;
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid #1e2638;
-  border-radius: 8px;
-  color: #8e9bb0;
-  display: flex;
+  border: none;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.85rem;
-  text-decoration: none;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.16), 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
-.footer-social-btn:hover {
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: #2e3a54;
+.btn-social:hover {
+  opacity: 1;
   color: #ffffff;
+  transform: translateY(-2px);
 }
 
-/* Navigation Headings & Links */
-.footer-heading {
-  color: #58637a;
-  font-family: 'Fira Code', monospace;
-  font-size: 0.725rem;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  margin-bottom: 18px;
-  text-transform: uppercase;
+.btn-social svg {
+  width: 22px;
+  height: 22px;
+  display: block;
 }
 
-.footer-links li {
-  margin-bottom: 12px;
+.btn-youtube {
+  background: linear-gradient(180deg, #ff2a2a 0%, #f60000 100%);
 }
 
-.footer-links a {
-  color: #8e9bb0;
+.btn-facebook {
+  background: linear-gradient(180deg, #2d7ff9 0%, #1769d1 100%);
+}
+
+.btn-telegram {
+  background: linear-gradient(180deg, #31b4ff 0%, #1d9ce1 100%);
+}
+
+.btn-tiktok {
+  background: linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
+  color: #000000;
+}
+
+.btn-tiktok:hover {
+  color: #000000;
+}
+
+.btn-instagram {
+  background: linear-gradient(135deg, #f9c74f 0%, #f9844a 18%, #d9436a 42%, #a63db6 68%, #4c53d6 100%);
+}
+
+/* Links */
+.footer-link {
+  color: #94a3b8;
   text-decoration: none;
-  font-size: 0.875rem;
   transition: color 0.2s ease;
 }
 
-.footer-links a:hover {
+.footer-link:hover {
   color: #ffffff;
 }
 
-/* System Status Column */
-.system-status-indicator {
-  color: #2ed573;
-  font-family: 'Fira Code', monospace;
-  font-size: 0.8rem;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.status-dot {
-  width: 7px;
-  height: 7px;
-  background-color: #2ed573;
+/* Status Indicator Dot */
+.dot-green {
+  width: 6px;
+  height: 6px;
+  background-color: #22c55e;
   border-radius: 50%;
   display: inline-block;
-  box-shadow: 0 0 8px rgba(46, 213, 115, 0.6);
+  box-shadow: 0 0 6px rgba(34, 197, 94, 0.8);
 }
 
-.system-version {
-  color: #58637a;
-  font-family: 'Fira Code', monospace;
-  font-size: 0.8rem;
+/* Bottom Divider Border */
+.footer-bottom.border-top {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  padding-top: 1rem !important;
 }
 
-/* Divider & Bottom Legal Area */
-.footer-divider {
-  border-color: #1e2638;
-  opacity: 0.6;
-}
-
-.copyright-text {
-  color: #8e9bb0;
-  font-size: 0.825rem;
-}
-
-.footer-legal-links a {
-  color: #8e9bb0;
-  text-decoration: none;
-  font-size: 0.825rem;
-  transition: color 0.2s ease;
-}
-
-.footer-legal-links a:hover {
-  color: #ffffff;
+@media (max-width: 767.98px) {
+  .footer-section {
+    padding-top: 1rem !important;
+    padding-bottom: 0.75rem !important;
+  }
 }
