@@ -133,6 +133,11 @@ main {
   background: #342a58;
   color: #ffffff;
 }
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
 
 /* Hero */
 .hero-section {
