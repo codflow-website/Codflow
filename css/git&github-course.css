@@ -142,32 +142,257 @@ body {
   color: #ffffff;
 }
 
-/* Custom Typography & Palette */
-.hero-section {
-  background-color: #060913;
-  color: #94a3b8;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+/* --- Git & GitHub Workflow Hero Section --- */
+.git-course-hero-section {
+  background-color: #0a0d18;
+  color: #ffffff;
 }
 
-.breadcrumb-text {
-  font-size: 0.78rem;
-  font-family: monospace;
+/* Breadcrumb Navigation */
+.course-breadcrumb {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: #58637a;
 }
 
-.text-cyan { color: #38bdf8; }
-.text-purple { color: #c084fc; }
-.text-green { color: #4ade80; }
-.text-slate { color: #64748b; }
-
-.text-purple-gradient {
-  background: linear-gradient(90deg, #a78bfa, #c084fc);
-  -webkit-background-clip: text;
-  background-clip: text; /* Standard property for future-proofing */
-  -webkit-text-fill-color: transparent;
-  display: inline-block; /* Resolves the clipping/rendering bug */
+.course-breadcrumb .breadcrumb-item {
+  color: #8e9bb0;
 }
 
+.course-breadcrumb .breadcrumb-item.active {
+  color: #74b9ff;
+}
 
+.course-breadcrumb .breadcrumb-separator {
+  margin: 0 8px;
+  color: #314269;
+}
+
+/* Metadata Badges */
+.badge-pill {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.725rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.badge-cyan {
+  background-color: rgba(0, 206, 201, 0.12);
+  color: #00cec9;
+  border: 1px solid rgba(0, 206, 201, 0.3);
+}
+
+.badge-cyan .dot-indicator {
+  width: 6px;
+  height: 6px;
+  background-color: #00cec9;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.badge-dark {
+  background-color: #121829;
+  color: #8e9bb0;
+  border: 1px solid #1e273c;
+}
+
+.text-warning-star {
+  color: #f1c40f;
+}
+
+.text-muted-reviews {
+  color: #58637a;
+}
+
+/* Title & Description */
+.course-main-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.text-purple {
+  color: #a29bfe;
+}
+
+.course-main-desc {
+  color: #8e9bb0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Stat Mini Cards Grid */
+.stat-mini-card {
+  background-color: #121829;
+  border: 1px solid #1e273c;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  color: #58637a;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.dot-cyan {
+  width: 6px;
+  height: 6px;
+  background-color: #00cec9;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.text-teal {
+  color: #00cec9;
+}
+
+/* Progress & Status Bar */
+.course-status-card {
+  background-color: #121829;
+  border: 1px solid #1e273c;
+  border-radius: 8px;
+}
+
+.font-mono {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+}
+
+.status-label {
+  color: #8e9bb0;
+}
+
+.dot-grey {
+  width: 6px;
+  height: 6px;
+  background-color: #58637a;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.status-percent {
+  color: #00cec9;
+  font-weight: 600;
+}
+
+.custom-progress {
+  height: 4px;
+  background-color: #1a2235;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bg-gradient-purple {
+  background: linear-gradient(90deg, #8075e5 0%, #a29bfe 100%) !important;
+}
+
+/* Action Buttons */
+.btn-start-course {
+  background: linear-gradient(135deg, #8075e5 0%, #0984e3 100%);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 12px 26px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 18px rgba(128, 117, 229, 0.35);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-start-course:hover {
+  opacity: 0.95;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-view-curriculum {
+  background-color: rgba(255, 255, 255, 0.03);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: 1px solid #1e2638;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-view-curriculum:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #314269;
+  color: #ffffff;
+}
+
+/* Right Column Preview Card */
+.course-preview-card {
+  background-color: #121829;
+  border: 1px solid #1e273c;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.gitlab-icon-box {
+  color: #e24329;
+  font-size: 1.5rem;
+}
+
+.preview-title {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.preview-subtext {
+  color: #00cec9;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.725rem;
+}
+
+.enrolled-badge {
+  background-color: rgba(0, 206, 201, 0.1);
+  color: #00cec9;
+  border: 1px solid rgba(0, 206, 201, 0.3);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.preview-image-wrapper {
+  border: 1px solid #1e2638;
+}
+
+.preview-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
 /* Badges */
 .badge-teal {
   background-color: #022c22;

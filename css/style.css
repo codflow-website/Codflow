@@ -26,6 +26,12 @@ body {
   z-index: 1030;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
 /* Compact Brand Logo */
 .brand-logo {
   height: 38px;
@@ -144,70 +150,155 @@ body {
 
 /* --- Hero Section --- */
 .hero-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.pill-badge {
-  background-color: rgba(30, 38, 56, 0.7);
-  border: 1px solid #1e2638;
-  border-radius: 50px;
-  padding: 6px 16px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.825rem;
-  color: #8e9bb0;
-  margin-bottom: 24px;
-}
-
-.pill-badge .dot {
-  width: 8px;
-  height: 8px;
-  background-color: #00cec9;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.pill-badge strong {
+  background-color: #0a0d18;
   color: #ffffff;
 }
 
-.badge-separator {
-  color: #6c757d;
+/* Badge Top Pill */
+.hero-tag-badge {
+  background-color: rgba(9, 132, 227, 0.1);
+  border: 1px solid rgba(9, 132, 227, 0.25);
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  font-family: 'Fira Code', monospace;
 }
 
-.hero-subtitle {
-  color: #8075e5;
+.hero-tag-badge .active-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #00cec9;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px #00cec9;
+}
+
+.hero-tag-badge .tag-bold {
+  color: #00cec9;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
+}
+
+.hero-tag-badge .tag-divider {
+  color: #2e3a54;
+}
+
+.hero-tag-badge .tag-sub {
+  color: #8e9bb0;
+}
+
+/* Subtitle & Title */
+.hero-subtitle {
+  color: #8e9bb0;
+  font-family: 'Fira Code', monospace;
   font-size: 0.8rem;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
 }
 
 .hero-title {
-  font-size: 3.2rem;
+  font-size: 3.25rem;
   font-weight: 800;
   line-height: 1.15;
-  margin-bottom: 20px;
+  letter-spacing: -1px;
 }
 
-.hero-title .gradient-text {
-  background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+.text-gradient-purple {
+  background: linear-gradient(135deg, #a29bfe 0%, #74b9ff 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-  background-clip: text; /* 1. Crucial for modern browser standards */
   -webkit-text-fill-color: transparent;
-  display: inline-block; /* 2. Keeps the background bounded to just the text words */
 }
-
 
 .hero-description {
   color: #8e9bb0;
   font-size: 1.05rem;
   line-height: 1.6;
-  margin-bottom: 32px;
   max-width: 520px;
+}
+
+/* Action Buttons */
+.btn-hero-purple {
+  background-color: #8075e5;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(128, 117, 229, 0.4);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-hero-purple:hover {
+  background-color: #6c5ce7;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(128, 117, 229, 0.5);
+}
+
+.btn-hero-outline {
+  background-color: rgba(255, 255, 255, 0.02);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #1e2638;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-hero-outline:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #314269;
+  color: #ffffff;
+}
+
+/* Metrics Footer */
+.border-top-dark {
+  border-top: 1px solid #1c2436 !important;
+}
+
+.hero-stat-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.hero-stat-number.text-cyan {
+  color: #74b9ff;
+}
+
+.hero-stat-number.text-green {
+  color: #2ed573;
+}
+
+.hero-stat-label {
+  color: #58637a;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.725rem;
+}
+
+/* Image Wrapper */
+.hero-image-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #1e2638;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 /* --- Buttons --- */
@@ -1590,11 +1681,14 @@ body {
   background-color: #060913;
   color: #94a3b8;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  padding-top: 1.25rem !important;
+  padding-bottom: 0.9rem !important;
 }
 
 .brand-desc {
   max-width: 340px;
-  line-height: 1.6;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 .footer-title {
@@ -1690,4 +1784,12 @@ body {
 /* Bottom Divider Border */
 .footer-bottom.border-top {
   border-color: rgba(255, 255, 255, 0.08) !important;
+  padding-top: 1rem !important;
+}
+
+@media (max-width: 767.98px) {
+  .footer-section {
+    padding-top: 1rem !important;
+    padding-bottom: 0.75rem !important;
+  }
 }
