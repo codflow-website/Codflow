@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodFlow - Learn to Code</title>
+  <meta name="description"
+    content="CodFlow helps you learn to code with interactive lessons, practice, and real-world projects." />
+  <meta property="og:title" content="CodFlow - Learn to Code" />
+  <meta property="og:description" content="Interactive coding lessons, projects, and practice in one platform." />
+  <meta property="og:image" content="img/codflow.png" />
+  <link rel="icon" type="image/png" href="../img/codflow.png" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Google Fonts (Inter & Fira Code) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="../css/html & css-courses.css" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
+    <div class="container-fluid px-3">
+      <!-- Brand Logo -->
+      <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
+        <img src="../img/logo.png" alt="CodFlow logo" class="brand-logo" />
+      </a>
+
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon small"></span>
+      </button>
+
+      <!-- Collapsible Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link " href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="#">Practice</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="#">Quizzes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="#">Learning Path</a>
+          </li>
+        </ul>
+
+        <!-- Right Controls -->
+        <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+          <!-- Compact Search Input -->
+          <div class="search-box position-relative">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" class="form-control form-control-sm compact-search"
+              placeholder="Search courses, docs..." />
+            <span class="kbd-shortcut">⌘K</span>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="container-fluid px-4 px-lg-5">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7">
+            <div class="eyebrow">FOUNDATIONS TRACK · MODULE 01</div>
+            <h1>HTML &amp; CSS <span>Fundamentals</span></h1>
+            <p class="hero-text">
+              Master modern semantic markup, responsive layout architecture, CSS Grid,
+              Flexbox, and micro-animations. Build clean and accessible.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="badge-pill"><i class="bi bi-bar-chart"></i> Beginner</span>
+              <span class="badge-pill"><i class="bi bi-book"></i> 14 Lessons</span>
+              <span class="badge-pill"><i class="bi bi-clock"></i> 5–7 Hours</span>
+              <span class="badge-pill rating"><i class="bi bi-star-fill"></i> 4.9 <small>(2.4k devs)</small></span>
+            </div>
+
+            <div class="progress-card">
+              <div class="d-flex justify-content-between small">
+                <span><i class="bi bi-check-circle-fill text-success me-1"></i> Course Progress</span>
+                <strong>45% <span class="muted">(6 of 14 Lessons)</span></strong>
+              </div>
+              <div class="progress progress-dark mt-2">
+                <div class="progress-bar" style="width:45%"></div>
+              </div>
+              <div class="d-flex justify-content-between tiny mt-2">
+                <span>Current: Lesson 06: CSS Fundamentals</span>
+                <span class="cyan">Estimated: 3h 15m remaining</span>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <a href="#" class="btn btn-primary-custom">Continue Learning <i class="bi bi-arrow-right"></i></a>
+              <a href="#" class="btn btn-outline-custom"><i class="bi bi-journal-text"></i> View Curriculum</a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="code-window h-100">
+              <img class="course-preview-image" src="../img/HTML & CSS Fundamentals.jpg"
+                alt="HTML and CSS Fundamentals course preview" />
+              <div class="code-footer">
+                <span class="text-success"><i class="bi bi-check-circle"></i> Live Parser Active</span>
+                <span class="cyan">Bundle: 0.8kb</span>
+                <span class="green-tag"><i class="bi bi-code-square"></i> Flexbox Responsive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- LEARNING OUTCOMES -->
+  <section class="section-block">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="eyebrow">KEY LEARNING OUTCOMES</div>
+      <h2>Build a Strong Web Development Foundation</h2>
+
+      <div class="row g-3 mt-1">
+        <div class="col-md-4">
+          <div class="outcome-card">
+            <div class="outcome-icon purple"><i class="bi bi-braces"></i></div>
+            <h3>1. Structure</h3>
+            <p>Master HTML5 semantic primitives <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>,
+              <code>&lt;nav&gt;</code> for clean DOM architecture, new SEO rankings, and universal accessibility.
+            </p>
+            <small>Lessons 01 → 05 → <i class="bi bi-arrow-right"></i></small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="outcome-card">
+            <div class="outcome-icon cyan-bg"><i class="bi bi-palette"></i></div>
+            <h3>2. Design &amp; Styling</h3>
+            <p>Harness modern CSS specificity, custom properties (variables), the box model, Flexbox alignment, and
+              multi-track CSS Grid topologies with absolute precision.</p>
+            <small>Lessons 06 → 09 → <i class="bi bi-arrow-right"></i></small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="outcome-card">
+            <div class="outcome-icon blue"><i class="bi bi-aspect-ratio"></i></div>
+            <h3>3. Responsive &amp; Motion</h3>
+            <p>Engineer fully fluid viewports using media queries, container queries, hardware-accelerated CSS3
+              keyframe animations, and slick micro-interactions.</p>
+            <small>Lessons 10 → 14 → <i class="bi bi-arrow-right"></i></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRICULUM -->
+  <section class="section-block curriculum">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="eyebrow">SYLLABUS BREAKDOWN</div>
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-2">
+        <div>
+          <h2>Course Curriculum</h2>
+          <p class="section-subtitle">14 structured lessons · 6 completed · 1 currently active</p>
+        </div>
+        <button class="mini-btn">Toggle Details</button>
+      </div>
+
+      <div class="lesson-list mt-3">
+        <div class="lesson completed"><span class="status-icon"><i class="bi bi-check"></i></span>
+          <div><small>Lesson 01 <b>Completed</b></small><strong>HTML Fundamentals &amp; Web Mechanics</strong></div>
+          <time>20m</time><i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="lesson completed"><span class="status-icon"><i class="bi bi-check"></i></span>
+          <div><small>Lesson 02 <b>Completed</b></small><strong>Semantic HTML &amp; Document Outline</strong></div>
+          <time>30m</time><i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="lesson completed"><span class="status-icon"><i class="bi bi-check"></i></span>
+          <div><small>Lesson 03 <b>Completed</b></small><strong>Links, Hypermedia, Images &amp; Formats</strong></div>
+          <time>35m</time><i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="lesson completed"><span class="status-icon"><i class="bi bi-check"></i></span>
+          <div><small>Lesson 04 <b>Completed</b></small><strong>Lists, Tables &amp; Tabular Data Display</strong>
+          </div><time>20m</time><i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="lesson completed"><span class="status-icon"><i class="bi bi-check"></i></span>
+          <div><small>Lesson 05 <b>Completed</b></small><strong>HTML Forms, Inputs &amp; User Validations</strong>
+          </div><time>40m</time><i class="bi bi-chevron-right"></i>
+        </div>
+
+        <div class="lesson active-lesson">
+          <span class="status-icon active"><i class="bi bi-play-fill"></i></span>
+          <div><small>Lesson 06 <b class="active-label">Active Lesson</b></small><strong>CSS Fundamentals, Cascade
+              &amp; Selectors</strong>
+            <p>Explore specificity, calculation, pseudo-classes, inheritance, and the foundational style cascade.</p>
+        <div class="lesson-list mt-3">
+          <div class="lesson completed"><span class="status-icon"><i class="bi bi-check"></i></span>
+            <div><small>Lesson 01 <b>Completed</b></small><strong>HTML Fundamentals &amp; Web Mechanics</strong></div>
+            <time>20m</time><i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="lesson completed"><span class="status-icon"><i class="bi bi-check"></i></span>
+            <div><small>Lesson 02 <b>Completed</b></small><strong>Semantic HTML &amp; Document Outline</strong></div>
+            <time>30m</time><i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="lesson completed"><span class="status-icon"><i class="bi bi-check"></i></span>
+            <div><small>Lesson 03 <b>Completed</b></small><strong>Links, Hypermedia, Images &amp; Formats</strong></div>
+            <time>35m</time><i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="lesson completed"><span class="status-icon"><i class="bi bi-check"></i></span>
+            <div><small>Lesson 04 <b>Completed</b></small><strong>Lists, Tables &amp; Tabular Data Display</strong>
+            </div><time>20m</time><i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="lesson completed"><span class="status-icon"><i class="bi bi-check"></i></span>
+            <div><small>Lesson 05 <b>Completed</b></small><strong>HTML Forms, Inputs &amp; User Validations</strong>
+            </div><time>40m</time><i class="bi bi-chevron-right"></i>
+          </div>
+
+          <div class="lesson active-lesson">
+            <span class="status-icon active"><i class="bi bi-play-fill"></i></span>
+            <div><small>Lesson 06 <b class="active-label">Active Lesson</b></small><strong>CSS Fundamentals, Cascade
+                &amp; Selectors</strong>
+              <p>Explore specificity, calculation, pseudo-classes, inheritance, and the foundational style cascade.</p>
+            </div>
+            <time>35m</time>
+            <a href="#" class="continue-btn">Continue Lesson →</a>
+          </div>
+          <time>35m</time>
+          <a href="#" class="continue-btn">Continue Lesson →</a>
+        </div>
+
+        <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+          <div><small>Lesson 07 · Locked</small><strong>The CSS Box Model, Margins, Borders &amp; Padding</strong>
+          </div><time>45m</time>
+        </div>
+        <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+          <div><small>Lesson 08 · Locked</small><strong>Flexbox 1D Layout System &amp; Space Distribution</strong>
+          </div><time>50m</time>
+        </div>
+        <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+          <div><small>Lesson 09 · Locked</small><strong>CSS Grid 2D Layouts, Template Areas &amp; Gap</strong></div>
+          <time>50m</time>
+        </div>
+        <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+          <div><small>Lesson 10 · Locked</small><strong>Responsive Web Design &amp; Viewport Breakpoints</strong>
+          </div><time>40m</time>
+        </div>
+        <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+          <div><small>Lesson 11 · Locked</small><strong>Smooth Transitions &amp; State Transformations</strong></div>
+          <time>30m</time>
+        </div>
+        <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+          <div><small>Lesson 12 · Locked</small><strong>CSS Keyframe Animations &amp; Micro-interactions</strong>
+          </div><time>35m</time>
+        </div>
+        <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+          <div><small>Lesson 13 · Locked</small><strong>Modern Reusable UI Components &amp; Design Patterns</strong>
+          </div><time>40m</time>
+        </div>
+        <div class="lesson capstone"><span class="status-icon purple-icon"><i class="bi bi-award"></i></span>
+          <div><small>Lesson 14 · Capstone <b>Final Project</b></small><strong>Comprehensive Responsive Portfolio
+              Deployment</strong></div><time>2h Capstone</time>
+          <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+            <div><small>Lesson 07 · Locked</small><strong>The CSS Box Model, Margins, Borders &amp; Padding</strong>
+            </div><time>45m</time>
+          </div>
+          <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+            <div><small>Lesson 08 · Locked</small><strong>Flexbox 1D Layout System &amp; Space Distribution</strong>
+            </div><time>50m</time>
+          </div>
+          <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+            <div><small>Lesson 09 · Locked</small><strong>CSS Grid 2D Layouts, Template Areas &amp; Gap</strong></div>
+            <time>50m</time>
+          </div>
+          <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+            <div><small>Lesson 10 · Locked</small><strong>Responsive Web Design &amp; Viewport Breakpoints</strong>
+            </div><time>40m</time>
+          </div>
+          <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+            <div><small>Lesson 11 · Locked</small><strong>Smooth Transitions &amp; State Transformations</strong></div>
+            <time>30m</time>
+          </div>
+          <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+            <div><small>Lesson 12 · Locked</small><strong>CSS Keyframe Animations &amp; Micro-interactions</strong>
+            </div><time>35m</time>
+          </div>
+          <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
+            <div><small>Lesson 13 · Locked</small><strong>Modern Reusable UI Components &amp; Design Patterns</strong>
+            </div><time>40m</time>
+          </div>
+          <div class="lesson capstone"><span class="status-icon purple-icon"><i class="bi bi-award"></i></span>
+            <div><small>Lesson 14 · Capstone <b>Final Project</b></small><strong>Comprehensive Responsive Portfolio
+                Deployment</strong></div><time>2h Capstone</time>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section-block">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="eyebrow">COMPETENCY BLUEPRINT</div>
+          <h2>What You Will Learn</h2>
+          <div class="skills-grid mt-3">
+            <div>✓ Semantic HTML5 tags</div>
+            <div>✓ CSS selectors, inheritance &amp; specificity</div>
+            <div>✓ The CSS Box Model, margins &amp; paddings</div>
+            <div>✓ Mobile-first &amp; responsive layout systems</div>
+            <div>✓ Complex 2D CSS Grid template areas</div>
+            <div>✓ Performance CSS </div>
+            <div>✓ Smooth interactive CSS transitions</div>
+            <div>✓ Accessible web forms with validations</div>
+            <div>✓ CSS custom variables &amp; theme architecture</div>
+            <div>✓ Reusable modular UI card components</div>
+            <div>✓ CSS Flexbox alignment &amp; distribution</div>
+            <div>✓ Publishing &amp; hosting on Git-based cloud</div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="mastery-card">
+            <div class="d-flex justify-content-between"><span>Current Skill Mastery</span><span
+                class="purple-label">Tracked</span></div>
+            <p class="tiny muted mt-2"> practice submissions and unit quizzes.</p>
+            <div class="skill-row"><span>HTML Fundamentals</span><b>90%</b>
+              <div><i style="width:90%"></i></div>
+            </div>
+            <div class="skill-row"><span>CSS Fundamentals</span><b>80%</b>
+              <div><i style="width:80%"></i></div>
+            </div>
+            <div class="skill-row"><span>Flexbox</span><b>65%</b>
+              <div><i style="width:65%"></i></div>
+            </div>
+            <div class="skill-row"><span>CSS Grid</span><b>45%</b>
+              <div><i style="width:45%"></i></div>
+          <div class="col-lg-5">
+            <div class="mastery-card">
+              <div class="d-flex justify-content-between"><span>Current Skill Mastery</span><span
+                  class="purple-label">Tracked</span></div>
+              <p class="tiny muted mt-2"> practice submissions and unit quizzes.</p>
+              <div class="skill-row"><span>HTML Fundamentals</span><b>90%</b>
+                <div><i style="width:90%"></i></div>
+              </div>
+              <div class="skill-row"><span>CSS Fundamentals</span><b>80%</b>
+                <div><i style="width:80%"></i></div>
+              </div>
+              <div class="skill-row"><span>Flexbox</span><b>65%</b>
+                <div><i style="width:65%"></i></div>
+              </div>
+              <div class="skill-row"><span>CSS Grid</span><b>45%</b>
+                <div><i style="width:45%"></i></div>
+              </div>
+              <div class="skill-row"><span>Responsive Design</span><b>30%</b>
+                <div><i style="width:30%"></i></div>
+              </div>
+              <div class="mastery-footer">Target Completion Rate <strong>100% on Capstone</strong></div>
+            </div>
+            <div class="skill-row"><span>Responsive Design</span><b>30%</b>
+              <div><i style="width:30%"></i></div>
+            </div>
+            <div class="mastery-footer">Target Completion Rate <strong>100% on Capstone</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELEMETRY + PROJECT -->
+  <section class="section-block bottom-cards">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="telemetry-card">
+            <div class="eyebrow">YOUR LEARNING TELEMETRY</div>
+            <p class="section-subtitle">your activity, exercises, and conceptual check-ins.</p>
+            <div class="row g-2 mt-2">
+              <div class="col-6">
+                <div class="metric"><small>Lessons Done</small><strong>6 <em>/ 14</em></strong></div>
+              </div>
+              <div class="col-6">
+                <div class="metric"><small>Hours Learning</small><strong>18 <em>/ 30</em></strong></div>
+              </div>
+              <div class="col-6">
+                <div class="metric"><small>Quiz Average</small><strong class="green-text">82%</strong></div>
+              </div>
+              <div class="col-6">
+                <div class="metric"><small>Capstone Status</small><strong>0 <em>/ 1</em></strong></div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="d-flex justify-content-between tiny"><span>Overall Milestone Progress</span><span>6 of
+                  14</span></div>
+              <div class="progress progress-dark mt-1">
+                <div class="progress-bar" style="width:43%"></div>
+    <!-- TELEMETRY + PROJECT -->
+    <section class="section-block bottom-cards">
+      <div class="container-fluid px-4 px-lg-5">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="telemetry-card">
+              <div class="eyebrow">YOUR LEARNING TELEMETRY</div>
+              <p class="section-subtitle">your activity, exercises, and conceptual check-ins.</p>
+              <div class="row g-2 mt-2">
+                <div class="col-6">
+                  <div class="metric"><small>Lessons Done</small><strong>6 <em>/ 14</em></strong></div>
+                </div>
+                <div class="col-6">
+                  <div class="metric"><small>Hours Learning</small><strong>18 <em>/ 30</em></strong></div>
+                </div>
+                <div class="col-6">
+                  <div class="metric"><small>Quiz Average</small><strong class="green-text">82%</strong></div>
+                </div>
+                <div class="col-6">
+                  <div class="metric"><small>Capstone Status</small><strong>0 <em>/ 1</em></strong></div>
+                </div>
+              </div>
+              <div class="mt-4">
+                <div class="d-flex justify-content-between tiny"><span>Overall Milestone Progress</span><span>6 of
+                    14</span></div>
+                <div class="progress progress-dark mt-1">
+                  <div class="progress-bar" style="width:43%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="project-card">
+            <div class="d-flex justify-content-between"><span class="cyan-label">Capstone Project</span><span
+                class="tiny"><i class="bi bi-clock"></i> 3–5 Hours</span></div>
+            <h3>Responsive Developer Portfolio Website</h3>
+            <p>Construct a multi-page personal portfolio featuring semantic project galleries, an interactive profile,
+              responsive layouts and smooth CSS animations.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tech">HTML5 Semantic</span><span class="tech">CSS3 Flexbox</span><span class="tech">CSS
+                Grid Areas</span><span class="tech green">Production Ready</span>
+            </div>
+            <div class="locked-note mt-3"><i class="bi bi-lock"></i> Unlocks automatically after Lesson 13
+              <span>Locked</span>
+          <div class="col-lg-6">
+            <div class="project-card">
+              <div class="d-flex justify-content-between"><span class="cyan-label">Capstone Project</span><span
+                  class="tiny"><i class="bi bi-clock"></i> 3–5 Hours</span></div>
+              <h3>Responsive Developer Portfolio Website</h3>
+              <p>Construct a multi-page personal portfolio featuring semantic project galleries, an interactive profile,
+                responsive layouts and smooth CSS animations.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tech">HTML5 Semantic</span><span class="tech">CSS3 Flexbox</span><span class="tech">CSS
+                  Grid Areas</span><span class="tech green">Production Ready</span>
+              </div>
+              <div class="locked-note mt-3"><i class="bi bi-lock"></i> Unlocks automatically after Lesson 13
+                <span>Locked</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-fluid px-4 px-lg-5 d-flex justify-content-between flex-wrap gap-2">
+      <span><i class="bi bi-code-square"></i> CodFlow &nbsp; © 2026 CodFlow IDE; Learning Platform. Built for
+        developers.</span>
+      <span>Documentation &nbsp;&nbsp; API Playground &nbsp;&nbsp; System Status</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
