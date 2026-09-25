@@ -26,6 +26,12 @@ body {
   z-index: 1030;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
 /* Compact Brand Logo */
 .brand-logo {
   height: 38px;
