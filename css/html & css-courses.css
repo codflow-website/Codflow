@@ -1,4 +1,5 @@
 html {
+  font-size: 16px;
   scrollbar-gutter: stable;
 }
 
@@ -6,6 +7,7 @@ body {
   background-color: #0a0d18;
   color: #ffffff;
   font-family: 'Inter', sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   overflow-x: clip;
   min-height: 100vh;
@@ -51,7 +53,8 @@ main {
 
 .custom-nav-link.active {
   color: #ffffff !important;
-  background-color: #272042; /* Highlight pill matching your dark-purple accent */
+  background-color: #272042;
+  /* Highlight pill matching your dark-purple accent */
 }
 
 /* Compact Search Box */
@@ -148,7 +151,7 @@ main {
 .hero-section {
   padding: 42px 0 56px;
   background:
-    radial-gradient(circle at 67% 22%, rgba(80,67,180,.18), transparent 35%),
+    radial-gradient(circle at 67% 22%, rgba(80, 67, 180, .18), transparent 35%),
     linear-gradient(180deg, #111932 0%, #0b1326 75%);
   border-bottom: 1px solid #111b32;
 }
@@ -166,20 +169,27 @@ main {
   margin-bottom: 5px;
 }
 
-h1, h2, h3, p { margin-top: 0; }
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
 
 h1 {
-  font-size: 3.2rem;
+  font-size: clamp(2.8rem, 3vw + 1.3rem, 4.2rem);
   line-height: 1.1;
   font-weight: 700;
   letter-spacing: -1px;
   margin-bottom: 12px;
 }
 
-h1 span { color: #6d4ae7; }
+h1 span {
+  color: #6d4ae7;
+}
 
 h2 {
-  font-size: 2.25rem;
+  font-size: clamp(2rem, 2vw + 1rem, 2.9rem);
   font-weight: 700;
   margin-bottom: 10px;
   letter-spacing: -.3px;
@@ -188,7 +198,7 @@ h2 {
 .hero-text {
   max-width: 680px;
   color: #b4bfd7;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   line-height: 1.7;
   margin-bottom: 13px;
 }
@@ -202,15 +212,23 @@ h2 {
   font-size: 0.825rem;
 }
 
-.badge-pill i { color: #a890ff; }
-.badge-pill.rating i { color: var(--yellow); }
-.badge-pill small { color: #7986a2; }
+.badge-pill i {
+  color: #a890ff;
+}
+
+.badge-pill.rating i {
+  color: var(--yellow);
+}
+
+.badge-pill small {
+  color: #7986a2;
+}
 
 .badge-pill i,
 .btn-primary-custom i,
 .btn-outline-custom i,
 .code-footer i,
-.locked-note > i {
+.locked-note>i {
   margin-right: 0.35rem;
 }
 
@@ -222,8 +240,14 @@ h2 {
   padding: 10px 12px;
 }
 
-.progress-card strong { color: #dce5fb; font-size: 0.85rem; }
-.muted { color: var(--muted); }
+.progress-card strong {
+  color: #dce5fb;
+  font-size: 0.85rem;
+}
+
+.muted {
+  color: var(--muted);
+}
 
 .progress-dark {
   height: 6px;
@@ -241,7 +265,9 @@ h2 {
   color: #73809d;
 }
 
-.cyan { color: var(--cyan); }
+.cyan {
+  color: var(--cyan);
+}
 
 .btn-primary-custom,
 .btn-outline-custom {
@@ -271,7 +297,7 @@ h2 {
 .code-window,
 .outcome-card,
 .lesson,
-.skills-grid > div,
+.skills-grid>div,
 .mastery-card,
 .telemetry-card,
 .project-card,
@@ -288,7 +314,7 @@ h2 {
 .code-window:hover,
 .outcome-card:hover,
 .lesson:hover,
-.skills-grid > div:hover,
+.skills-grid>div:hover,
 .mastery-card:hover,
 .telemetry-card:hover,
 .project-card:hover,
@@ -345,14 +371,38 @@ h2 {
   object-fit: cover;
 }
 
-.dots { display: flex; gap: 4px; }
-.dots i { width: 7px; height: 7px; border-radius: 50%; background: #f05b42; }
-.dots i:nth-child(2) { background: #f1b738; }
-.dots i:nth-child(3) { background: #1ac77d; }
+.dots {
+  display: flex;
+  gap: 4px;
+}
 
-.file-tab { color: #36c8f0; }
-.file-name { color: #7887a7; }
-.utf { margin-left: auto; color: #8e99b1; }
+.dots i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f05b42;
+}
+
+.dots i:nth-child(2) {
+  background: #f1b738;
+}
+
+.dots i:nth-child(3) {
+  background: #1ac77d;
+}
+
+.file-tab {
+  color: #36c8f0;
+}
+
+.file-name {
+  color: #7887a7;
+}
+
+.utf {
+  margin-left: auto;
+  color: #8e99b1;
+}
 
 .code-window pre {
   min-height: 220px;
@@ -364,13 +414,33 @@ h2 {
   white-space: pre-wrap;
 }
 
-.comment { color: #6b7794; }
-.tag { color: #ff79c6; }
-.attr { color: #8be9fd; }
-.str { color: #f1fa8c; }
-.selector { color: #50fa7b; }
-.prop { color: #8be9fd; }
-.num { color: #bd93f9; }
+.comment {
+  color: #6b7794;
+}
+
+.tag {
+  color: #ff79c6;
+}
+
+.attr {
+  color: #8be9fd;
+}
+
+.str {
+  color: #f1fa8c;
+}
+
+.selector {
+  color: #50fa7b;
+}
+
+.prop {
+  color: #8be9fd;
+}
+
+.num {
+  color: #bd93f9;
+}
 
 .code-footer {
   min-height: 35px;
@@ -424,8 +494,15 @@ h2 {
   font-size: 1rem;
 }
 
-.outcome-icon.cyan-bg { background: #155a72; color: #5ce0ff; }
-.outcome-icon.blue { background: #28559a; color: #c0dcff; }
+.outcome-icon.cyan-bg {
+  background: #155a72;
+  color: #5ce0ff;
+}
+
+.outcome-icon.blue {
+  background: #28559a;
+  color: #c0dcff;
+}
 
 .outcome-card h3 {
   font-size: 1.1rem;
@@ -434,7 +511,7 @@ h2 {
 
 .outcome-card p {
   color: #aab7d0;
-  font-size: 0.875rem;
+  font-size: 0.98rem;
   line-height: 1.7;
   margin-bottom: 14px;
 }
@@ -445,7 +522,9 @@ h2 {
 }
 
 /* Curriculum */
-.curriculum { padding-top: 20px; }
+.curriculum {
+  padding-top: 20px;
+}
 
 .mini-btn {
   color: #8997b5;
@@ -474,18 +553,18 @@ h2 {
   align-items: center;
 }
 
-.lesson > div {
+.lesson>div {
   min-width: 0;
 }
 
-.lesson > * {
+.lesson>* {
   min-width: 0;
 }
 
 .lesson small {
   display: block;
   color: #7d8ba8;
-  font: 0.725rem 'Fira Code', monospace;
+  font: 0.8rem 'Fira Code', monospace;
 }
 
 .lesson small b {
@@ -500,12 +579,12 @@ h2 {
 .lesson strong {
   display: block;
   color: #dce4f5;
-  font-size: 1rem;
+  font-size: 1.08rem;
   font-weight: 500;
 }
 
 .lesson time,
-.lesson > i {
+.lesson>i {
   color: #7b89a4;
   font: 0.775rem 'Fira Code', monospace;
 }
@@ -558,7 +637,9 @@ h2 {
   font-weight: 700;
 }
 
-.locked { opacity: .72; }
+.locked {
+  opacity: .72;
+}
 
 .capstone {
   background: #131e37;
@@ -575,159 +656,552 @@ h2 {
 }
 
 /* Skills */
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+.dashboard {
+  min-height: 100vh;
+
+  background: #080f21;
+
+  padding: 20px 18px 32px;
 }
 
-.skills-grid > div {
-  background: #151f36;
-  border: 1px solid #1e2b47;
-  border-radius: 5px;
-  color: #aebad0;
-  padding: 12px 14px;
-  line-height: 1.45;
-  font-size: 0.85rem;
+
+/* =================================
+   SECTION TITLE
+================================= */
+
+.section-label {
+  color: #25c5ed;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 4px;
 }
 
-.skills-grid > div::first-letter { color: var(--green); }
+.main-title {
+  font-size: 25px;
 
-.mastery-card,
-.telemetry-card,
-.project-card {
-  background: #203360;
-  border: 1px solid #2a3d70;
-  border-radius: 8px;
-  padding: 22px;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+
+  color: #f5f7fc;
 }
 
-.mastery-card { height: 100%; }
 
-.purple-label,
-.cyan-label {
+/* =================================
+   LEARNING ITEMS
+================================= */
+
+.learning-item {
+  min-height: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  background: #172138;
+
+  border-radius: 6px;
+
+  padding: 7px 9px;
+
+  margin-bottom: 6px;
+
+  color: #c4cad8;
+
+  font-size: 0.95rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.015);
+
+  transition: 0.2s;
+}
+
+.learning-item:hover {
+  background: #1d2945;
+
+  transform: translateY(-1px);
+}
+
+.learning-item i {
+  color: #00d984;
+
+  font-size: 13px;
+
+  flex-shrink: 0;
+}
+
+
+/* =================================
+   SKILL CARD
+================================= */
+
+.skill-card {
+  background: #20315e;
+
+  border-radius: 9px;
+
+  overflow: hidden;
+
+  padding-top: 18px;
+
+  height: 100%;
+}
+
+.skill-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 0 18px 8px;
+}
+
+.skill-header h5 {
+  font-size: 1rem;
+
+  margin-bottom: 5px;
+
+  color: #f3f5fb;
+}
+
+.skill-header p {
+  font-size: 0.9rem;
+
+  line-height: 1.5;
+
+  color: #8793aa;
+
+  margin: 0;
+
+  max-width: 300px;
+}
+
+.tracked {
+  align-self: flex-start;
+
+  background: #565183;
+
+  color: #c6c2e4;
+
+  font-size: 7px;
+
+  padding: 3px 7px;
+
   border-radius: 4px;
-  padding: 2px 5px;
-  font: 0.725rem 'Fira Code', monospace;
+
+  letter-spacing: 0.5px;
 }
 
-.purple-label { background: #3b2c64; color: #c7aeff; }
-.cyan-label { background: #0c3d4b; color: #44d7f4; }
+
+/* =================================
+   SKILLS
+================================= */
 
 .skill-row {
-  position: relative;
-  margin-top: 10px;
-  font: 0.8rem 'Fira Code', monospace;
-  color: #abb8d1;
+  padding: 5px 18px;
 }
 
-.skill-row b {
-  float: right;
-  color: var(--green);
-  font-weight: 400;
-}
-
-.skill-row > div {
-  clear: both;
-  height: 4px;
-  background: #2c3c64;
-  border-radius: 5px;
-  margin-top: 3px;
-}
-
-.skill-row > div i {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-  background: var(--green);
-}
-
-.skill-row:nth-of-type(4) > div i { background: #42d6ef; }
-.skill-row:nth-of-type(5) > div i { background: #a990f5; }
-.skill-row:nth-of-type(6) > div i { background: #287fe5; }
-.skill-row:nth-of-type(7) > div i { background: #e2aa3c; }
-
-.mastery-footer {
-  border-top: 1px solid #30446f;
-  margin-top: 12px;
-  padding-top: 8px;
-  color: #7182a2;
-  font: 0.775rem 'Fira Code', monospace;
+.skill-title {
   display: flex;
+
   justify-content: space-between;
+
+  font-size: 0.92rem;
+
+  color: #dce2ed;
+
+  margin-bottom: 4px;
 }
 
-.mastery-footer strong { color: #dce5fa; font-weight: 400; }
+.skill-title strong {
+  font-size: 0.85rem;
 
-/* Bottom */
-.telemetry-card { height: 100%; }
+  color: #c4cad8;
+}
 
-.metric {
+.skill-progress {
+  height: 6px;
+
+  background: #071126;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+
+  border-radius: 10px;
+}
+
+
+/* Skill colors */
+
+.skill-fill.html {
+  background: #15d77f;
+}
+
+.skill-fill.css {
+  background: #3dd0ed;
+}
+
+.skill-fill.flexbox {
+  background: #c1a4ff;
+}
+
+.skill-fill.grid {
+  background: #1888e5;
+}
+
+.skill-fill.responsive {
+  background: #ffa900;
+}
+
+
+/* =================================
+   TARGET BOX
+================================= */
+
+.target-box {
+  margin-top: 6px;
+
+  padding: 12px;
+
+  background: #1a294e;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 8px;
+
+  color: #8c98ae;
+}
+
+.target-box strong {
+  color: #f1f3f8;
+}
+
+
+/* =================================
+   BOTTOM SECTION
+================================= */
+
+.bottom-section {
+  margin-top: 120px;
+}
+
+
+/* =================================
+   TELEMETRY CARD
+================================= */
+
+.telemetry-card {
+  background: #20315e;
+
+  border-radius: 9px;
+
+  padding: 18px;
+}
+
+.telemetry-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  margin-bottom: 10px;
+}
+
+.telemetry-header h3 {
+  font-size: 1.05rem;
+
+  margin-bottom: 6px;
+
+  color: #f1f4fb;
+}
+
+.telemetry-header p {
+  color: #8995ad;
+
+  font-size: 0.9rem;
+
+  margin: 0;
+
+  line-height: 1.5;
+}
+
+.completion {
+  white-space: nowrap;
+
+  background: #5b548b;
+
+  color: #d3cfee;
+
+  font-size: 7px;
+
+  padding: 4px 8px;
+
+  border-radius: 10px;
+}
+
+
+/* =================================
+   STAT CARDS
+================================= */
+
+.stat-card {
+  background: #151f36;
+
+  border-radius: 6px;
+
+  min-height: 67px;
+
+  padding: 12px;
+}
+
+.stat-label {
+  display: block;
+
+  color: #8591a8;
+
+  font-size: 8px;
+
+  margin-bottom: 7px;
+
+  letter-spacing: 0.5px;
+}
+
+.stat-number {
+  font-size: 1.4rem;
+
+  color: #f0f3f8;
+}
+
+.stat-number small {
+  font-size: 10px;
+
+  color: #8994a9;
+}
+
+.green-text {
+  color: #00d87b;
+}
+
+.purple-text {
+  color: #b29bff;
+}
+
+
+/* =================================
+   OVERALL PROGRESS
+================================= */
+
+.overall-progress {
+  margin-top: 28px;
+}
+
+.overall-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 6px;
+
+  font-size: 8px;
+
+  color: #929db2;
+}
+
+.overall-header strong {
+  color: #dce2ee;
+}
+
+.milestone-bar {
+  height: 6px;
+
+  background: #080f20;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.milestone-bar div {
+  height: 100%;
+
+  background: linear-gradient(90deg,
+      #b38cff,
+      #087ff0);
+
+  border-radius: 10px;
+}
+
+
+/* =================================
+   CAPSTONE CARD
+================================= */
+
+.capstone-card {
+  background: #18243a;
+
+  border-radius: 9px;
+
+  padding: 18px;
+
+  min-height: 198px;
+}
+
+.capstone-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 8px;
+}
+
+.capstone-label {
+  background: #10435a;
+
+  color: #28c8ef;
+
+  font-size: 7px;
+
+  padding: 4px 8px;
+
+  border-radius: 10px;
+
+  letter-spacing: 0.5px;
+}
+
+.duration {
+  color: #8994a9;
+
+  font-size: 8px;
+}
+
+.duration i {
+  margin-right: 3px;
+}
+
+.capstone-card h2 {
+  font-size: 1.2rem;
+
+  color: #f0f3f8;
+
+  margin-bottom: 7px;
+}
+
+.capstone-card p {
+  color: #b0b8c8;
+
+  font-size: 0.95rem;
+
+  line-height: 1.6;
+
+  margin-bottom: 10px;
+
+  max-width: 500px;
+}
+
+
+/* =================================
+   TAGS
+================================= */
+
+.tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-bottom: 14px;
+}
+
+.tags span {
+  background: #142237;
+
+  color: #56c8e5;
+
+  font-size: 7px;
+
+  padding: 4px 7px;
+
+  border-radius: 4px;
+}
+
+.tags .ready {
+  color: #00db82;
+
+  background: #12352e;
+}
+
+
+/* =================================
+   LOCKED AREA
+================================= */
+
+.locked {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: #21345e;
+
+  border-radius: 5px;
+
+  padding: 8px 10px;
+
+  color: #9ba6bb;
+
+  font-size: 8px;
+}
+
+.lesson.locked {
+  display: grid;
+  grid-template-columns: 30px 1fr auto auto;
+  gap: 12px;
+  align-items: center;
   min-height: 56px;
-  background: #151f39;
-  border: 1px solid #27365b;
-  border-radius: 5px;
-  padding: 14px;
+  padding: 12px 16px;
+  background: #141e36;
+  border: 1px solid #192540;
+  color: inherit;
+  font-size: inherit;
 }
 
-.metric small {
-  display: block;
-  color: #72809e;
-  font: 0.75rem 'Fira Code', monospace;
+.locked i {
+  margin-right: 5px;
 }
 
-.metric strong {
-  display: block;
-  color: #f0f4ff;
-  font-size: 1.8rem;
-  margin-top: 4px;
+.locked button {
+  border: none;
+
+  background: #12213c;
+
+  color: #9aa5ba;
+
+  padding: 6px 12px;
+
+  border-radius: 6px;
+
+  font-size: 8px;
 }
 
-.metric em {
-  font-style: normal;
-  font-size: 0.8rem;
-  color: #8793ad;
-}
-
-.green-text { color: var(--green) !important; }
-
-.project-card { height: 100%; }
-
-.project-card h3 {
-  font-size: 1.25rem;
-  margin: 7px 0 5px;
-}
-
-.project-card p {
-  color: #a6b3cd;
-  font-size: 0.875rem;
-  line-height: 1.7;
-}
-
-.tech {
-  background: #182d51;
-  color: #54aaff;
-  border-radius: 4px;
-  padding: 3px 6px;
-  font: 0.75rem 'Fira Code', monospace;
-}
-
-.tech.green { color: #23dd99; background: #12382e; }
-
-.locked-note {
-  padding: 6px 8px;
-  border: 1px solid #2c3d62;
-  border-radius: 5px;
-  color: #71809e;
-  font-size: 0.8rem;
-}
-
-.locked-note span {
-  float: right;
-  background: #0f1830;
-  padding: 2px 6px;
-  border-radius: 4px;
-}
 
 /* Footer */
 .footer {
@@ -739,52 +1213,111 @@ h2 {
 
 /* Responsive */
 @media (max-width: 991.98px) {
-  .nav-links { margin-top: 12px !important; }
-  .hero-section { padding-top: 12px; }
-  .code-window { min-height: 0; }
+  .nav-links {
+    margin-top: 12px !important;
+  }
+
+  .hero-section {
+    padding-top: 12px;
+  }
+
+  .code-window {
+    min-height: 0;
+  }
 }
 
 @media (max-width: 767.98px) {
-  body { font-size: 0.875rem; }
+  body {
+    font-size: 0.875rem;
+  }
 
-  .section-block { padding: 40px 0; }
+  .section-block {
+    padding: 40px 0;
+  }
 
-  h1 { font-size: 2.25rem; }
-  h2 { font-size: 1.75rem; }
+  h1 {
+    font-size: 2.25rem;
+  }
 
-  .skills-grid { grid-template-columns: 1fr; }
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 
   .lesson {
     grid-template-columns: 28px 1fr auto;
     padding: 12px;
   }
 
-  .lesson > i { display: none; }
-  .lesson .continue-btn { grid-column: 2 / -1; justify-self: start; }
-  .active-lesson { padding-bottom: 10px; }
+  .lesson>i {
+    display: none;
+  }
+
+  .lesson .continue-btn {
+    grid-column: 2 / -1;
+    justify-self: start;
+  }
+
+  .active-lesson {
+    padding-bottom: 10px;
+  }
 
   .lesson time {
     font-size: 0.7rem;
   }
 
-  .outcome-card { min-height: auto; }
+  .outcome-card {
+    min-height: auto;
+  }
 
-  .footer { line-height: 1.8; }
+  .footer {
+    line-height: 1.8;
+  }
 }
 
 @media (max-width: 480px) {
-  .hero-section { padding: 30px 0 40px; }
+  .hero-section {
+    padding: 30px 0 40px;
+  }
 
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
+  h1 {
+    font-size: 2rem;
+  }
 
-  .badge-pill { font-size: 0.75rem; }
-  .code-window pre { font-size: 0.75rem; }
-  .code-footer { align-items: flex-start; flex-direction: column; gap: 4px; }
-  .green-tag { margin-left: 0; }
+  h2 {
+    font-size: 1.5rem;
+  }
 
-  .lesson strong { font-size: 0.875rem; }
-  .lesson small { font-size: 0.65rem; }
+  .badge-pill {
+    font-size: 0.75rem;
+  }
 
-  .skills-grid > div { font-size: 0.8rem; }
+  .code-window pre {
+    font-size: 0.75rem;
+  }
+
+  .code-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .green-tag {
+    margin-left: 0;
+  }
+
+  .lesson strong {
+    font-size: 0.875rem;
+  }
+
+  .lesson small {
+    font-size: 0.65rem;
+  }
+
+  .skills-grid>div {
+    font-size: 0.8rem;
+  }
 }
