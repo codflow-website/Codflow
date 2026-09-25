@@ -64,48 +64,121 @@
   </script>
 </head>
 <body>
-  <nav class="navbar-sticky navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
-    <div class="container-fluid px-3">
-      <!-- Brand Logo -->
-      <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
-        <img src="img/logo.png" alt="CodFlow logo" class="brand-logo" />
-      </a>
 
-      <!-- Mobile Toggler -->
-      <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon small"></span>
-      </button>
+ <nav class="navbar-sticky navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
+  <div class="container-fluid px-3">
+    <!-- Brand Logo -->
+    <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
+      <img src="img/logo.png" alt="CodFlow logo" class="brand-logo" />
+    </a>
+    
+    <!-- Mobile Toggler -->
+    <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon small"></span>
+    </button>
+    
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#popularcourses">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#prcticebycoding">Practice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#quizes">Quizzes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#practice">Practice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#quizzes">Quizzes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#learningpath">Learning Path</a>
+        </li>
+      </ul>
 
-      <!-- Collapsible Menu -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link" href="#popularcourses">Courses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link" href="#prcticebycoding">Practice</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link" href="#quizes">Quizzes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-nav-link" href="#learningpath">Learning Path</a>
-          </li>
-        </ul>
-        <!-- Right Controls -->
-        <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
-          <!-- Compact Search Input -->
-          <div class="search-box position-relative">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input type="text" class="form-control form-control-sm compact-search"
-              placeholder="Search courses, docs..." />
-            <!-- <span class="kbd-shortcut">⌘K</span> -->
+      <!-- Right Controls -->
+      <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <!-- Compact Search Input -->
+        <div class="search-box position-relative">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="form-control form-control-sm compact-search" placeholder="Search courses, docs..." />
+          <span class="kbd-shortcut">⌘K</span>
+        </div>
+        
+        <!-- Notification Button -->
+        <button class="icon-btn" type="button" aria-label="Notifications">
+          <i class="fa-regular fa-bell"></i>
+        </button>
+        
+        <!-- Profile Avatar -->
+        <button class="profile-avatar-btn" type="button" aria-label="User Profile">
+          <i class="fa-regular fa-user"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row align-items-center gy-5">
+        
+        <!-- Left Column: Content -->
+        <div class="col-lg-6">
+          <div class="pill-badge">
+            <span class="dot"></span>
+            <strong>100% PRACTICE-BASED</strong>
+            <span class="badge-separator">|</span>
+            <span>Learn by building</span>
+          </div>
+
+          <div class="hero-subtitle">// LEARN CODE. PRACTICE. BUILD.</div>
+          
+          <h1 class="hero-title">
+            Learn to Code.<br />
+            <span class="gradient-text">Build Your Future.</span>
+          </h1>
+          
+          <p class="hero-description">
+            Learn programming through simple lessons, interactive practice, quizzes, and real-world projects built directly inside a browser IDE.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-5">
+            <a href="#learningpath" class="btn btn-purple">
+              Start Learning <i class="fa-solid fa-arrow-right fs-6"></i>
+            </a>
+            <a href="#popularcourses" class="btn btn-outline-custom">
+              <i class="fa-regular fa-folder-open"></i> Explore Courses
+            </a>
+          </div>
+
+          <!-- Stats Row -->
+          <div class="stats-section">
+            <div class="row">
+              <div class="col-4">
+                <div class="stat-number stat-teal">45+</div>
+                <div class="stat-label">Interactive Labs</div>
+              </div>
+              <div class="col-4">
+                <div class="stat-number stat-blue">300+</div>
+                <div class="stat-label">Coding Challenges</div>
+              </div>
+              <div class="col-4">
+                <div class="stat-number stat-green">98%</div>
+                <div class="stat-label">Completion Rate</div>
+              </div>
+            </div>
           </div>
 
           <!-- Notification Button -->
