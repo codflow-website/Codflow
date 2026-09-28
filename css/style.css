@@ -496,141 +496,148 @@ body {
 
 
 /* --- Learning Path Section --- */
+/* --- Learning Path Section --- */
 .learning-path-section {
-  background-color: #0a0d18;
+  background-color: #0b0f19;
   color: #ffffff;
 }
 
 .section-subtitle {
   color: #8075e5;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  font-family: 'Fira Code', monospace;
   font-size: 0.75rem;
-  text-transform: uppercase;
-  margin-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 6px;
 }
 
 .section-title {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 800;
-  margin-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
 .section-description {
   color: #8e9bb0;
-  font-size: 0.95rem;
-  max-width: 520px;
-  margin-bottom: 0;
+  font-size: 0.9rem;
 }
 
-/* Legend Styles */
-.path-legend {
+/* Status Tracker Header Badges */
+.status-tracker {
   font-size: 0.85rem;
-  font-weight: 500;
 }
 
-.text-success-custom { color: #00b894; }
-.text-purple-custom { color: #a29bfe; }
-.text-muted-custom { color: #58637a; }
-.legend-separator { color: #3b465e; }
+.text-success { color: #10b981 !important; }
+.text-purple { color: #a78bfa !important; }
+.text-muted { color: #64748b !important; }
 
-/* Timeline Container & Connecting Line */
-.path-timeline-wrapper {
-  position: relative;
-  margin-top: 20px;
+/* Custom 5-Column Grid Layout for Large Screens */
+@media (min-width: 1200px) {
+  .col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
 }
 
-.path-connector-line {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #1e2638;
-  z-index: 0;
-  transform: translateY(-50%);
-}
-
-/* Path Cards Base */
+/* Path Card Base Styles */
 .path-card {
-  background-color: #131929;
-  border: 1px solid #1e2638;
-  border-radius: 12px;
-  padding: 20px;
-  min-height: 240px;
-  display: flex;
-  flex-direction: column;
+  background-color: #111726;
+  border: 1px solid #1c2538;
+  border-radius: 14px;
   position: relative;
-  z-index: 1;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.path-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(16, 185, 129, 0.04));
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
 }
 
 .path-card:hover {
-  transform: translateY(-3px);
-  border-color: #2e3a54;
+  transform: translateY(-6px);
+  border-color: rgba(148, 163, 184, 0.42);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.38), 0 0 0 1px rgba(99, 102, 241, 0.15);
 }
 
-/* Step Badge Number */
+.path-card:hover::before {
+  opacity: 1;
+}
+
+.path-card:hover .step-badge {
+  transform: scale(1.03);
+  box-shadow: 0 0 18px rgba(45, 229, 209, 0.18);
+}
+
+.path-card:hover .status-pill {
+  filter: brightness(1.08);
+}
+
+/* Card 01 Completed State */
+.completed-card {
+  background-color: #121a2d;
+  border-color: #1f2d48;
+}
+
+/* Card 03 Active Highlighted State */
+.active-card {
+  background-color: #12192c;
+  border: 1px solid #6366f1;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+}
+
+/* Step Number Badges */
 .step-badge {
-  background-color: #1d2638;
-  color: #00cec9;
   font-family: 'Fira Code', monospace;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.85rem;
-  padding: 4px 10px;
-  border-radius: 6px;
-  border: 1px solid #2a364f;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Status Badges */
-.status-badge {
-  font-size: 0.725rem;
+.badge-green {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+.badge-dark {
+  background-color: #172033;
+  color: #94a3b8;
+  border-color: #243047;
+}
+
+/* Status Pills Top Right */
+.status-pill {
+  font-size: 0.75rem;
   font-weight: 600;
   padding: 4px 10px;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+  border-radius: 20px;
 }
 
-.badge-completed {
-  background-color: rgba(0, 184, 148, 0.12);
-  color: #00b894;
-  border: 1px solid rgba(0, 184, 148, 0.25);
+.pill-completed {
+  background-color: rgba(16, 185, 129, 0.12);
+  color: #10b981;
 }
 
-.badge-active {
-  background-color: rgba(108, 92, 231, 0.2);
-  color: #a29bfe;
-  border: 1px solid rgba(108, 92, 231, 0.4);
+.pill-locked {
+  background-color: #172033;
+  color: #64748b;
+  border: 1px solid #222d42;
 }
 
-.active-dot {
-  width: 6px;
-  height: 6px;
-  background-color: #a29bfe;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.badge-next {
-  background-color: #1a2233;
-  color: #72809a;
-  border: 1px solid #26334d;
-}
-
-.badge-locked {
-  background-color: #141a29;
-  color: #58637a;
-  border: 1px solid #1e2638;
-}
-
-/* Card Content Typography */
+/* Typography & Content */
 .path-card-title {
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: 700;
-  color: #ffffff;
-  margin-top: 6px;
   margin-bottom: 8px;
 }
 
@@ -641,261 +648,229 @@ body {
   margin-bottom: 20px;
 }
 
-/* Card Footer */
+/* Card Bottom Footer */
 .path-card-footer {
-  border-top: 1px solid #1c2436;
-  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
   font-size: 0.775rem;
-  color: #58637a;
-  font-weight: 500;
+  color: #64748b;
 }
 
-.text-teal { color: #00cec9; font-weight: 700; }
-.text-purple { color: #a29bfe; font-weight: 700; }
-
-/* Active Card Accent Glow */
-.path-card.card-active {
-  border-color: #6c5ce7;
-  box-shadow: 0 0 20px rgba(108, 92, 231, 0.25);
-  background: linear-gradient(180deg, #161a2e 0%, #111625 100%);
-}
-
-.path-card.card-active .step-badge {
-  color: #a29bfe;
-  border-color: #6c5ce7;
-}
-
-/* Locked Card Styling */
-.path-card.card-locked {
-  opacity: 0.65;
-}
-
-.path-card.card-locked .step-badge {
-  color: #58637a;
-  border-color: #1e2638;
-}
-
-
+.fs-7 { font-size: 0.8rem; }
 
 
 /* --- Popular Courses Section --- */
 .popular-courses-section {
-  background-color: #0a0d18;
+  background-color: #080b14;
   color: #ffffff;
 }
 
-/* Header Filter Pill Bar */
-.filter-tabs-container {
-  background-color: #131929;
-  border: 1px solid #1e2638;
-  padding: 4px;
-  border-radius: 10px;
-  display: inline-flex;
-  gap: 4px;
+.section-subtitle {
+  color: #8075e5;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 6px;
 }
 
-.filter-tab {
-  background: transparent;
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.section-description {
+  color: #8e9bb0;
+  font-size: 0.95rem;
+}
+
+/* Catalog Filter Pills */
+.catalog-filter-pills {
+  background-color: #121829;
+  border: 1px solid #1e273c;
+}
+
+.filter-pill {
+  background: none;
   border: none;
   color: #8e9bb0;
   font-size: 0.825rem;
   font-weight: 500;
   padding: 6px 16px;
-  border-radius: 7px;
+  border-radius: 6px;
   transition: all 0.2s ease;
 }
 
-.filter-tab:hover {
-  color: #ffffff;
-}
-
-.filter-tab.active {
+.filter-pill.active,
+.filter-pill:hover {
   background-color: #8075e5;
   color: #ffffff;
 }
 
-/* Course Card */
+/* Course Cards Container */
 .course-card {
-  background-color: #131929;
-  border: 1px solid #1e2638;
-  border-radius: 12px;
-  padding: 24px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  background-color: #0c101c;
+  border: 1px solid #1a2235;
+  border-radius: 16px;
+  overflow: hidden;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .course-card:hover {
-  transform: translateY(-4px);
-  border-color: #2e3a54;
+  transform: translateY(-3px);
+  border-color: #2b3854;
 }
 
-.course-title-row {
+/* Top Visual Box */
+.card-thumb-wrapper {
+  background-color: #080a12;
+  border-bottom: 1px solid #161c2c;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+
+.code-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.725rem;
+  color: #64b5f6;
+  background-color: rgba(100, 181, 246, 0.08);
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(100, 181, 246, 0.25);
+  z-index: 2;
+}
+
+.tech-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.badge-js { background-color: #f7df1e; color: #000000; }
+.badge-html { background-color: #e44d26; color: #ffffff; }
+.badge-react { background-color: rgba(0, 216, 255, 0.15); color: #00d8ff; border: 1px solid rgba(0, 216, 255, 0.3); }
+.badge-git { background-color: #f05032; color: #ffffff; }
+.badge-tw { background-color: #38bdf8; color: #000000; }
+.badge-node { background-color: rgba(46, 213, 115, 0.15); color: #2ed573; border: 1px solid rgba(46, 213, 115, 0.3); }
+
+/* Laptop Illustration Frame */
+.laptop-img-wrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.course-tech-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
-  font-size: 1.15rem;
-  font-weight: 700;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.02);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-.course-tech-icon svg {
-  width: 22px;
-  height: 22px;
+.course-laptop-img {
+  width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
 }
 
-.js-icon { color: #f7df1e; background: rgba(247, 223, 30, 0.12); }
-.html-icon { color: #ff7a59; background: rgba(255, 122, 89, 0.12); }
-.css-icon { color: #4dabf7; background: rgba(77, 171, 247, 0.12); }
-.react-icon { color: #61dafb; background: rgba(97, 218, 251, 0.12); }
-.git-icon {
-  color: #8ef0b8;
-  background: linear-gradient(135deg, rgba(12, 75, 69, 0.9), rgba(38, 153, 110, 0.72));
-  border-color: rgba(142, 240, 184, 0.2);
-}
-.tailwind-icon { color: #38bdf8; background: rgba(56, 189, 248, 0.12); }
-.node-icon { color: #68a063; background: rgba(104, 160, 99, 0.12); }
-
-.course-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0;
-}
-
-.course-desc {
-  color: #8e9bb0;
-  font-size: 0.875rem;
-  line-height: 1.6;
-  margin-bottom: 24px;
-}
-
-.lessons-count {
-  color: #8e9bb0;
-  font-size: 0.8rem;
-  font-family: 'Fira Code', monospace;
-}
-
-/* Badges */
-.level-badge {
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 4px 12px;
-  border-radius: 50px;
-}
-
-.badge-purple-light {
-  background-color: rgba(128, 117, 229, 0.15);
-  color: #a29bfe;
-  border: 1px solid rgba(128, 117, 229, 0.3);
-}
-
-.badge-teal {
-  background-color: rgba(0, 206, 201, 0.15);
-  color: #00cec9;
-  border: 1px solid rgba(0, 206, 201, 0.3);
-}
-
-.badge-blue {
-  background-color: rgba(9, 132, 227, 0.15);
-  color: #74b9ff;
-  border: 1px solid rgba(9, 132, 227, 0.3);
-}
-
-.badge-dark {
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #8e9bb0;
-  border: 1px solid #1e2638;
-}
-
-/* Progress Indicator */
-.font-mono {
-  font-family: 'Fira Code', monospace;
-  font-size: 0.75rem;
-}
-
-.progress-label {
-  color: #58637a;
-}
-
-.progress-val {
-  color: #8e9bb0;
+/* Card Content Details */
+.level-label {
+  color: #a0aec0;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
-.text-success-teal {
-  color: #00cec9 !important;
+.lessons-count {
+  color: #58637a;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+}
+
+.course-card-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.course-card-desc {
+  color: #8e9bb0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Card Footer with Divider and Glowing Pill Button */
+.card-footer-action {
+  border-top: 1px solid rgba(255, 255, 255, 0.08); /* Top line divider */
+}
+
+.font-mono {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+}
+
+.progress-lbl { 
+  color: #8e9bb0; 
+  font-weight: 500;
+}
+
+.progress-val { 
+  color: #8e9bb0; 
+  font-weight: 500;
+}
+
+.progress-block {
+  flex-grow: 1;
+  max-width: 170px;
 }
 
 .custom-progress {
   height: 6px;
-  background-color: #1c2436;
-  border-radius: 10px;
+  background-color: #161c2e;
+  border-radius: 999px;
   overflow: hidden;
 }
 
 .bg-purple {
-  background-color: #8075e5 !important;
+  background-color: #9061ff !important;
+  border-radius: 999px;
 }
 
-.bg-teal {
-  background-color: #00cec9 !important;
-}
-
-/* Course Buttons */
-.btn-course-purple {
-  background-color: #8075e5;
+.btn-purple-cta {
+  background-color: #9061ff;
   color: #ffffff;
   font-weight: 600;
   font-size: 0.875rem;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 10px 22px;
+  border-radius: 12px;
   border: none;
+  white-space: nowrap;
+  box-shadow: 0 6px 20px rgba(144, 97, 255, 0.35);
   transition: all 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.btn-course-purple:hover {
-  background-color: #6c5ce7;
+.btn-purple-cta:hover {
+  background-color: #7f4bf9;
   color: #ffffff;
+  box-shadow: 0 8px 25px rgba(144, 97, 255, 0.5);
+  transform: translateY(-1px);
 }
-
-.btn-course-dark {
-  background-color: #0c0f1a;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 0.875rem;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #1e2638;
-  transition: all 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn-course-dark:hover {
-  background-color: #161b2e;
-  color: #ffffff;
-  border-color: #2e3a54;
-}
-
 
 
 
