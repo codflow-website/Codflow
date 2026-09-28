@@ -740,3 +740,163 @@ body {
     padding-bottom: 0.75rem !important;
   }
 }
+
+
+/* --- Course Hero Section --- */
+.course-hero-section {
+  background-color: #080a12;
+  color: #8e9bb0;
+}
+
+/* Breadcrumbs */
+.course-breadcrumb {
+  font-size: 0.8rem;
+  color: #556278;
+}
+
+.course-breadcrumb span {
+  color: #556278;
+}
+
+.course-breadcrumb span.active {
+  color: #38bdf8;
+}
+
+/* Category Badge */
+.track-badge {
+  background-color: rgba(144, 97, 255, 0.12);
+  color: #a78bfa;
+  border: 1px solid rgba(144, 97, 255, 0.25);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.725rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Dot Indicators */
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.purple-dot { background-color: #a78bfa; }
+.blue-dot { background-color: #38bdf8; }
+
+/* Course Title */
+.course-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.highlight-purple {
+  color: #8075e5;
+}
+
+.course-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  max-width: 620px;
+}
+
+/* Meta Badges Row */
+.text-sm { font-size: 0.825rem; }
+.text-xs { font-size: 0.75rem; }
+
+.meta-badge {
+  background-color: #101625;
+  border: 1px solid #1c2538;
+  color: #94a3b8;
+  padding: 6px 14px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star-badge {
+  border-color: #262117;
+  background-color: #12100d;
+}
+
+/* Action Buttons */
+.btn-purple-cta {
+  background-color: #9061ff;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 12px 26px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 6px 20px rgba(144, 97, 255, 0.35);
+  transition: all 0.2s ease;
+}
+
+.btn-purple-cta:hover {
+  background-color: #7f4bf9;
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(144, 97, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-outline-dark-custom {
+  background-color: #111726;
+  border: 1px solid #222d42;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 12px 24px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-dark-custom:hover {
+  background-color: #182238;
+  border-color: #2e3d5c;
+  color: #ffffff;
+}
+
+/* Progress Box */
+.course-progress-box {
+  background-color: #0d121f;
+  border: 1px solid #1c2538;
+  border-radius: 12px;
+}
+
+.progress-title {
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.custom-hero-progress {
+  height: 8px;
+  background-color: #172033;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bg-cyan-gradient {
+  background: linear-gradient(90deg, #38bdf8 0%, #a78bfa 100%);
+  border-radius: 999px;
+}
+
+/* Image Frame */
+.border-dark-glow {
+  border: 1px solid #1c2538;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.hero-image-frame img {
+  max-height: 420px;
+  width: 100%;
+}
