@@ -289,16 +289,29 @@ h1 span {
 }
 
 .course-art {
-    height: 275px;
+    height: auto;
+    aspect-ratio: 16 / 9;
     border: 1px solid #2d3b5c;
     border-radius: 13px;
-    padding: 9px;
+    padding: 0;
     background:
         radial-gradient(circle at 50% 60%, rgba(80, 67, 180, .18), transparent 48%),
         linear-gradient(145deg, #111932, #0b1326 65%, #0b1326);
     box-shadow: inset 0 0 40px rgba(80, 67, 180, .12), 0 0 22px rgba(80, 67, 180, .12);
     position: relative;
     overflow: hidden;
+}
+
+.course-art .art-top {
+    position: absolute;
+    inset: 0;
+}
+
+.course-art img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .art-top,
@@ -686,7 +699,7 @@ h2 {
     padding: 4px 7px;
     margin-bottom: 4px;
     color: #c4cad8;
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .check-item i {
@@ -712,6 +725,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    font-size: 12px;
 }
 
 .metric i {
@@ -720,7 +734,7 @@ h2 {
 
 .metric small {
     color: #8591a8;
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .metric strong {
@@ -740,7 +754,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 2px 8px;
-    font-size: 9px;
+    font-size: 12px;
     color: #dce2ed;
 }
 
