@@ -652,13 +652,6 @@ body {
   padding: 6px 54px;
 }
 
-/* Main Card Outer Box */
-.summary-card {
-  background-color: #0d1220;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
 
 /* Inner Stats Cards */
 .stat-box {
