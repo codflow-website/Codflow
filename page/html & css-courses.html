@@ -44,7 +44,7 @@
         <span class="navbar-toggler-icon small"></span>
       </button>
 
-      
+
       <!-- Collapsible Menu -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
@@ -202,7 +202,7 @@
           <span class="status-icon active"><i class="bi bi-play-fill"></i></span>
           <div><small>Lesson 01 </small><strong>HTML Fundamentals &amp; Web Mechanics</strong></div>
           <time>35m</time>
-          <a href="#" class="continue-btn">Continue Lesson →</a>
+          <button class="continue-btn">Continue Lesson <i class="bi bi-arrow-right"></i></button>
         </div>
         <div class="lesson locked"><span class="status-icon"><i class="bi bi-lock"></i></span>
           <div><small>Lesson 02 · Locked</small><strong>Semantic HTML &amp; Document Outline</strong></div>
@@ -694,7 +694,6 @@
               </svg>
             </a>
 
-            
             <!-- Telegram -->
             <a href="#"
               class="btn btn-social btn-telegram rounded-2 d-inline-flex align-items-center justify-content-center"
@@ -747,81 +746,46 @@
           </ul>
         </div>
 
-                <!-- Right Links Columns Container -->
-                <div class="col-lg-8 col-md-12">
-                    <div class="row g-4">
-
-                        <!-- Curriculum Links -->
-                        <div class="col-6 col-sm-3">
-                            <h6 class="text-uppercase small fw-bold text-secondary mb-3 tracking-wider"
-                                style="font-size: 0.75rem;">Curriculum</h6>
-                            <ul class="list-unstyled d-flex flex-column gap-2 small">
-                                <li><a href="#" class="text-secondary text-decoration-none hover-white">Courses</a></li>
-                                <li><a href="#" class="text-secondary text-decoration-none hover-white">Practice</a>
-                                </li>
-                                <li><a href="#" class="text-secondary text-decoration-none hover-white">Learning
-                                        Path</a></li>
-                            </ul>
-                        </div>
-
-
-                        <!-- Evaluation Links -->
-                        <div class="col-6 col-sm-3">
-                            <h6 class="text-uppercase small fw-bold text-secondary mb-3 tracking-wider"
-                                style="font-size: 0.75rem;">Evaluation</h6>
-                            <ul class="list-unstyled d-flex flex-column gap-2 small">
-                                <li><a href="#" class="text-secondary text-decoration-none hover-white">Quizzes</a></li>
-                                <li><a href="#" class="text-secondary text-decoration-none hover-white">Projects</a>
-                                </li>
-                                <li><a href="#"
-                                        class="text-secondary text-decoration-none hover-white">Certifications</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Platform Links -->
-                        <div class="col-6 col-sm-3">
-                            <h6 class="text-uppercase small fw-bold text-secondary mb-3 tracking-wider"
-                                style="font-size: 0.75rem;">Platform</h6>
-                            <ul class="list-unstyled d-flex flex-column gap-2 small">
-                                <li><a href="#" class="text-secondary text-decoration-none hover-white">About</a></li>
-                                <li><a href="#" class="text-secondary text-decoration-none hover-white">Contact</a></li>
-                                <li><a href="#" class="text-secondary text-decoration-none hover-white">Privacy
-                                        Policy</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- System Status -->
-                        <div class="col-6 col-sm-3">
-                            <h6 class="text-uppercase small fw-bold text-secondary mb-3 tracking-wider"
-                                style="font-size: 0.75rem;">System</h6>
-                            <ul class="list-unstyled d-flex flex-column gap-2 small">
-                                <li class="d-flex align-items-center gap-2">
-                                    <span class="d-inline-block rounded-circle bg-success"
-                                        style="width: 6px; height: 6px;"></span>
-                                    <span class="text-success fw-semibold">Kernels Online</span>
-                                </li>
-                                <li class="text-secondary opacity-50">v2.4.0-stable</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Bottom Copyright & Footer Links -->
-            <div
-                class="pt-3 border-top border-secondary border-opacity-10 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 small">
-                <span class="text-secondary opacity-75">&copy; 2026 CodFlow Dev Systems Inc. All rights reserved.</span>
-                <div class="d-flex gap-4">
-                    <a href="#" class="text-secondary text-decoration-none hover-white">Terms</a>
-                    <a href="#" class="text-secondary text-decoration-none hover-white">Telemetry</a>
-                    <a href="#" class="text-secondary text-decoration-none hover-white">Status</a>
-                </div>
-            </div>
-
+        <!-- Column 4: Platform -->
+        <div class="col-6 col-sm-3 col-lg-2">
+          <h6 class="footer-title text-uppercase font-monospace mb-3">PLATFORM</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 fs-7 mb-0">
+            <li><a href="#" class="footer-link">About</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          </ul>
         </div>
-    </footer>
+
+        <!-- Column 5: System -->
+        <div class="col-6 col-sm-3 col-lg-2">
+          <h6 class="footer-title text-uppercase font-monospace mb-3">SYSTEM</h6>
+          <div class="d-flex flex-column gap-2 font-monospace fs-8">
+            <div class="d-flex align-items-center gap-2 text-green">
+              <span class="dot dot-green"></span>
+              <span>Kernels Online</span>
+            </div>
+            <span class="text-slate">v2.4.0-stable</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Border & Copyright Bar -->
+      <div
+        class="footer-bottom pt-3 border-top border-secondary-subtle d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+        <span class="text-secondary fs-7">
+          © 2026 CodFlow Dev Systems Inc. All rights reserved.
+        </span>
+        <div class="d-flex align-items-center gap-4 fs-7">
+          <a href="#" class="footer-link">Terms</a>
+          <a href="#" class="footer-link">Telemetry</a>
+          <a href="#" class="footer-link">Status</a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
 
 
   <!-- Bootstrap JS -->
