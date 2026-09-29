@@ -451,254 +451,63 @@ body {
 
 
 
-/* Base Section Setup */
+/* --- Course Curriculum Section --- */
 .curriculum-section {
-  background-color: #0a0d18;
-  color: #ffffff;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #070913;
+  color: #8e9bb0;
 }
 
-.sub-heading {
-  color: #818cf8;
-  font-size: 0.72rem;
-  letter-spacing: 1px;
+.curriculum-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
 }
 
-.section-title {
-  font-size: 1.8rem;
-  letter-spacing: -0.5px;
+.curriculum-subtitle {
+  color: #64748b;
+  font-size: 0.9rem;
 }
 
-.fs-7 {
-  font-size: 0.85rem;
-}
-
-/* Status Filter Buttons Top Right */
-.status-filter-group {
-  background-color: #111827;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
+/* Filter Buttons */
 .filter-btn {
-  background: transparent;
-  border: none;
-  color: #94a3b8;
-  font-size: 0.75rem;
-  padding: 0.35rem 0.85rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.filter-btn:hover {
-  color: #ffffff;
-}
-
-.filter-btn.active {
-  background-color: #272042;
-  color: #c084fc;
-  font-weight: 500;
-}
-
-/* Curriculum Card Item */
-.curriculum-item {
-  background-color: #111827;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.curriculum-item:hover {
-  border-color: rgba(255, 255, 255, 0.12);
-}
-
-/* Active Lesson Highlight Styling */
-.item-active {
-  background: linear-gradient(90deg, #181d36 0%, #111827 100%);
-  border: 1px solid #3b82f6 !important;
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.15);
-}
-
-/* Icon Box Indicators */
-.status-icon {
-  width: 32px;
-  height: 32px;
+  background-color: #0d121f;
+  border: 1px solid #1c2538;
+  color: #64748b;
+  padding: 6px 14px;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.icon-completed {
-  background-color: #064e3b;
-  color: #10b981;
-}
-
-.icon-active {
-  background-color: #3b0764;
-  color: #c084fc;
-}
-
-.icon-locked {
-  background-color: #1e293b;
-  color: #64748b;
-}
-
-/* Typography & Badges inside cards */
-.lesson-num {
-  font-size: 0.75rem;
-  color: #94a3b8;
-  font-weight: 500;
-}
-
-.lesson-title {
-  font-size: 0.95rem;
-  color: #e2e8f0;
-  font-weight: 600;
-}
-
-.lesson-desc {
-  font-size: 0.8rem;
-  color: #64748b;
-}
-
-.duration-text {
-  font-size: 0.72rem;
-  color: #64748b;
-}
-
-.badge {
-  font-size: 0.65rem;
-  padding: 0.2em 0.5em;
-  font-weight: 500;
-  border-radius: 4px;
-}
-
-.badge-completed {
-  background-color: rgba(16, 185, 129, 0.15);
-  color: #34d399;
-}
-
-.badge-active {
-  background-color: #ec4899;
-  color: #ffffff;
-}
-
-.badge-locked {
-  background-color: rgba(100, 116, 139, 0.2);
-  color: #94a3b8;
-}
-
-/* Right Side Action Buttons */
-.btn-review {
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #94a3b8;
-  font-size: 0.78rem;
-  padding: 0.35rem 0.85rem;
-  border-radius: 6px;
   transition: all 0.2s ease;
 }
 
-.btn-review:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.filter-btn.active, 
+.filter-btn:hover {
+  background-color: #8075e5;
+  border-color: #8075e5;
   color: #ffffff;
 }
 
-.btn-continue {
-  background: linear-gradient(90deg, #818cf8 0%, #3b82f6 100%);
-  color: #ffffff;
-  border: none;
-  font-size: 0.8rem;
-  padding: 0.45rem 1rem;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-  transition: opacity 0.2s ease;
+/* List Items Container */
+.curriculum-item {
+  border: 1px solid #161c2c;
+  background-color: #0b0f1b;
+  transition: all 0.2s ease;
 }
 
-.btn-continue:hover {
-  opacity: 0.9;
-  color: #ffffff;
+/* Active Highlighted Item */
+.active-item {
+  background-color: #101628;
+  border-color: #6366f1;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
 }
 
-.locked-icon-right {
-  opacity: 0.5;
-  padding-right: 0.5rem;
+.locked-item:hover {
+  background-color: #0e1322;
+  border-color: #243047;
 }
 
-
-/* Base Section Setup */
-.mastery-section {
-  background-color: #0a0d18;
-  color: #ffffff;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-}
-
-.sub-heading {
-  color: #818cf8;
-  font-size: 0.72rem;
-  letter-spacing: 1px;
-}
-
-.text-slate-300 {
-  color: #cbd5e1;
-}
-
-.fs-7 {
-  font-size: 0.85rem;
-}
-
-.fs-8 {
-  font-size: 0.75rem;
-}
-
-/* Card Containers */
-.mastery-card {
-  background-color: #161f38;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.metric-card {
-  background-color: #161f38;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* Check Icons */
-.check-icon {
-  flex-shrink: 0;
-}
-
-/* Skill Progress Bars */
-.skill-progress-bg {
-  height: 6px;
-  background-color: #0f172a;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.skill-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #a78bfa, #c084fc);
-  border-radius: 10px;
-}
-
-.skill-progress-fill.fill-cyan {
-  background: linear-gradient(90deg, #38bdf8, #818cf8);
-}
-
-.skill-progress-fill.fill-dark {
-  background: #334155;
-}
-
-/* Projected Box */
-.projected-box {
-  background-color: #0d1222;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* Metric Icon Boxes */
-.metric-icon {
-  width: 42px;
-  height: 42px;
+/* Icons Styling */
+.lesson-icon {
+  width: 38px;
+  height: 38px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -706,24 +515,82 @@ body {
   flex-shrink: 0;
 }
 
-.metric-purple {
-  background-color: #2e264f;
+.bg-purple-glow {
+  background-color: #8075e5;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(128, 117, 229, 0.4);
+}
+
+.bg-dark-icon {
+  background-color: #141a29;
+  border: 1px solid #1f2a3f;
+}
+
+/* Badges */
+.badge-tag {
+  font-size: 0.675rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.tag-purple {
+  background-color: rgba(144, 97, 255, 0.15);
   color: #a78bfa;
 }
 
-.metric-blue {
-  background-color: #1e2e4f;
-  color: #60a5fa;
-}
-
-.metric-cyan {
-  background-color: #0e384f;
-  color: #38bdf8;
-}
-
-.metric-slate {
-  background-color: #1e293b;
+.tag-dark {
+  background-color: #172033;
   color: #94a3b8;
+  border: 1px solid #243047;
+}
+
+.tag-purple-filled {
+  background-color: #8075e5;
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  box-shadow: 0 2px 8px rgba(128, 117, 229, 0.4);
+}
+
+.text-purple {
+  color: #a78bfa;
+}
+
+/* Typography */
+.lesson-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 4px;
+}
+
+.lesson-desc {
+  font-size: 0.825rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* Action Button */
+.btn-purple-sm {
+  background-color: #9061ff;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(144, 97, 255, 0.35);
+  transition: all 0.2s ease;
+}
+
+.btn-purple-sm:hover {
+  background-color: #7f4bf9;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(144, 97, 255, 0.5);
+  transform: translateY(-1px);
 }
 
 
