@@ -1,0 +1,139 @@
+/* ROOT VARIABLES */
+:root {
+    --cf-bg: #0b0f17;
+    --cf-card-bg: rgba(17, 24, 39, 0.7);
+    --cf-border: rgba(255, 255, 255, 0.1);
+    --cf-accent-purple: #8b5cf6;
+    --cf-accent-blue: #3b82f6;
+    --cf-accent-green: #10b981;
+}
+
+body {
+    background-color: var(--cf-bg);
+    color: #e5e7eb;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* CARD STYLES */
+.cf-card {
+    background: var(--cf-card-bg);
+    border: 1px solid var(--cf-border);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+}
+
+.key-points-card {
+    background: rgba(139, 92, 246, 0.05);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 12px;
+}
+
+/* SECTION TITLES */
+.section-title {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-title i {
+    color: var(--cf-accent-purple);
+}
+
+/* VIDEO WRAPPER */
+.video-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--cf-border);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* FLOW DIAGRAMS & TREES */
+.flow-container .flow-step {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--cf-border);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.flow-container .flow-arrow {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.75rem;
+}
+
+.tree-container {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--cf-border);
+    border-radius: 8px;
+    padding: 1rem;
+    color: #a7f3d0;
+    font-size: 0.875rem;
+}
+
+.font-mono {
+    font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.diff-box {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--cf-border);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* QUIZ OPTIONS */
+.quiz-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--cf-border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quiz-option:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.quiz-option input[type="radio"] {
+    accent-color: var(--cf-accent-purple);
+}
+
+/* BUTTONS */
+.btn-cf-primary {
+    background: linear-gradient(135deg, var(--cf-accent-purple), var(--cf-accent-blue));
+    color: #ffffff;
+    border: none;
+    font-weight: 500;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    transition: opacity 0.2s;
+}
+
+.btn-cf-primary:hover {
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+.btn-cf-success {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--cf-accent-green);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    font-weight: 500;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.btn-cf-success:hover {
+    background: rgba(16, 185, 129, 0.25);
+    color: var(--cf-accent-green);
+}
