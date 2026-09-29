@@ -284,6 +284,113 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+/* Card Container */
+.curriculum-item {
+  border: 1px solid #161c2c;
+  background-color: #0b0f1b;
+  transition: all 0.2s ease;
+  border-radius: 12px;
+}
+
+.active-item {
+  background-color: #0e1126;
+  border-color: #4f46e5;
+  box-shadow: 0 0 20px rgba(79, 70, 229, 0.15);
+}
+
+.locked-item:hover {
+  background-color: #0e1322;
+  border-color: #243047;
+}
+
+/* Icons Styling */
+.lesson-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bg-purple-glow {
+  background-color: #8075e5;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(128, 117, 229, 0.4);
+}
+
+.bg-dark-icon {
+  background-color: #141a29;
+  border: 1px solid #1f2a3f;
+}
+
+/* Badges */
+.badge-tag {
+  font-size: 0.675rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.tag-purple {
+  background-color: rgba(144, 97, 255, 0.15);
+  color: #a78bfa;
+}
+
+.tag-dark {
+  background-color: #172033;
+  color: #94a3b8;
+  border: 1px solid #243047;
+}
+
+/* Icon Box */
+.lesson-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.bg-purple-glow {
+  background-color: #818cf8;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(129, 140, 248, 0.4);
+}
+
+/* Badge Tag */
+.badge-tag.tag-purple {
+  background-color: rgba(129, 140, 248, 0.15);
+  color: #a5b4fc;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+/* Action Button */
+.btn-purple-sm {
+  background-color: #818cf8;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 15px rgba(129, 140, 248, 0.3);
+  transition: opacity 0.2s ease;
+}
+
+.btn-purple-sm:hover {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* Brighter muted text for dark backgrounds */
+.text-muted {
+  color: #94a3b8 !important; /* Soft light gray/blue */
+}
+
 .lesson-card:hover:not(.locked) {
   border-color: rgba(168, 85, 247, 0.3);
   background-color: #1a243d;
