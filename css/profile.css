@@ -1,38 +1,56 @@
+/* ==========================================================================
+   1. Base & Global Styles
+   ========================================================================== */
+
 body {
-  background-color: #0a0d18;
-  color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  overflow-x: hidden;
+  background-color: #07090e;
+  color: #e2e8f0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(139, 92, 246, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(6, 182, 212, 0.06) 0%, transparent 40%);
 }
 
-
-.navbar-sticky {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #0b0f19; 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+/* Monospace Font Helpers */
+.font-mono { 
+  font-family: 'JetBrains Mono', monospace; 
 }
 
+/* Custom Text Accent Colors */
+.text-purple  { color: #8b5cf6 !important; }
+.text-cyan    { color: #06b6d4 !important; }
+.text-amber   { color: #f59e0b !important; }
+.text-emerald { color: #10b981 !important; }
 
-/* Dark Theme Base */
+
+/* ==========================================================================
+   2. Navigation Bar
+   ========================================================================== */
+
+.navbar-sticky,
 .bg-dark-custom {
-  background-color: rgba(11, 15, 25, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   position: sticky;
   top: 0;
   z-index: 1030;
+  background-color: rgba(11, 15, 25, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Compact Brand Logo */
+.navbar-codflow {
+  background: rgba(7, 9, 14, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
 .brand-logo {
   height: 38px;
   width: auto;
 }
 
-/* Navigation Links */
+/* Compact Nav Links */
 .custom-nav-link {
   font-size: 0.85rem;
   font-weight: 500;
@@ -49,12 +67,35 @@ body {
 
 .custom-nav-link.active {
   color: #ffffff !important;
-  background-color: #272042; /* Highlight pill matching your dark-purple accent */
+  background-color: #272042;
 }
 
-/* Compact Search Box */
+/* Codflow Nav Links */
+.nav-link-cf {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.nav-link-cf:hover {
+  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav-link-cf.active {
+  color: #a78bfa !important;
+  background: rgba(255, 255, 255, 0.06);
+  border-bottom: 2px solid #8b5cf6;
+}
+
+/* Search Box Component */
 .search-box {
   width: 220px;
+  position: relative;
 }
 
 .compact-search {
@@ -102,7 +143,11 @@ body {
   pointer-events: none;
 }
 
-/* Icon Buttons & Profile */
+
+/* ==========================================================================
+   3. User Profile & Avatar Styles
+   ========================================================================== */
+
 .icon-btn {
   background: transparent;
   border: none;
@@ -142,207 +187,216 @@ body {
   color: #ffffff;
 }
 
-
-
-
-/* Background & Global Colors */
-.profile-workspace {
-  background-color: #060913;
-  color: #94a3b8;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+/* Avatar Glow Wrapper */
+.avatar-container {
+  position: relative;
+  display: inline-block;
 }
 
-/* Typography & Utility Colors */
-.fs-7 { font-size: 0.88rem; }
-.fs-8 { font-size: 0.78rem; }
-.fs-9 { font-size: 0.70rem; }
-
-.text-cyan { color: #38bdf8 !important; }
-.text-purple { color: #c084fc !important; }
-.text-amber { color: #fbbf24 !important; }
-.text-green { color: #22c55e !important; }
-.text-slate { color: #64748b !important; }
-
-.bg-cyan-subtle { background-color: rgba(56, 189, 248, 0.12) !important; }
-.bg-purple-subtle { background-color: rgba(192, 132, 252, 0.12) !important; }
-.bg-amber-subtle { background-color: rgba(251, 191, 36, 0.12) !important; }
-.bg-danger-subtle { background-color: rgba(248, 113, 113, 0.12) !important; }
-.bg-primary-subtle { background-color: rgba(96, 165, 250, 0.12) !important; }
-.bg-success-subtle { background-color: rgba(34, 197, 94, 0.12) !important; }
-.bg-slate-subtle { background-color: rgba(100, 116, 139, 0.12) !important; }
-
-/* Dashboard Cards */
-.dash-card {
-  background-color: #0c1220;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-/* User Avatar & Info */
-.profile-avatar-wrapper {
-  width: 90px;
-  height: 90px;
+.avatar-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 110%;
   border-radius: 50%;
-  padding: 3px;
-  background: linear-gradient(135deg, #38bdf8, #a855f7);
+  background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+  filter: blur(12px);
+  opacity: 0.6;
+  z-index: 0;
 }
 
 .avatar-img {
-  width: 100%;
-  height: 100%;
+  position: relative;
+  z-index: 1;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid #1e293b;
   object-fit: cover;
 }
 
-.stat-box {
-  background-color: #10192e;
-  border: 1px solid rgba(255, 255, 255, 0.04);
+.online-pulse {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 16px;
+  height: 16px;
+  background-color: #10b981;
+  border: 3px solid #0f172a;
+  border-radius: 50%;
+  z-index: 2;
 }
 
-.profile-link:hover span {
-  color: #38bdf8 !important;
+
+/* ==========================================================================
+   4. Cards & Containers
+   ========================================================================== */
+
+.cf-card {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Badges & Buttons */
-.badge-active-status {
-  background-color: rgba(34, 197, 94, 0.1);
-  color: #22c55e;
-  border: 1px solid rgba(34, 197, 94, 0.2);
-}
-
-.badge-pro {
-  background-color: rgba(168, 85, 247, 0.1);
-  color: #c084fc;
-  border: 1px solid rgba(168, 85, 247, 0.2);
-}
-
-.badge-meta {
-  background-color: #121c33;
-  color: #64748b;
-  padding: 4px 10px;
-  border-radius: 6px;
-}
-
-.badge-in-progress {
-  background-color: rgba(56, 189, 248, 0.9);
-  color: #060913;
-}
-
-.badge-completed {
-  background-color: rgba(34, 197, 94, 0.9);
-  color: #060913;
-}
-
-.btn-action {
-  background-color: #121a2d;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: all 0.2s ease;
-}
-
-.btn-action:hover {
-  background-color: #1b2640;
-}
-
-.btn-purple-gradient {
-  background: linear-gradient(90deg, #a855f7, #8b5cf6);
-  border: none;
-  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
-}
-
-.btn-purple-gradient:hover {
-  opacity: 0.92;
-}
-
-.btn-action-sm {
-  background-color: #141f36;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.btn-action-sm:hover {
-  background-color: #1e2c4d;
-}
-
-.btn-green-outline {
-  background-color: transparent;
-  border: 1px solid rgba(34, 197, 94, 0.4);
-  color: #22c55e;
-}
-
-.btn-green-outline:hover {
-  background-color: rgba(34, 197, 94, 0.1);
-}
-
-/* Custom Progress Bars */
-.custom-progress {
-  height: 6px;
-  background-color: #070b14;
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.bg-cyan-gradient {
-  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
-}
-
-.bg-cyan { background-color: #38bdf8; }
-.bg-purple { background-color: #c084fc; }
-.bg-green { background-color: #22c55e; }
-
-/* Commit Matrix Cards */
-.day-card {
-  background-color: #10182b;
-  border: 1px solid rgba(255, 255, 255, 0.03);
-}
-
-.day-active {
-  background-color: #172442;
-  border-color: rgba(56, 189, 248, 0.3);
-}
-
-/* Skill Tags & Specialization Box */
-.skill-tag {
-  padding: 4px 10px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.track-box {
-  background-color: #090f1b;
-  border: 1px solid rgba(56, 189, 248, 0.15);
-}
-
-/* Course Cards */
-.course-card {
-  background-color: #090e1a;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: transform 0.2s ease;
-}
-
-.course-card:hover {
+.cf-card:hover {
+  border-color: rgba(139, 92, 246, 0.4);
   transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(139, 92, 246, 0.25);
 }
 
-.course-thumb {
-  height: 100px;
+/* Stat Cards */
+.stat-card .stat-title {
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.course-thumb img {
-  height: 100%;
-  object-fit: cover;
+.stat-card .stat-number {
+  color: #f8fafc;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
 }
 
-/* Settings Box & Custom Switch */
-.setting-box {
-  background-color: #090e1a;
+.stat-card .stat-desc {
+  color: #e2e8f0;
+  font-size: 0.825rem;
+  font-weight: 500;
+}
+
+/* Stat Icon Badges */
+.stat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.stat-purple { background: rgba(139, 92, 246, 0.15); color: #a78bfa; border: 1px solid rgba(139, 92, 246, 0.3); }
+.stat-amber  { background: rgba(245, 158, 11, 0.15);  color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+.stat-cyan   { background: rgba(6, 182, 212, 0.15);   color: #38bdf8; border: 1px solid rgba(6, 182, 212, 0.3); }
+.stat-blue   { background: rgba(59, 130, 246, 0.15);   color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+
+
+/* ==========================================================================
+   5. Buttons
+   ========================================================================== */
+
+.btn-cf-primary {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.btn-cf-primary:hover {
+  opacity: 0.95;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+  color: #ffffff;
+}
+
+.btn-cf-outline {
+  background: rgba(255, 255, 255, 0.03);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.btn-cf-outline:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* ==========================================================================
+   6. Custom UI Components (Badges & Charts)
+   ========================================================================== */
+
+/* GitHub Commit Activity Chart */
+.commit-bar-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.commit-bar-track {
+  height: 120px;
+  width: 100%;
+  max-width: 28px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.custom-switch {
-  background-color: #1e293b;
-  border-color: #334155;
-  cursor: pointer;
+.commit-bar-fill {
+  width: 100%;
+  background: linear-gradient(180deg, #8b5cf6, #3b82f6);
+  border-radius: 4px;
+  transition: height 0.6s ease;
 }
 
-.custom-switch:checked {
-  background-color: #a855f7;
-  border-color: #a855f7;
+.commit-bar-fill.dim {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Skills Badges */
+.skill-badge {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s;
+}
+
+.skill-badge:hover {
+  border-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.08);
+}
+
+
+/* ==========================================================================
+   7. Scrollbar Customization
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
 }
