@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>CodFlow programming</title>
+    <meta name="description"
+        content="Master programming with CodFlow. Access interactive coding lessons, hands-on practice, and real-world projects all in one platform." />
+    <meta name="keywords"
+        content="learn to code, coding lessons, programming platform, interactive coding, web development projects" />
+    <meta name="author" content="CodFlow" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="icon" type="image/png" href="../../img/codflow.png" />
+    <link rel="canonical" href="https://codflow-programming.vercel.app/" />
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="B0b2CfWbl_E08tUNxTFK2BG5XMaXDH1LVShNMa6M0r8" />
+
+    <!-- ============================= -->
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <!-- ============================= -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://codflow-programming.vercel.app/" />
+    <meta property="og:title" content="CodFlow - Learn Programming & Web Development" />
+    <meta property="og:description"
+        content="Learn programming with CodFlow through coding lessons, interactive practice, and real-world projects." />
+    <meta property="og:image" content="https://codflow-programming.vercel.app/img/codflow.png" />
+    <meta property="og:image:alt" content="CodFlow Programming Learning Platform" />
+    <meta property="og:site_name" content="CodFlow" />
+    <meta property="og:locale" content="en_US" />
+    <!-- ============================= -->
+    <!-- TWITTER / X CARD -->
+    <!-- ============================= -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://codflow-programming.vercel.app/" />
+    <meta name="twitter:title" content="CodFlow - Learn Programming & Web Development" />
+    <meta name="twitter:description"
+        content="Learn programming with CodFlow through coding lessons, interactive practice, and real-world projects." />
+    <meta name="twitter:image" content="https://codflow-programming.vercel.app/img/codflow.png" />
+    <meta name="twitter:image:alt" content="CodFlow Programming Learning Platform" />
+
+    <!-- ============================= -->
+    <!-- FAVICON & APP ICON -->
+    <!-- ============================= -->
+    <link rel="icon" type="image/png" href="https://codflow-programming.vercel.app/img/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="https://codflow-programming.vercel.app/img/logo.png" />
+    <link rel="apple-touch-icon" href="https://codflow-programming.vercel.app/img/logo.png" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Google Fonts (Inter & Fira Code) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <!-- ============================= -->
+    <!-- CUSTOM CSS -->
+    <!-- ============================= -->
+    <link rel="stylesheet" href="../frondend/css/lesson1.css" />
+
+    <!-- ============================= -->
+    <!-- STRUCTURED DATA / SCHEMA.ORG -->
+    <!-- ============================= -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CodFlow",
+    "alternateName": "CodFlow Programming",
+    "url": "https://codflow-programming.vercel.app/",
+    "description": "CodFlow is a programming learning platform that provides coding lessons, practice exercises, and real-world programming projects.",
+    "inLanguage": "en",
+    "logo": "https://codflow-programming.vercel.app/img/logo.png",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CodFlow",
+      "logo": "https://codflow-programming.vercel.app/img/logo.png"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://codflow-programming.vercel.app/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar-sticky navbar navbar-expand-lg navbar-dark bg-dark-custom py-2">
+        <div class="container-fluid px-3">
+            <!-- Brand Logo -->
+            <a class="navbar-brand me-3 py-0" href="#" aria-label="CodFlow home">
+                <img src="../../img/logo.png" alt="CodFlow logo" class="brand-logo" />
+            </a>
+
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon small"></span>
+            </button>
+
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link " href="../../page/frondend-course.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link active" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#prcticebycoding">Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#quizes">Quizzes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#learningpath">Learning Path</a>
+                    </li>
+                </ul>
+
+                <!-- Right Controls -->
+                <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+                    <!-- Compact Search Input -->
+                    <div class="search-box position-relative">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" class="form-control form-control-sm compact-search"
+                            placeholder="Search courses, docs..." />
+                        <!-- <span class="kbd-shortcut">⌘K</span> -->
+                    </div>
+
+                    <!-- Notification Button -->
+                    <button class="icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+
+                    <!-- Profile Avatar -->
+                    <a href="./page/profile.html" class="profile-avatar-btn" aria-label="User Profile">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+   <!-- REACT LESSON VIDEO -->
+<section class="mb-5">
+    <div class="video-wrapper">
+        <div class="ratio ratio-16x9">
+            <iframe
+                src="https://www.youtube.com/embed/7YhdqIR2Yzo"
+                title="React Virtual DOM & Architecture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- LESSON CONTENT OVERVIEW -->
+    <section class="mb-4">
+        <div class="cf-card p-4">
+            <h2 class="section-title fs-5">
+                <i class="fa-solid fa-cubes"></i> What is React Architecture?
+            </h2>
+            <p class="text-secondary mb-0">
+                React architecture is the underlying system React uses to manage components, handle state changes,
+                schedule rendering tasks, and apply minimal updates to the browser's user interface seamlessly.
+            </p>
+        </div>
+    </section>
+
+    <!-- VIRTUAL DOM SECTION -->
+    <section class="mb-4">
+        <div class="cf-card p-4">
+            <h2 class="section-title fs-5">
+                <i class="fa-solid fa-network-wired"></i> Virtual DOM
+            </h2>
+            <p class="text-secondary mb-4">
+                The Virtual DOM is a lightweight, in-memory representation of the real browser DOM. React uses it to
+                calculate necessary UI updates before actually touching the slower browser DOM.
+            </p>
+
+            <!-- Flow visual -->
+            <div class="p-3 rounded-3" style="background: rgba(11, 15, 23, 0.5); border: 1px dashed var(--cf-border);">
+                <div class="d-flex justify-content-center align-items-center gap-2 gap-md-3 flex-wrap flow-container">
+                    <div class="flow-step text-info"><i class="fa-brands fa-react me-1"></i> React</div>
+                    <div class="flow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="flow-step">Virtual DOM</div>
+                    <div class="flow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="flow-step text-warning">Compare Changes</div>
+                    <div class="flow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="flow-step text-success"><i class="fa-solid fa-globe me-1"></i> Browser DOM</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECONCILIATION SECTION -->
+    <section class="mb-4">
+        <div class="cf-card p-4">
+            <h2 class="section-title fs-5">
+                <i class="fa-solid fa-arrows-rotate"></i> Reconciliation
+            </h2>
+            <p class="text-secondary mb-4">
+                Reconciliation is the algorithm React uses to compare (or "diff") the previous Virtual DOM tree with the
+                new Virtual DOM tree to determine exactly what parts of the browser DOM need to be updated.
+            </p>
+
+            <!-- Flow diagram -->
+            <div class="p-3 rounded-3" style="background: rgba(11, 15, 23, 0.5); border: 1px dashed var(--cf-border);">
+                <div class="d-flex justify-content-center align-items-center gap-2 gap-md-3 flex-wrap flow-container">
+                    <div class="flow-step">Old UI</div>
+                    <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="flow-step text-purple" style="color: var(--cf-accent-purple);">Compare (Diffing)</div>
+                    <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="flow-step">New UI</div>
+                    <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="flow-step text-success">Update Browser</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIBER ARCHITECTURE SECTION -->
+    <section class="mb-4">
+        <div class="cf-card p-4">
+            <h2 class="section-title fs-5">
+                <i class="fa-solid fa-sitemap"></i> Fiber Architecture
+            </h2>
+            <p class="text-secondary mb-3">
+                Fiber is React's re-implemented core architecture designed to enable incremental rendering. It breaks
+                rendering work into small units of work to keep web applications smooth and responsive.
+            </p>
+
+            <div class="tree-container font-mono">
+                <div class="text-muted small mb-2">// Fiber Node Hierarchy Tree</div>
+                <div>App</div>
+                <div>├── Header</div>
+                <div>├── Main</div>
+                <div>│ ├── Card</div>
+                <div>│ └── Button <span class="text-warning small">&lt;-- Work scheduled</span></div>
+                <div>└── Footer</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFFING SECTION -->
+    <section class="mb-4">
+        <div class="cf-card p-4">
+            <h2 class="section-title fs-5">
+                <i class="fa-solid fa-code-compare"></i> Diffing Algorithm
+            </h2>
+            <p class="text-secondary mb-3">
+                React compares nodes at the same level. If an element type changes, React rebuilds the entire subtree.
+                If properties change, only the specific attributes are updated.
+            </p>
+
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <div class="diff-box">
+                        <div class="text-muted fw-semibold mb-2">Before State:</div>
+                        <div class="font-mono text-secondary">
+                            &lt;div class="badge"&gt;<br>
+                            &nbsp;&nbsp;&lt;span&gt;Status: Idle&lt;/span&gt;<br>
+                            &lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="diff-box">
+                        <div class="text-muted fw-semibold mb-2">After State:</div>
+                        <div class="font-mono text-secondary">
+                            &lt;div class="badge"&gt;<br>
+                            &nbsp;&nbsp;<span class="diff-changed">&lt;span&gt;Status: Active&lt;/span&gt;</span><br>
+                            &lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process note -->
+            <div
+                class="d-flex align-items-center gap-2 text-info small bg-dark p-2 rounded-3 border border-secondary border-opacity-25">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>React detects the single modified node change &rarr; Updates only the necessary DOM text
+                    node.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY POINTS ALERT -->
+    <section class="mb-4">
+        <div class="key-points-card p-4">
+            <h2 class="h6 fw-bold text-white mb-3 d-flex align-items-center gap-2">
+                <i class="fa-solid fa-lightbulb text-warning"></i> Key Takeaways
+            </h2>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2 text-secondary small">
+                <li class="d-flex align-items-start gap-2">
+                    <i class="fa-solid fa-check text-success mt-1"></i>
+                    <span><strong class="text-white">Virtual DOM</strong> represents the UI in memory as a lightweight
+                        tree structure.</span>
+                </li>
+                <li class="d-flex align-items-start gap-2">
+                    <i class="fa-solid fa-check text-success mt-1"></i>
+                    <span><strong class="text-white">Reconciliation</strong> compares UI changes efficiently before
+                        updating the real DOM.</span>
+                </li>
+                <li class="d-flex align-items-start gap-2">
+                    <i class="fa-solid fa-check text-success mt-1"></i>
+                    <span><strong class="text-white">Fiber Engine</strong> organizes, prioritizes, and breaks rendering
+                        work into flexible chunks.</span>
+                </li>
+                <li class="d-flex align-items-start gap-2">
+                    <i class="fa-solid fa-check text-success mt-1"></i>
+                    <span><strong class="text-white">Diffing</strong> identifies precise element modifications to
+                        minimize DOM manipulation costs.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- QUICK CHECK QUIZ -->
+    <section class="mb-5">
+        <div class="cf-card p-4">
+            <div class="d-flex align-items-center gap-2 mb-3">
+                <span
+                    class="badge bg-primary bg-opacity-20 text-info border border-info border-opacity-25 px-2 py-1">QUIZ</span>
+                <h2 class="h6 fw-bold text-white mb-0">Quick Knowledge Check</h2>
+            </div>
+
+            <p class="fw-medium text-white mb-3">What does reconciliation do?</p>
+
+            <form id="quizForm" class="d-flex flex-column gap-2 mb-3">
+                <label class="quiz-option" for="optA">
+                    <input type="radio" name="quiz" id="optA" value="A">
+                    <span class="text-secondary">A. Creates CSS styling rules automatically</span>
+                </label>
+
+                <label class="quiz-option" for="optB">
+                    <input type="radio" name="quiz" id="optB" value="B">
+                    <span class="text-secondary">B. Compares UI changes between Virtual DOM trees</span>
+                </label>
+
+                <label class="quiz-option" for="optC">
+                    <input type="radio" name="quiz" id="optC" value="C">
+                    <span class="text-secondary">C. Creates a backend SQL database connection</span>
+                </label>
+
+                <label class="quiz-option" for="optD">
+                    <input type="radio" name="quiz" id="optD" value="D">
+                    <span class="text-secondary">D. Downloads React source code to the browser cache</span>
+                </label>
+            </form>
+
+            <button id="checkBtn" type="button" class="btn btn-cf-primary btn-sm">
+                <i class="fa-solid fa-check-double me-1"></i> Check Answer
+            </button>
+
+            <div id="quizFeedback" class="mt-3 d-none">
+                <!-- Populated via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- NEXT LESSON FOOTER NAVIGATION -->
+    <footer class="cf-card p-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+            <div class="text-muted small">CURRENT LESSON</div>
+            <div class="fw-bold text-white fs-6">Lesson 01 — React Architecture & Virtual DOM</div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2 w-100 w-md-auto justify-content-end">
+            <button id="completeBtn" class="btn btn-cf-success flex-grow-1 flex-md-grow-0">
+                <i class="fa-regular fa-circle-check me-1"></i> Mark as Complete
+            </button>
+            <a href="../../page/frondend-course.html" class="btn btn-cf-primary flex-grow-1 flex-md-grow-0">
+                Next Lesson <i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
+        </div>
+    </footer>
+
+    </div>
+    </div>
+    </main>
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Quiz Radio Option Highlight Styling
+            const options = document.querySelectorAll('.quiz-option');
+            options.forEach(opt => {
+                opt.addEventListener('click', function () {
+                    options.forEach(o => o.classList.remove('selected'));
+                    this.classList.add('selected');
+                    const radio = this.querySelector('input[type="radio"]');
+                    if (radio) radio.checked = true;
+                });
+            });
+
+            // Quiz Verification Logic
+            const checkBtn = document.getElementById('checkBtn');
+            const quizFeedback = document.getElementById('quizFeedback');
+
+            checkBtn.addEventListener('click', function () {
+                const selected = document.querySelector('input[name="quiz"]:checked');
+
+                if (!selected) {
+                    quizFeedback.className = "mt-3 alert alert-warning py-2 px-3 small border-0";
+                    quizFeedback.innerHTML = '<i class="fa-solid fa-triangle-exclamation me-1"></i> Please select an answer option first.';
+                    quizFeedback.classList.remove('d-none');
+                    return;
+                }
+
+                if (selected.value === 'B') {
+                    quizFeedback.className = "mt-3 alert alert-success py-2 px-3 small border-0 bg-success bg-opacity-20 text-success";
+                    quizFeedback.innerHTML = '<i class="fa-solid fa-circle-check me-1"></i> <strong>Correct!</strong> Reconciliation is the algorithm React uses to compare UI trees and determine what changed.';
+                } else {
+                    quizFeedback.className = "mt-3 alert alert-danger py-2 px-3 small border-0 bg-danger bg-opacity-20 text-danger";
+                    quizFeedback.innerHTML = '<i class="fa-solid fa-circle-xmark me-1"></i> <strong>Incorrect.</strong> Try again! Hint: Reconciliation is focused on comparing UI changes.';
+                }
+                quizFeedback.classList.remove('d-none');
+            });
+
+            // Mark as Complete Toggle Logic
+            const completeBtn = document.getElementById('completeBtn');
+            let isCompleted = false;
+
+            completeBtn.addEventListener('click', function () {
+                isCompleted = !isCompleted;
+                if (isCompleted) {
+                    completeBtn.classList.add('active');
+                    completeBtn.innerHTML = '<i class="fa-solid fa-check-double me-1"></i> Completed';
+                } else {
+                    completeBtn.classList.remove('active');
+                    completeBtn.innerHTML = '<i class="fa-regular fa-circle-check me-1"></i> Mark as Complete';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
