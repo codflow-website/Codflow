@@ -167,7 +167,7 @@
               Start Learning <i class="fa-solid fa-arrow-right ms-1"></i>
             </a>
             <a href="#courses" class="btn btn-hero-outline">
-              <i class="fa-regular fa-book-open me-2"></i> Explore Courses
+              <i class="fa-solid fa-book-open me-2"></i> Explore Courses
             </a>
           </div>
 
@@ -615,143 +615,120 @@
     </div>
   </section>
 
-
-  <!-- Practice by Coding -->
-  <section id="prcticebycoding" class="practice-coding-section py-4">
-    <div class="container-fluid px-4 px-lg-5">
-
-      <!-- Header Area -->
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
-        <div>
-          <div class="d-flex align-items-center gap-2 mb-2">
-            <span class="challenge-badge">Beginner Challenge</span>
-            <span class="badge-dot">•</span>
-            <span class="challenge-id">Challenge #042</span>
-          </div>
-          <h2 class="section-title">Practice by Coding</h2>
-          <p class="section-description">
-            Test your logic directly in the live browser sandbox. Write code, execute tests, and receive
-            immediate benchmark diagnostics.
-          </p>
+ <!-- Practice by Coding -->
+<section id="prcticebycoding" class="practice-coding-section py-4">
+  <div class="container-fluid px-4 px-lg-5">
+    
+    <!-- Section Header (Added based on reference image) -->
+    <div class="section-header mb-4 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+      <div class="header-content">
+        <div class="header-badges mb-2 d-flex align-items-center gap-2">
+          <span class="badge beginner-badge">Beginner Challenge</span>
+          <span class="text-muted small">•</span>
+          <span class="challenge-id text-muted small">Challenge #042</span>
         </div>
-
-        <!-- Action Buttons -->
-        <div class="d-flex align-items-center gap-3 mt-3 mt-md-0">
-          <button type="button" class="btn btn-reset">
-            <i class="fa-solid fa-rotate-left me-1"></i> Reset
-          </button>
-          <button type="button" class="btn btn-run-code">
-            <i class="fa-solid fa-play me-1"></i> Run Code
-          </button>
-        </div>
+        <h2 class="section-title text-white fw-bold mb-1">Practice by Coding</h2>
+        <p class="section-subtitle text-muted mb-0">Test your logic directly in the live browser sandbox. Write code, execute tests, and receive immediate benchmark diagnostics.</p>
       </div>
-
-      <!-- Interactive Editor Grid Container -->
-      <div class="practice-box">
-        <div class="row g-0">
-
-          <!-- Left Panel: Problem & Code Input -->
-          <div class="col-lg-7 border-panel-right">
-            <!-- Problem Title Header -->
-            <div class="panel-header d-flex justify-content-between align-items-center">
-              <span class="panel-title">
-                <i class="fa-regular fa-clipboard me-2"></i> Problem Description
-              </span>
-              <span class="return-type-badge">Returns number</span>
-            </div>
-
-            <!-- Problem Description Text -->
-            <div class="problem-desc-body">
-              <h3 class="problem-heading">Create a function that returns the sum of two numbers.</h3>
-              <p class="problem-subtext">
-                Accept parameters <code class="code-param">a</code> and <code class="code-param">b</code>, and
-                return their arithmetic addition.
-              </p>
-            </div>
-
-            <!-- Code Editor Workspace -->
-            <div class="editor-workspace">
-              <div class="code-line">
-                <span class="line-num">1</span>
-                <span class="code-text"><span class="syn-keyword">function</span> <span
-                    class="syn-func">sum</span>(<span class="syn-param">a</span>, <span class="syn-param">b</span>)
-                  {</span>
-              </div>
-              <div class="code-line">
-                <span class="line-num">2</span>
-                <span class="code-text">&nbsp;&nbsp;<span class="syn-keyword">return</span> <span
-                    class="syn-param">a</span> + <span class="syn-param">b</span>;</span>
-              </div>
-              <div class="code-line">
-                <span class="line-num">3</span>
-                <span class="code-text">}</span>
-              </div>
-              <div class="code-line"><span class="line-num">4</span><span class="code-text"></span></div>
-              <div class="code-line"><span class="line-num">5</span><span class="code-text"></span></div>
-            </div>
-          </div>
-
-          <!-- Right Panel: Test Suite Output -->
-          <div class="col-lg-5">
-            <div class="panel-header d-flex justify-content-between align-items-center">
-              <span class="panel-title text-success-teal">
-                <i class="fa-regular fa-circle-check me-2"></i> Test Suite Output
-              </span>
-              <span class="passed-count-badge">3/3 Passed</span>
-            </div>
-
-            <div class="test-suite-body">
-              <!-- Test Case Item 1 -->
-              <div class="test-case-item">
-                <div class="d-flex align-items-center">
-                  <i class="fa-regular fa-circle-check text-success-teal me-2"></i>
-                  <code class="test-code">sum(5, 3)</code>
-                </div>
-                <div class="test-result">
-                  <span class="result-icon">═</span>
-                  <span class="result-value">8 (Passed)</span>
-                </div>
-              </div>
-
-              <!-- Test Case Item 2 -->
-              <div class="test-case-item">
-                <div class="d-flex align-items-center">
-                  <i class="fa-regular fa-circle-check text-success-teal me-2"></i>
-                  <code class="test-code">sum(-2, 4)</code>
-                </div>
-                <div class="test-result">
-                  <span class="result-icon">═</span>
-                  <span class="result-value">2 (Passed)</span>
-                </div>
-              </div>
-
-              <!-- Test Case Item 3 -->
-              <div class="test-case-item">
-                <div class="d-flex align-items-center">
-                  <i class="fa-regular fa-circle-check text-success-teal me-2"></i>
-                  <code class="test-code">sum(0, 0)</code>
-                </div>
-                <div class="test-result">
-                  <span class="result-icon">═</span>
-                  <span class="result-value">0 (Passed)</span>
-                </div>
-              </div>
-
-              <!-- Execution Benchmark Footer -->
-              <div class="execution-footer d-flex justify-content-between align-items-center mt-4">
-                <span class="execution-time">
-                  <span class="active-dot"></span> Executed in 4ms
-                </span>
-                <span class="execution-memory">Memory: 1.4MB</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
+      <div class="header-actions d-flex align-items-center gap-2">
+        <button class="btn btn-outline-secondary reset-btn px-3 py-2" type="button">
+          <i class="fa-solid fa-rotate-left me-1"></i> Reset
+        </button>
+        <!-- Note: Main run button is already inside the editor-topbar, but if you want the header one as well: -->
+        <!-- <button class="btn btn-primary run-code-btn px-4 py-2" type="button">
+          <i class="fa-solid fa-play me-1"></i> Run Code
+        </button> -->
       </div>
-
     </div>
-  </section>
+
+    <div class="practice-shell">
+      <div class="editor-topbar">
+        <div class="language-picker">
+          <button class="language-pill" type="button">
+            <i class="fa-brands fa-python lang-icon python" aria-hidden="true"></i>
+            <span>Python</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="language-menu" aria-label="Language selector">
+            <button class="menu-option active" type="button">
+              <i class="fa-brands fa-python lang-icon python" aria-hidden="true"></i>
+              <span>Python</span>
+            </button>
+            <button class="menu-option" type="button">
+              <i class="fa-brands fa-js lang-icon js" aria-hidden="true"></i>
+              <span>JavaScript</span>
+            </button>
+            <button class="menu-option" type="button">
+              <i class="fa-brands fa-java lang-icon java" aria-hidden="true"></i>
+              <span>Java</span>
+            </button>
+            <button class="menu-option" type="button">
+              <i class="fa-solid fa-code lang-icon cpp" aria-hidden="true"></i>
+              <span>C++</span>
+            </button>
+            <button class="menu-option" type="button">
+              <i class="fa-solid fa-hashtag lang-icon csharp" aria-hidden="true"></i>
+              <span>C#</span>
+            </button>
+            <button class="menu-option" type="button">
+              <i class="fa-brands fa-php lang-icon php" aria-hidden="true"></i>
+              <span>PHP</span>
+            </button>
+            <button class="menu-option" type="button">
+              <i class="fa-brands fa-html5 lang-icon html" aria-hidden="true"></i>
+              <span>HTML</span>
+            </button>
+            <button class="menu-option" type="button">
+              <i class="fa-brands fa-css3-alt lang-icon css" aria-hidden="true"></i>
+              <span>CSS</span>
+            </button>
+            <button class="menu-option" type="button">
+              <i class="fa-solid fa-code lang-icon ts" aria-hidden="true"></i>
+              <span>TypeScript</span>
+            </button>
+          </div>
+        </div>
+
+        <button class="practice-run-btn" type="button">
+          <i class="fa-solid fa-play"></i>
+          Run Code
+        </button>
+      </div>
+
+      <div class="editor-layout">
+        <div class="code-panel">
+          <div class="code-surface">
+            <div class="code-line">
+              <span class="line-number">1</span>
+              <span class="code-text"><span class="syn-keyword">def</span> <span class="syn-func">sum</span>(<span class="syn-param">a</span>, <span class="syn-param">b</span>):</span>
+            </div>
+            <div class="code-line">
+              <span class="line-number">2</span>
+              <span class="code-text">&nbsp;&nbsp;&nbsp;&nbsp;<span class="syn-keyword">return</span> <span class="syn-param">a</span> + <span class="syn-param">b</span></span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="output-panel">
+          <div class="practice-results">
+            <div class="test-pass"><i class="fa-solid fa-circle-check"></i> Test passed</div>
+            <div class="result-output">
+              <span>Output</span>
+              <code>5</code>
+            </div>
+            <p class="result-detail">sum(2, 3) expected 5, received 5</p>
+          </div>
+
+          <div class="execution-status">
+            <span class="status-dot"></span>
+            <span>Sample run · sum(2, 3)</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Test Your Knowledge -->
   <section id="quizes" class="quiz-section py-4">
@@ -1136,7 +1113,6 @@
     </div>
   </footer>
 
-
   <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
@@ -1148,6 +1124,35 @@
         link.classList.add("active");
       });
     });
+
+    const languagePicker = document.querySelector(".language-picker");
+    if (languagePicker) {
+      const languageButton = languagePicker.querySelector(".language-pill");
+      const languageLabel = languageButton.querySelector("span:nth-of-type(2)");
+      const menuOptions = languagePicker.querySelectorAll(".menu-option");
+
+      languageButton.addEventListener("click", (event) => {
+        event.stopPropagation();
+        languagePicker.classList.toggle("open");
+      });
+
+      menuOptions.forEach((option) => {
+        option.addEventListener("click", () => {
+          menuOptions.forEach((item) => item.classList.remove("active"));
+          option.classList.add("active");
+
+          const selectedText = option.querySelector("span:nth-of-type(2)").textContent.trim();
+          languageLabel.textContent = selectedText;
+          languagePicker.classList.remove("open");
+        });
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!languagePicker.contains(event.target)) {
+          languagePicker.classList.remove("open");
+        }
+      });
+    }
   </script>
 </body>
 

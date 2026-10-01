@@ -197,11 +197,12 @@ pre,
 }
 
 /* Navbar & Branding */
-.navbar-brand span {
-    background: var(--cf-accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 800;
+.navbar-brand span { 
+  background: var(--cf-accent-gradient); 
+  -webkit-background-clip: text; 
+  background-clip: text; /* Add this line */
+  -webkit-text-fill-color: transparent; 
+  font-weight: 800; 
 }
 
 /* Glass / Card Styling */
@@ -253,13 +254,12 @@ pre,
 
 /* YouTube Style Video */
 .video-wrapper {
-    width: 100%;
     overflow: hidden;
     border-radius: 14px;
     background: #000;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-     width: 90%;
-     margin: auto;
+    /* width: 80%; */
+    margin-inline: auto;
 }
 
 .video-wrapper iframe {
